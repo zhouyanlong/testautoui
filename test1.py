@@ -10,6 +10,18 @@ class Test1():
 
     cluelist_btn=(123,"222","33",66)
     ttt(*cluelist_btn)"""
+    def test1207(self,a):
+        if a> 8:
+            print(a)
+        else:
+            if a<5:
+                print("5")
+                if a==3:
+                    print(a)
+                else:
+                    print()
+            else:
+                print("ddd")
 
     # 关键字参数，传参会被加工成元组
     def print_hello(*args):
@@ -23,3 +35,4 @@ if __name__ == '__main__':
     cluecenter = (By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span')
     Test1().find_element(cluecenter)
     a=["send_keys()", "222"]
+

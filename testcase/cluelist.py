@@ -5,6 +5,7 @@ from commom.mylog import Log
 from time import sleep
 from testcase.basepage.cluelistpage import ClueListPage
 from commom.page import Page
+from commom.shot import screenshot
 #不可不导入By，否则执行eval函数会报错找不到By
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("线索中心")
@@ -40,7 +41,12 @@ class ClueList(MyUnit):
             Page(self.driver).find_element(*eval(testdata["param"])).click()
             sleep(2)
             assertdata = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
+            #如果失败，截图
+            if str(assertdata) != str(testdata["assertresult"]):
+                picname = str(testdata["function"])+"失败"
+                screenshot(self.driver, picname)
             self.assertEqual(str(assertdata), str(testdata["assertresult"]))
+
         else:
             # 如果action，则发送send_keys
             if testdata["action"]:
@@ -58,6 +64,10 @@ class ClueList(MyUnit):
             ClueListPage(self.driver).seach_btn()
             sleep(3)
             assertdata = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
+            #如果失败，截图
+            if str(assertdata) != str(testdata["assertresult"]):
+                picname = str(testdata["function"])+"失败"
+                screenshot(self.driver, picname)
             self.assertEqual(str(assertdata), str(testdata["assertresult"]))
 
 

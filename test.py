@@ -2,6 +2,7 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
 from commom.page import Page
+from commom.shot import screenshot
 class Test():
     def __init__(self):
         url = "https://ai.zhilingsd.com/#/login"
@@ -13,14 +14,14 @@ class Test():
             "zhouyanlong")
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[3]/div[3]/form/div[2]/div/div[2]/input').send_keys(
             "Aa123456.")
-        print("1")
         self.driver.find_element(By.XPATH,
                             '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span').click()
-        print("2")
         self.driver.find_element(By.XPATH,
                             '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div').click()
-        print("3")
+        #screenshot(self.driver, "登陆成功")
+        #self.driver.get_screenshot_as_file(r'D:\pycharm\pythondemo\testui1125\screenpic\登陆成功.png')
         sleep(1)
+
     def test_xiansuoliebiao(self):
 
 
@@ -28,11 +29,6 @@ class Test():
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/div/span').click()
         #点击线索列表
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/ul/a[1]/li').click()
-        #选择自定义时间
-        #self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]').click()
-        #选择11月1日
-        #self.driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div/div[1]/table/tbody/tr[2]/td[2]/div/span').click()
-        #self.driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div/div[1]/table/tbody/tr[2]/td[2]/div/span').click()
         sleep(1)
         #点击查询
         #self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/span/button[1]/span').click()
@@ -46,6 +42,7 @@ class Test():
         #点击详情
         Page(self.driver).find_element("XPATH", '//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[20]/div/div/button/span').click()
         sleep(2)
+
         self.driver.quit()
     def test_ziduanguanli(self):
         #点击线索中心
@@ -70,5 +67,5 @@ class Test():
 
 if __name__ == '__main__':
     #Test().test_ziduanguanli()
-    #Test().test_xiansuoliebiao()
-    Test().testtt()
+    Test().test_xiansuoliebiao()
+    #Test().testtt()

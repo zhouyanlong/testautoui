@@ -5,5 +5,7 @@ configdir=os.path.join(projectdir,"config/config.ini")
 infologdir=os.path.join(projectdir,"log/info.txt")
 errorlogdir=os.path.join(projectdir,"log/error.txt")
 reportdir=os.path.join(projectdir,"report")
-snappicdir=os.path.join(projectdir,"snappic")
+screenpicdir=os.path.join(projectdir,"screenpic")
 testdatadir=os.path.join(projectdir,"testdata/case.xlsx")
+
+

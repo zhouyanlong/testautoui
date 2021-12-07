@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from commom.mylog import Log
+#PO中的Page类，所有页面都继承的类
 class Page():
     def __init__(self,driver):
         self.url = "https://ai.zhilingsd.com/#/login"
@@ -56,3 +57,6 @@ class Page():
     #等待元素可点击
     def wait_until_clickable(self,driver,loc,time=10,poll=0.5):
         return WebDriverWait(driver,time,poll,ignored_exceptions=None).until(EC.element_to_be_clickable(loc))
+    #执行js
+    def script(self,scr):
+        return self.driver.execute_script(scr)
