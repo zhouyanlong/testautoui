@@ -24,5 +24,3 @@ if __name__ == '__main__':
     b=a[0]["param"]
     c=a[4]["action"]
     print(c,eval(c)[0]== "send_keys()")
-    #print(tuple(b))
-    #print(eval(b),type(eval(b)))
