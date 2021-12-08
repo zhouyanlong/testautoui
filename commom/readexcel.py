@@ -1,6 +1,7 @@
 import openpyxl
 from commom import setting
 from commom.mylog import Log
+from selenium.webdriver.common.by import By
 class ReadExcel():
     def read_data(self,sheet,file=setting.testdatadir):
         global worksheet
@@ -20,7 +21,12 @@ class ReadExcel():
             data.append(data_real)
         return data
 if __name__ == '__main__':
-    a=ReadExcel().read_data("线索中心")
-    b=a[0]["param"]
-    c=a[4]["action"]
-    print(c,eval(c)[0]== "send_keys()")
+    a=ReadExcel().read_data("字段管理")
+    b=a[1]["param"]
+    c=eval(b)
+    print(c,type(c))
+    print(len(c))
+    for i in range(len(c)):
+        print(c[i])
+    #print(c,type(c))
+    #c=a[4]["action"]

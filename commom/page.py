@@ -51,11 +51,13 @@ class Page():
         #print(*loctor,loctor)
         return self.driver.find_element(*loc)
     #专门处理excel中的元素和action
-    def find_element_action(self,*loc,action):
-        if eval(action)[0]=="click()":
-            return self.driver.find_element(*loc).click()
-        elif eval(action)[0]=="send_keys()":
-            return self.driver.find_element(*loc).send_keys(eval(action)[1])
+    def find_element_action(self,action,*loc):
+        if action[0]=="click()":
+            self.driver.find_element(*loc).click()
+            sleep(1)
+        elif action[0]=="send_keys()":
+            self.driver.find_element(*loc).send_keys(action[1])
+            sleep(1)
 
 
 
