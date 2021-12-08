@@ -670,3 +670,5 @@
 2021-12-07 22:03:06,917 - root - INFO - {'id': 12, 'module': '线索列表', 'function': '点击回传记录', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/span[2]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div\']', 'assertresult': '否'}
 2021-12-07 22:03:19,434 - root - INFO - 测试用例执行完成
 2021-12-07 22:42:41,925 - root - INFO - 邮件发送成功！
+2021-12-08 18:25:43,594 - root - INFO - 开始执行测试用例
+2021-12-08 18:25:56,507 - root - INFO - {'id': 1, 'module': '字段管理', 'function': '查询字段名称', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[1]/div/div/input\']', 'action': '["send_keys()","电话号码"]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '电话号码'}

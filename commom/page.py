@@ -50,6 +50,14 @@ class Page():
     def find_element(self,*loc):
         #print(*loctor,loctor)
         return self.driver.find_element(*loc)
+    #专门处理excel中的元素和action
+    def find_element_action(self,*loc,action):
+        if eval(action)[0]=="click()":
+            return self.driver.find_element(*loc).click()
+        elif eval(action)[0]=="send_keys()":
+            return self.driver.find_element(*loc).send_keys(eval(action)[1])
+
+
 
     #等待元素存在
     def wait_until_presence(self,driver,loc,time=10,poll=0.5):
