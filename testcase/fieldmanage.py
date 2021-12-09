@@ -4,6 +4,7 @@ from commom.readexcel import ReadExcel
 from testcase.basepage.fieldmanagepage import FieldManagePage
 from commom.page import Page
 from time import sleep
+from commom.shot import screenshot
 from selenium.webdriver.common.by import By
 import ddt
 testdata=ReadExcel().read_data("字段管理")
@@ -18,8 +19,11 @@ class FieldManage(MyUnit):
         #点击字段管理
         FieldManagePage(self.driver).fieldmanage_page()
         sleep(1)
+        #循环执行元素和action
         for i in range(len(eval(testdata["param"]))):
-            Page(self.driver).find_element_action(eval(testdata["action"])[i],*eval(testdata["param"])[i])
+            print(eval(testdata["action"])[i],*(eval(testdata["param"])[i]))
+            Page(self.driver).find_element_action(eval(testdata["action"])[i],*(eval(testdata["param"])[i]))
+
 
 
 
