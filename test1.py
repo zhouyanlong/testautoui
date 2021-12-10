@@ -32,7 +32,7 @@ class Test1():
     #print_hello(*a)#print(args)解包裹参数，把元组a拆开后当成各个参数传入关键字参数中，结果会被加工成一个元组中的两个参数(1, ('zhou', '男'))
 if __name__ == '__main__':
     #cluecenter = [By.XPATH,'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span']
-    cluecenter = (By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span')
-    Test1().find_element(cluecenter)
-    a=["send_keys()", "222"]
+    cluecenter = [By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span']
+    Test1().find_element(*cluecenter)
+
 

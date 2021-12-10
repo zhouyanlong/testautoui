@@ -3,6 +3,8 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from commom.page import Page
 from commom.shot import screenshot
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 class Test():
     def __init__(self):
         url = "https://ai.zhilingsd.com/#/login"
@@ -49,14 +51,25 @@ class Test():
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/div/span').click()
         #点击字段管理
         self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/ul/a[2]/li/span').click()
-        #点击必填下拉框
+        #编辑线索id
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[1]/td[10]/div/button/span').click()
+        #点击确定
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span').click()
+        sleep(0.3)
+        #WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH,'/div/p')))
+        #self.driver.switch_to.alert()
+        a=self.driver.find_element(By.CLASS_NAME,'el-message__content').text
+        #a=self.driver.find_element(By.XPATH,'/div/p').text
+        #a=self.driver.find_element(By.XPATH,'/div/p').text
+        print(a)
+        """#点击必填下拉框
         self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div[1]/form/div[3]/div/div/div/input').click()
         #选择否
         self.driver.find_element(By.XPATH,'/html/body/div[2]/div[1]/div[1]/ul/li[3]').click()
         sleep(1)
         #点击查询
         self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span').click()
-        sleep(3)
+        sleep(3)"""
         self.driver.quit()
     def find(self,*loctor):
         return self.driver.find_element(*loctor)
@@ -67,5 +80,4 @@ class Test():
 
 if __name__ == '__main__':
     #Test().test_ziduanguanli()
-    Test().test_xiansuoliebiao()
-    #Test().testtt()
+    Test().test_ziduanguanli()
