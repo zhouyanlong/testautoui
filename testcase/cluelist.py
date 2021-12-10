@@ -15,7 +15,7 @@ class ClueList(MyUnit):
     #线索列表
     def test_xiansuoliebiao(self,testdata):
         Log.info(testdata)
-        sleep(1)
+        sleep(0.5)
         #点击线索中心
         ClueListPage(self.driver).cluecenter_page()
         #等待线索列表
@@ -33,7 +33,7 @@ class ClueList(MyUnit):
             #WebDriverWait(self.driver, 10, 0.5).until(EC.presence_of_element_located((By.XPATH,'//*[@id="appMain"]/div/div/form/span/button[1]/span')))
             ClueListPage(self.driver).seach_btn()
             #等待详细元素存在点击详情
-            sleep(3)
+            sleep(2)
             ClueListPage(self.driver).detail_btn()
             #等待新页面的元素加载
             sleep(2)
@@ -45,7 +45,7 @@ class ClueList(MyUnit):
             if str(assertdata) != str(testdata["assertresult"]):
                 picname = str(testdata["function"])+"失败"
                 screenshot(self.driver, picname)
-            self.assertEqual(str(assertdata), str(testdata["assertresult"]))
+            self.assertEqual(str(testdata["assertresult"]),str(assertdata))
 
         else:
             # 如果action，则发送send_keys
@@ -62,13 +62,13 @@ class ClueList(MyUnit):
                 sleep(1)
             #查询后断言
             ClueListPage(self.driver).seach_btn()
-            sleep(3)
+            sleep(2)
             assertdata = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
             #如果失败，截图
             if str(assertdata) != str(testdata["assertresult"]):
                 picname = str(testdata["function"])+"失败"
                 screenshot(self.driver, picname)
-            self.assertEqual(str(assertdata), str(testdata["assertresult"]))
+            self.assertEqual(str(testdata["assertresult"]),str(assertdata))
 
 
 

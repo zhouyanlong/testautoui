@@ -54,15 +54,15 @@ class Page():
     def find_element_action(self,action,*loc):
         if action[0]=="click()":
             self.driver.find_element(*loc).click()
-            #sleep(1)
+            #sleep(3)
         elif action[0]=="send_keys()":
             self.driver.find_element(*loc).send_keys(action[1])
-            #sleep(1)
+            #sleep(3)
 
 
 
     #等待元素存在
-    def wait_until_presence(self,driver,loc,time=10,poll=0.5):
+    def wait_until_presence(self,driver,loc,time=10,poll=1):
         return WebDriverWait(driver,time,poll,ignored_exceptions=None).until(EC.presence_of_element_located(loc))
     #等待元素可点击=可见+enable
     def wait_until_clickable(self,driver,loc,time=10,poll=0.5):
