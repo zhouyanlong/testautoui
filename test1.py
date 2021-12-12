@@ -1,5 +1,7 @@
 from commom.page import Page
 from selenium.webdriver.common.by import By
+from selenium import webdriver
+from time import sleep
 class Test1():
 
     def find_element(self,*loctor):
@@ -30,9 +32,15 @@ class Test1():
     #a = (1,('zhou', '男'))
     #print_hello(a)#print(args)把元组a当成参数传入关键字参数中，会被加工成三个括号((1, ('zhou', '男')),)的嵌套元组
     #print_hello(*a)#print(args)解包裹参数，把元组a拆开后当成各个参数传入关键字参数中，结果会被加工成一个元组中的两个参数(1, ('zhou', '男'))
+    def test_roll(self):
+        driver=webdriver.Chrome()
+        driver.get("https://www.cnblogs.com/jasmine0627/p/13094288.html")
+        sleep(3)
+        #driver.execute_script("arguments[0].scrollIntoView();",(By.XPATH,'//*[@id="poweredby"]'))
+        #driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        driver.execute_script("window.scrollTo(0,1000)")
+        sleep(3)
 if __name__ == '__main__':
-    #cluecenter = [By.XPATH,'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span']
-    cluecenter = [By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span']
-    Test1().find_element(*cluecenter)
+    Test1().test_roll()
 
 

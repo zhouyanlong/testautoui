@@ -32,17 +32,23 @@ class Test():
         #点击线索列表
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/ul/a[1]/li').click()
         sleep(1)
+        # 自定义日期
+        self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]').send_keys("2021-12-01")
+        sleep(1)
+        #sendkeys
+        #self.driver.find_element(By.XPATH,'/html/body/div[2]/div[1]/div/div[1]/table/tbody/tr[2]/td[1]/div/span').click()
+        #self.driver.find_element(By.XPATH,'/html/body/div[2]/div[1]/div/div[1]/table/tbody/tr[2]/td[1]/div/span').click()
+        sleep(1)
         #点击查询
         #self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/span/button[1]/span').click()
-        print("1")
         #暂无数据
         #a=self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span').text
         #print(a)
         #点击30天
-        Page(self.driver).find_element("XPATH",'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[4]/span')
+        #Page(self.driver).find_element("XPATH",'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[4]/span')
         sleep(1)
         #点击详情
-        Page(self.driver).find_element("XPATH", '//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[20]/div/div/button/span').click()
+        #Page(self.driver).find_element("XPATH", '//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[20]/div/div/button/span').click()
         sleep(2)
 
         self.driver.quit()
@@ -71,13 +77,38 @@ class Test():
         self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span').click()
         sleep(3)"""
         self.driver.quit()
+    def test_piciguanli(self):
+        #点击外呼管理//*[@id="appMain"]/div/div/div/div[2]/form/div[2]/div/div/div/div[1]/button/span
+        self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[3]/div/span').click()
+        sleep(1)
+        #点击批次管理
+        self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[3]/ul/a[1]/li/span').click()
+        sleep(1)
+        #选中数据
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span').click()
+        #暂停批次/html/body/div[2]
+        sleep(1)
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[2]/span').click()
+        sleep(1)
+        #self.driver.switch_to.alert.accept()
+        #WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located((By.XPATH,'/html/body/div[2]/div/div[3]/button[2]')))
+        #self.driver.find_element(By.XPATH,'/html/body/div[2]').find_element(By.XPATH,'//div/div[3]/button[2]').click()
+        self.driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[2]').click()
+        sleep(1)
     def find(self,*loctor):
         return self.driver.find_element(*loctor)
     def testtt(self):
-        cluecenter=(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/div/span')
+        """cluecenter=(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/div/span')
         Test().find(*cluecenter)
-        sleep(3)
+        sleep(3)"""
+        testdata={'id': 8, 'module': '批次管理', 'function': '创建批次', 'action': '[["click()"],["send_keys()","testtime"],["click()"],["click()"],["clear()"],["send_keys()","0"],["click()"],["click()"],["send_keys()","2021-12-12"],["click()"]]'}
+        testdata["action"]=testdata["action"].replace(eval(testdata["action"])[1][1],"ttttt")
+        #testdata=str(testdata).replace(eval(testdata["action"])[1][1],"ttttt")
+        print(testdata,type(testdata))
+        #print(type(eval(testdata)["action"]))
 
 if __name__ == '__main__':
     #Test().test_ziduanguanli()
-    Test().test_ziduanguanli()
+    Test().test_piciguanli()
+    #Test().test_xiansuoliebiao()
+    #Test().testtt()

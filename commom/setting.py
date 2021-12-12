@@ -7,5 +7,5 @@ errorlogdir=os.path.join(projectdir,"log/error.txt")
 reportdir=os.path.join(projectdir,"report")
 screenpicdir=os.path.join(projectdir,"screenpic")
 testdatadir=os.path.join(projectdir,"testdata/case.xlsx")
-
+batchuploadfile="D:\software\AutoIt3\jiaoben\jiaoben.exe"
 

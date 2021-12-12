@@ -21,12 +21,8 @@ class ReadExcel():
             data.append(data_real)
         return data
 if __name__ == '__main__':
-    a=ReadExcel().read_data("字段管理")
-    b=a[1]["param"]
-    c=eval(b)
-    print(c,type(c))
-    print(len(c))
-    for i in range(len(c)):
-        print(c[i])
+    a=ReadExcel().read_data("批次管理")
+    b=a[7]["assertresult"]
+    print(b)
     #print(c,type(c))
     #c=a[4]["action"]

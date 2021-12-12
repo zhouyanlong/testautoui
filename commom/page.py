@@ -57,7 +57,9 @@ class Page():
             #sleep(3)
         elif action[0]=="send_keys()":
             self.driver.find_element(*loc).send_keys(action[1])
-            #sleep(3)
+        elif action[0]=="clear()":
+            self.driver.find_element(*loc).clear()
+
 
 
 
@@ -70,3 +72,6 @@ class Page():
     #执行js
     def script(self,scr):
         return self.driver.execute_script(scr)
+    #滚动鼠标到底部
+    def rolling_bottom(self):
+        self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
