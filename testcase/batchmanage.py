@@ -19,6 +19,7 @@ class BatchManage(MyUnit):
         #点击外呼管理
         BatchManagePage(self.driver).callmanage_page()
         Page(self.driver).wait_until_presence(self.driver,BatchManagePage(self.driver).batchmanage)
+        sleep(0.3)
         #点击批次管理
         BatchManagePage(self.driver).batchmanage_page()
         sleep(0.5)

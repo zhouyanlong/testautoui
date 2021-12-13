@@ -90,11 +90,26 @@ class Test():
         sleep(1)
         self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[2]/span').click()
         sleep(1)
-        #self.driver.switch_to.alert.accept()
-        #WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located((By.XPATH,'/html/body/div[2]/div/div[3]/button[2]')))
         #self.driver.find_element(By.XPATH,'/html/body/div[2]').find_element(By.XPATH,'//div/div[3]/button[2]').click()
         self.driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[2]').click()
         sleep(1)
+    def test_duanxincelue(self):
+        # 点击外呼管理//*[@id="appMain"]/div/div/div/div[2]/form/div[2]/div/div/div/div[1]/button/span
+        self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[3]/div/span').click()
+        sleep(0.5)
+        #点击短信策略
+        self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[3]/ul/a[2]/li').click()
+        sleep(0.5)
+        #短信类型下拉
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/div/input').click()
+        sleep(0.5)
+        self.driver.find_element(By.XPATH,'/html/body/div[2]/div[1]/div[1]/ul/li').click()
+        #状态
+        self.driver.find_element(By.XPATH,'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/div[1]/input').click()
+        sleep(0.5)
+        #/html/body/div[2]/div[1]/div[1]/ul/li[1]
+        self.driver.find_element(By.XPATH,'/html/body/div[3]/div[1]/div[1]/ul/li[1]').click()
+        sleep(2)
     def find(self,*loctor):
         return self.driver.find_element(*loctor)
     def testtt(self):
@@ -103,12 +118,11 @@ class Test():
         sleep(3)"""
         testdata={'id': 8, 'module': '批次管理', 'function': '创建批次', 'action': '[["click()"],["send_keys()","testtime"],["click()"],["click()"],["clear()"],["send_keys()","0"],["click()"],["click()"],["send_keys()","2021-12-12"],["click()"]]'}
         testdata["action"]=testdata["action"].replace(eval(testdata["action"])[1][1],"ttttt")
-        #testdata=str(testdata).replace(eval(testdata["action"])[1][1],"ttttt")
         print(testdata,type(testdata))
-        #print(type(eval(testdata)["action"]))
 
 if __name__ == '__main__':
     #Test().test_ziduanguanli()
-    Test().test_piciguanli()
+    #Test().test_piciguanli()
     #Test().test_xiansuoliebiao()
     #Test().testtt()
+    Test().test_duanxincelue()
