@@ -5,7 +5,7 @@ from commom.mylog import Log
 #断言失败截图
 def screenshot(driver, filename):
     finalfilename = setting.screenpicdir + "\\" +time.strftime("%Y%m%d_%H%M%S") +filename + ".png"
-    print(finalfilename)
+    Log.info(finalfilename)
     return driver.get_screenshot_as_file(finalfilename)
 #删除图片
 def delshot(filepath=setting.screenpicdir):

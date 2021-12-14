@@ -15,11 +15,11 @@ class BatchManage(MyUnit):
     @ddt.data(*testdata)
     def test_piciguanli(self,testdata):
         Log.info(testdata)
-        sleep(0.3)
+        # 等待页面菜单加载，否则容易出现菜单点击不到
+        sleep(1)
         #点击外呼管理
         BatchManagePage(self.driver).callmanage_page()
         Page(self.driver).wait_until_presence(self.driver,BatchManagePage(self.driver).batchmanage)
-        sleep(0.3)
         #点击批次管理
         BatchManagePage(self.driver).batchmanage_page()
         sleep(0.5)
@@ -45,21 +45,25 @@ class BatchManage(MyUnit):
                 else:
                     Page(self.driver).find_element_action(eval(testdata["action"])[i], *eval(testdata["param"])[i])
                     sleep(0.5)
+            Page(self.driver).wait_until_presence(self.driver, eval(testdata["assertparam"]))
+            sleep(0.5)
             result=Page(self.driver).find_element(*eval(testdata["assertparam"])).text
             if str(result) != str(testdata["assertresult"]):
                 Log.info("用例{}:{}执行失败".format(testdata["id"], testdata["function"]))
                 screenshot(self.driver, testdata["function"] + "失败")
-            self.assertEqual(str(result), str(testdata["assertresult"]))
+            self.assertEqual(str(testdata["assertresult"]),str(result))
         #其他情况，直接执行元素和action
         else:
             for i in range(len(eval(testdata["param"]))):
+                Page(self.driver).wait_until_clickable(self.driver, eval(testdata["param"])[i])
                 Page(self.driver).find_element_action(eval(testdata["action"])[i],*eval(testdata["param"])[i])
-                sleep(0.5)
+            Page(self.driver).wait_until_presence(self.driver, eval(testdata["assertparam"]))
+            sleep(0.5)
             result = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
             if str(result) != str(testdata["assertresult"]):
                 Log.info("用例{}:{}执行失败".format(testdata["id"], testdata["function"]))
                 screenshot(self.driver, testdata["function"] + "失败")
-            self.assertEqual(str(result), str(testdata["assertresult"]))
+            self.assertEqual(str(testdata["assertresult"]),str(result))
 if __name__ == '__main__':
     BatchManage().main()
 

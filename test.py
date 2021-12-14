@@ -110,6 +110,20 @@ class Test():
         #/html/body/div[2]/div[1]/div[1]/ul/li[1]
         self.driver.find_element(By.XPATH,'/html/body/div[3]/div[1]/div[1]/ul/li[1]').click()
         sleep(2)
+    def test_yonghuguanli(self):
+        sleep(1)
+        self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[6]/div').click()
+        self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[6]/ul/a[3]/li').click()
+        sleep(0.5)
+        self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/div[3]/div/div/div/div[1]/input').click()
+        sleep(1)
+        self.driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div[1]/ul/li[1]').click()
+        sleep(3)
+        #人工坐席
+        self.driver.find_element(By.XPATH, '//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input').click()
+        sleep(1)
+        self.driver.find_element(By.XPATH, '/html/body/div[3]/div[1]/div[1]/ul/li[2]').click()
+        sleep(3)
     def find(self,*loctor):
         return self.driver.find_element(*loctor)
     def testtt(self):
@@ -125,4 +139,4 @@ if __name__ == '__main__':
     #Test().test_piciguanli()
     #Test().test_xiansuoliebiao()
     #Test().testtt()
-    Test().test_duanxincelue()
+    Test().test_yonghuguanli()
