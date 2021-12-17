@@ -17,13 +17,13 @@ class UserManage(MyUnit):
         sleep(1)
         #点击系统设置
         UserManagePage(self.driver).syssetting_page()
-        Page(self.driver).wait_until_clickable(self.driver,UserManagePage(self.driver).stopblacklist)
+        Page(self.driver).wait_until_clickable(self.driver,UserManagePage(self.driver).usermanage_page())
         sleep(0.5)
-        #点击停呼黑名单
-        UserManagePage(self.driver).stopblacklist_page()
+        #点击用户管理
+        UserManagePage(self.driver).usermanage_page()
+        sleep(0.5)
         for i in range(len(eval(testdata["param"]))):
             Page(self.driver).wait_until_clickable(self.driver, eval(testdata["param"])[i])
-            sleep(2)
             Page(self.driver).find_element_action(eval(testdata["action"])[i],*eval(testdata["param"])[i])
         Page(self.driver).wait_until_presence(self.driver, eval(testdata["assertparam"]))
         sleep(0.5)
