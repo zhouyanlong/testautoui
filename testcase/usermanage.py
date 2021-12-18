@@ -11,13 +11,13 @@ testdata=ReadExcel().read_data("用户管理")
 @ddt.ddt
 class UserManage(MyUnit):
     @ddt.data(*testdata)
-    def test_tinghuheimingdan(self,testdata):
+    def test_yonghuguanli(self,testdata):
         Log.info(testdata)
         # 等待页面菜单加载，否则容易出现菜单点击不到
         sleep(1)
         #点击系统设置
         UserManagePage(self.driver).syssetting_page()
-        Page(self.driver).wait_until_clickable(self.driver,UserManagePage(self.driver).usermanage_page())
+        Page(self.driver).wait_until_clickable(self.driver,UserManagePage(self.driver).usermanage)
         sleep(0.5)
         #点击用户管理
         UserManagePage(self.driver).usermanage_page()

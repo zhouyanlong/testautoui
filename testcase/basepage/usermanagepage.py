@@ -8,4 +8,4 @@ class UserManagePage(Page):
     def syssetting_page(self):
         return Page(self.driver).find_element(*self.syssetting).click()
     def usermanage_page(self):
-        return Page(self.driver).find_element(*self.stopblacklist).click()
+        return Page(self.driver).find_element(*self.usermanage).click()

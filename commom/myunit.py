@@ -16,10 +16,10 @@ class MyUnit(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
         self.driver.get(url)
-        Page(self.driver).find_element(By.XPATH, '//*[@id="app"]/div[1]/div[3]/div[3]/form/div[1]/div/div[2]/input').send_keys("zhouyanlong")
-        Page(self.driver).find_element(By.XPATH, '//*[@id="app"]/div[1]/div[3]/div[3]/form/div[2]/div/div[2]/input').send_keys("Aa123456.")
-        Page(self.driver).find_element(By.XPATH, '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span').click()
-        Page(self.driver).find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div').click()
+        Page(self.driver).find_element(*account).send_keys("zhouyanlong")
+        Page(self.driver).find_element(*password).send_keys("Aa123456.")
+        Page(self.driver).find_element(*login).click()
+        Page(self.driver).find_element(*market).click()
         sleep(1)
     @classmethod
     def setUpClass(cls) -> None:

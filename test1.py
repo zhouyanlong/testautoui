@@ -41,6 +41,7 @@ class Test1():
         driver.execute_script("window.scrollTo(0,1000)")
         sleep(3)
 if __name__ == '__main__':
-    Test1().test_roll()
+    #Test1().test_roll()
+    Test1().print_hello({"ss":"dd"})
 
 
