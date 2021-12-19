@@ -22,6 +22,7 @@ class ReadExcel():
         return data
 if __name__ == '__main__':
     a=ReadExcel().read_data("批次管理")
+    print(type(a))
     b=a[7]["assertresult"]
     print(b)
     #print(c,type(c))

@@ -40,8 +40,33 @@ class Test1():
         #driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
         driver.execute_script("window.scrollTo(0,1000)")
         sleep(3)
+    def test1217(self):
+        #遍历str list
+        a='[[1,2],[3,4]]'
+        for i in eval(a):
+            print(i)
+        #使用下标
+        for i in range(len(eval(a))):
+            print(eval(a)[i])
+        #遍历str,dict
+        b='{"name":"zzz","age":"23"}'
+        print(eval(b).keys(),eval(b).values(),eval(b).items())
+        for i in eval(b).keys():
+            print(i)
+        for i in eval(b).values():
+            print(i)
+        for i,j in eval(b).items():
+            print(i,j)
+        #tuple
+        c='(10,20,30)'
+        for i in eval(c):
+            print(i)
+        #使用下表
+        for i in range(len(eval(c))):
+            print(eval(c)[i])
 if __name__ == '__main__':
     #Test1().test_roll()
-    Test1().print_hello({"ss":"dd"})
+    #Test1().print_hello({"ss":"dd"})
+    Test1().test1217()
 
 
