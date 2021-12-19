@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-from commom.mylog import Log
+from common.mylog import Log
 #PO中的Page类，所有页面都继承的类
 class Page():
     def __init__(self,driver):

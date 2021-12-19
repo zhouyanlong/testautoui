@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from commom.page import Page
+from common.page import Page
 class UserManagePage(Page):
     #系统设置
     syssetting=(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[6]/div')

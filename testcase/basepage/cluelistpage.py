@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-from commom.page import Page
-from commom.readexcel import ReadExcel
+from common.page import Page
+from common.readexcel import ReadExcel
 testdata=ReadExcel().read_data("线索中心")
 #线索列表page
 class ClueListPage(Page):

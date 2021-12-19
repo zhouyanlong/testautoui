@@ -1,8 +1,8 @@
-from commom import setting
+from common import setting
 import unittest,time
-from commom.sendemail import send_mail
-from commom.newreport import new_report
-from commom.HTMLTestRunner import HTMLTestRunner
+from common.sendemail import send_mail
+from common.newreport import new_report
+from common.HTMLTestRunner import HTMLTestRunner
 def load_testcase(testcase=setting.testcasedir):
     return unittest.defaultTestLoader.discover(testcase, pattern='stop*.py')
 def run_case(filedir=setting.reportdir):

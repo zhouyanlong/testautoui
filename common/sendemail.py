@@ -1,10 +1,10 @@
-from commom.config import get_config
+from common.config import get_config
 import smtplib
 from email.header import Header
-from commom.mylog import Log
+from common.mylog import Log
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
-from commom.newreport import new_report
+from common.newreport import new_report
 def send_mail(file):
     # f = open(file,'rb')
     # mail_body = f.read()

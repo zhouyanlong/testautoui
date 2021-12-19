@@ -1,12 +1,12 @@
-from commom.shot import screenshot
-from commom.page import Page
-from commom.myunit import MyUnit
-from commom.mylog import Log
-from commom.readexcel import ReadExcel
+from common.shot import screenshot
+from common.page import Page
+from common.myunit import MyUnit
+from common.mylog import Log
+from common.readexcel import ReadExcel
 from testcase.basepage.bathchmanagepage import BatchManagePage
 from time import sleep
 import time
-from commom import setting
+from common import setting
 from selenium.webdriver.common.by import By
 import ddt,os
 testdata=ReadExcel().read_data("批次管理")

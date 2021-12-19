@@ -1,4 +1,4 @@
-from commom.page import Page
+from common.page import Page
 from selenium.webdriver.common.by import By
 class BatchManagePage(Page):
     #外呼管理

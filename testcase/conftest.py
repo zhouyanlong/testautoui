@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from commom.page import Page
+from common.page import Page
 from time import sleep
 
 @pytest.fixture(scope="function", autouse=True)

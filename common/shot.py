@@ -1,7 +1,7 @@
-from commom import setting
+from common import setting
 import os
 import time
-from commom.mylog import Log
+from common.mylog import Log
 #断言失败截图
 def screenshot(driver, filename):
     finalfilename = setting.screenpicdir + "\\" +time.strftime("%Y%m%d_%H%M%S") +filename + ".png"

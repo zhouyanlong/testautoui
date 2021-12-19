@@ -1,6 +1,6 @@
-from commom import setting
+from common import setting
 import logging
-from commom import setting
+from common import setting
 class Log():
     def get_log(self,level,msg,filename1=setting.infologdir,filename2=setting.errorlogdir):
         #获取日志收集器

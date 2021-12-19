@@ -1,6 +1,6 @@
 import openpyxl
-from commom import setting
-from commom.mylog import Log
+from common import setting
+from common.mylog import Log
 from selenium.webdriver.common.by import By
 class ReadExcel():
     def read_data(self,sheet,file=setting.testdatadir):

@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
-from commom.page import Page
-from commom.shot import screenshot
-from commom.mylog import Log
-from commom.readexcel import ReadExcel
-from commom.myunit import MyUnit
+from common.page import Page
+from common.shot import screenshot
+from common.mylog import Log
+from common.readexcel import ReadExcel
+from common.myunit import MyUnit
 from testcase.basepage.usermanagepage import UserManagePage
 from time import sleep
 import ddt

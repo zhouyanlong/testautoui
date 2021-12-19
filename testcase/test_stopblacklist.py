@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
-from commom.page import Page
-from commom.shot import screenshot
-from commom.mylog import Log
-from commom.readexcel import ReadExcel
+from common.page import Page
+from common.shot import screenshot
+from common.mylog import Log
+from common.readexcel import ReadExcel
 from testcase.basepage.stopblacklistpage import StopBlacklistPage
 from time import sleep
 from selenium import webdriver
+from common.login import Login
 import pytest
 
 class TestStopBlacklist():
@@ -40,6 +41,7 @@ class TestStopBlacklist():
         return request.param
 
     def test_tinghuheimingdan(self,excel_data):
+        self.driver=Login().login_s()
         testdata=excel_data
         Log.info(testdata)
         # 等待页面菜单加载，否则容易出现菜单点击不到

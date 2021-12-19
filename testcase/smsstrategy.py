@@ -1,8 +1,8 @@
-from commom.page import Page
-from commom.readexcel import ReadExcel
-from commom.shot import screenshot
-from commom.mylog import Log
-from commom.myunit import MyUnit
+from common.page import Page
+from common.readexcel import ReadExcel
+from common.shot import screenshot
+from common.mylog import Log
+from common.myunit import MyUnit
 from testcase.basepage.smsstrategypage import SmsStrategyPage
 from selenium.webdriver.common.by import By
 import ddt

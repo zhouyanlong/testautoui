@@ -1,5 +1,5 @@
 import configparser
-from commom import setting
+from common import setting
 def get_config(option,selection,file=setting.configdir):
     con=configparser.ConfigParser()
     con.read(file,encoding="UTF-8")

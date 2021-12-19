@@ -1,10 +1,10 @@
-from commom.mylog import Log
-from commom.myunit import MyUnit
-from commom.readexcel import ReadExcel
+from common.mylog import Log
+from common.myunit import MyUnit
+from common.readexcel import ReadExcel
 from testcase.basepage.fieldmanagepage import FieldManagePage
-from commom.page import Page
+from common.page import Page
 from time import sleep
-from commom.shot import screenshot
+from common.shot import screenshot
 from selenium.webdriver.common.by import By
 import ddt
 testdata=ReadExcel().read_data("字段管理")

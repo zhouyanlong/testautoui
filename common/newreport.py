@@ -1,5 +1,5 @@
 import os
-from commom import setting
+from common import setting
 
 def new_report(filepath=setting.reportdir):
     files=os.listdir(filepath)

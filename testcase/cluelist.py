@@ -1,11 +1,11 @@
 import unittest,ddt
-from commom.myunit import MyUnit
-from commom.readexcel import ReadExcel
-from commom.mylog import Log
+from common.myunit import MyUnit
+from common.readexcel import ReadExcel
+from common.mylog import Log
 from time import sleep
 from testcase.basepage.cluelistpage import ClueListPage
-from commom.page import Page
-from commom.shot import screenshot
+from common.page import Page
+from common.shot import screenshot
 #不可不导入By，否则执行eval函数会报错找不到By
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("线索中心")

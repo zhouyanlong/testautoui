@@ -1,4 +1,4 @@
-from commom.page import Page
+from common.page import Page
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from time import sleep
