@@ -1,18 +1,14 @@
 import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from common.page import Page
-from time import sleep
+from common.mylog import Log
 from testcase.login import Login
-@pytest.fixture(scope="function")
-def broswer(request):
+@pytest.fixture(scope="function",autouse=True)
+def start(request):
     def end():
-        print("全部用例执行完后 teardown quit dirver1")
+        Log.info("用例执行完成")
         driver.quit()
     request.addfinalizer(end)
-    global driver
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    Log.info("用例开始执行")
+    driver=Login().login_market()
     return driver
 
 

@@ -9,19 +9,23 @@ from testcase.login import Login
 import pytest
 
 class TestStopBlacklist():
+    """
+    setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
     def setup(self):
         self.driver=Login().login_market()
 
     def teardown(self):
-        self.driver.quit()
-
-
+        self.driver.quit()"""
+    #使用fixture中的params做数据驱动，相当于ddt
     testdata1=ReadExcel().read_data("停呼黑名单")
     @pytest.fixture(params=testdata1)
     def excel_data(self,request):
         return request.param
-
-    def test_tinghuheimingdan(self,excel_data):
+    """
+    在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回driver复制给self.driver
+    """
+    def test_tinghuheimingdan(self,excel_data,start):
+        self.driver=start
         testdata=excel_data
         Log.info(testdata)
         # 等待页面菜单加载，否则容易出现菜单点击不到
