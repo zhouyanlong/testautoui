@@ -7,9 +7,9 @@ class SmsStrategyPage(Page):
     smsstrategy=(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[3]/ul/a[2]/li')
 
     def callmanage_page(self):
-        return Page(self.driver).find_element(*self.callmanage).click()
+        return self.find_element(*self.callmanage).click()
     def smsstrategy_page(self):
-        return Page(self.driver).find_element(*self.smsstrategy).click()
+        return self.find_element(*self.smsstrategy).click()
     """"
     excel中的元素:
 1	短信策略	查询存在的策略名称：策略名称、查询

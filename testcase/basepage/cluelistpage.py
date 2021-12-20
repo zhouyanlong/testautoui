@@ -21,26 +21,26 @@ class ClueListPage(Page):
     #详情btn
     detail=(By.XPATH, '//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[20]/div/div/button/span')
     def cluecenter_page(self):
-        return Page(self.driver).find_element(*self.cluecenter).click()
+        return self.find_element(*self.cluecenter).click()
     #线索列表btn
     def cluelist_page(self):
-        return Page(self.driver).find_element(*self.cluelist).click()
+        return self.find_element(*self.cluelist).click()
     #最近30天按钮
     def last30_btn(self):
-        return Page(self.driver).find_element(*self.last30).click()
+        return self.find_element(*self.last30).click()
     #自定义时间框
     def definetime_btn(self):
-        return Page(self.driver).find_element(*self.definetime).click()
+        return self.find_element(*self.definetime).click()
     #线索id查询按钮
     def clueid_btn(self):
-        return Page(self.driver).find_element(*self.clueid).click()
+        return self.find_element(*self.clueid).click()
     #查询按钮
     def seach_btn(self):
-        return Page(self.driver).find_element(*self.seach).click()
+        return self.find_element(*self.seach).click()
     #下载按钮
     def duwnload_btn(self):
-        return Page(self.driver).find_element(*self.duwnload).click()
+        return self.find_element(*self.duwnload).click()
     #详情按钮
     def detail_btn(self):
-        return Page(self.driver).find_element(*self.detail).click()
+        return self.find_element(*self.detail).click()
 

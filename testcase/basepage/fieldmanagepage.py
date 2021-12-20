@@ -7,9 +7,9 @@ class FieldManagePage(Page):
     #字段管理btn
     fieldmanagebtn=(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[1]/div/ul/div/li[2]/ul/a[2]/li/span')
     def cluecenter_page(self):
-        return Page(self.driver).find_element(*self.cluecenterbtn).click()
+        return self.find_element(*self.cluecenterbtn).click()
     def fieldmanage_page(self):
-        return Page(self.driver).find_element(*self.fieldmanagebtn).click()
+        return self.find_element(*self.fieldmanagebtn).click()
     """
     excel中元素属性说明：
     1查询存在的字段名称,第一个元素为查询字段名称btn，第二个为查询btn

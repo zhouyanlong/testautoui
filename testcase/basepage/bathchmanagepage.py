@@ -12,13 +12,13 @@ class BatchManagePage(Page):
     #确定
     ok=[By.XPATH,'//*[@id="appMain"]/div/div/div/div[3]/div[2]/button[2]/span']
     def callmanage_page(self):
-        return Page(self.driver).find_element(*self.callmanage).click()
+        return self.find_element(*self.callmanage).click()
     def batchmanage_page(self):
-        return Page(self.driver).find_element(*self.batchmanage).click()
+        return self.find_element(*self.batchmanage).click()
     def createbatch_page(self):
-        return Page(self.driver).find_element(*self.createbatch).click()
+        return self.find_element(*self.createbatch).click()
     def uploadfile_page(self):
-        return Page(self.driver).find_element(*self.uploadfile).click()
+        return self.find_element(*self.uploadfile).click()
 
     """excel中的元素：
     1查询不存在的批次名称:外呼批次名称、查询
