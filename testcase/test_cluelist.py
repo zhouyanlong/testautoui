@@ -1,5 +1,4 @@
 import unittest,ddt
-from common.myunit import MyUnit
 from common.readexcel import ReadExcel
 from common.mylog import Log
 from time import sleep
@@ -9,11 +8,27 @@ from common.shot import screenshot
 #不可不导入By，否则执行eval函数会报错找不到By
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("线索中心")
-@ddt.ddt
-class ClueList(MyUnit):
-    @ddt.data(*testdata)
-    #线索列表
-    def test_xiansuoliebiao(self,testdata):
+import pytest
+class TestClueList():
+    """
+                setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
+                def setup(self):
+                    self.driver=Login().login_market()
+
+                def teardown(self):
+                    self.driver.quit()"""
+
+    # 使用fixture中的params做数据驱动，相当于ddt
+    @pytest.fixture(params=testdata)
+    def excel_data(self, request):
+        return request.param
+
+    """
+    在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver
+    """
+    def test_xiansuoliebiao(self,excel_data,start):
+        testdata=excel_data
+        self.driver=start
         Log.info(testdata)
         sleep(0.5)
         #点击线索中心
@@ -40,12 +55,12 @@ class ClueList(MyUnit):
             # 点击excel中的param元素
             Page(self.driver).find_element(*eval(testdata["param"])).click()
             sleep(2)
-            assertdata = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
+            result = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
             #如果失败，截图
-            if str(assertdata) != str(testdata["assertresult"]):
+            if str(result) != str(testdata["assertresult"]):
                 picname = str(testdata["function"])+"失败"
                 screenshot(self.driver, picname)
-            self.assertEqual(str(testdata["assertresult"]),str(assertdata))
+            assert str(testdata["assertresult"])==str(result)
 
         else:
             # 如果action，则发送send_keys
@@ -63,18 +78,19 @@ class ClueList(MyUnit):
             #查询后断言
             ClueListPage(self.driver).seach_btn()
             sleep(2)
-            assertdata = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
+            result = Page(self.driver).find_element(*eval(testdata["assertparam"])).text
             #如果失败，截图
-            if str(assertdata) != str(testdata["assertresult"]):
+            if str(result) != str(testdata["assertresult"]):
                 picname = str(testdata["function"])+"失败"
                 screenshot(self.driver, picname)
-            self.assertEqual(str(testdata["assertresult"]),str(assertdata))
+            assert str(testdata["assertresult"])==str(result)
 
 
 
 
 if __name__ == '__main__':
-    suite=unittest.TestSuite()
+    """suite=unittest.TestSuite()
     suite.addTest(ClueList("test_ui"))
     runner=unittest.TextTestRunner(verbosity=2)
-    runner.run(suite)
+    runner.run(suite)"""
+    pytest.main(["-sv","test_cluelist.py"])

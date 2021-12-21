@@ -1,13 +1,12 @@
-from selenium.webdriver.common.by import By
 from common.page import Page
 from common.shot import screenshot
 from common.mylog import Log
 from common.readexcel import ReadExcel
 from testcase.basepage.stopblacklistpage import StopBlacklistPage
 from time import sleep
-from testcase.login import Login
 import pytest
-
+from selenium.webdriver.common.by import By
+testdata=ReadExcel().read_data("停呼黑名单")
 class TestStopBlacklist():
     """
     setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
@@ -17,12 +16,11 @@ class TestStopBlacklist():
     def teardown(self):
         self.driver.quit()"""
     #使用fixture中的params做数据驱动，相当于ddt
-    testdata1=ReadExcel().read_data("停呼黑名单")
-    @pytest.fixture(params=testdata1)
+    @pytest.fixture(params=testdata)
     def excel_data(self,request):
         return request.param
     """
-    在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回driver复制给self.driver
+    在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver
     """
     def test_tinghuheimingdan(self,excel_data,start):
         self.driver=start
