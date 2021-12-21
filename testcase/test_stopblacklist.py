@@ -47,4 +47,4 @@ class TestStopBlacklist():
 
 if __name__ == '__main__':
     #pytest.main()
-    pytest.main(["-sv","test_stopblacklist.py"])
+    pytest.main(["-sv","test_stopblacklist.py","--html=123report.html"])
