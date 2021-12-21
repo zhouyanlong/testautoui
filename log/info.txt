@@ -55,3 +55,420 @@
 2021-12-21 16:16:45,915 - root - INFO - 用例开始执行
 2021-12-21 16:16:58,377 - root - INFO - {'id': 1, 'module': '线索列表', 'function': '查询今天', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
 2021-12-21 16:17:03,266 - root - INFO - 用例执行完成
+2021-12-21 19:52:07,234 - root - INFO - 用例开始执行
+2021-12-21 19:52:12,037 - root - INFO - {'id': 1, 'module': '停呼黑名单', 'function': '查询已存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293681"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': 13192293681}
+2021-12-21 19:52:14,979 - root - INFO - 用例执行完成
+2021-12-21 19:52:17,148 - root - INFO - 用例开始执行
+2021-12-21 19:52:20,531 - root - INFO - {'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 19:52:23,528 - root - INFO - 用例执行完成
+2021-12-21 19:52:25,695 - root - INFO - 用例开始执行
+2021-12-21 19:52:29,763 - root - INFO - {'id': 3, 'module': '停呼黑名单', 'function': '查询已存在的停呼原因', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","已还款"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[4]/div\']', 'assertresult': '已还款'}
+2021-12-21 19:52:32,697 - root - INFO - 用例执行完成
+2021-12-21 19:52:34,854 - root - INFO - 用例开始执行
+2021-12-21 19:52:38,224 - root - INFO - {'id': 4, 'module': '停呼黑名单', 'function': '查询不存在的停呼原因', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 19:52:41,161 - root - INFO - 用例执行完成
+2021-12-21 19:52:43,287 - root - INFO - 用例开始执行
+2021-12-21 19:52:48,290 - root - INFO - {'id': 5, 'module': '停呼黑名单', 'function': '查询已存在的创建日期', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-14"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[6]/div\']', 'assertresult': datetime.datetime(2021, 12, 14, 15, 9, 14)}
+2021-12-21 19:53:01,520 - root - INFO - 用例执行完成
+2021-12-21 19:53:03,648 - root - INFO - 用例开始执行
+2021-12-21 19:53:08,710 - root - INFO - {'id': 6, 'module': '停呼黑名单', 'function': '查询不存在的创建日期', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 19:53:11,768 - root - INFO - 用例执行完成
+2021-12-21 19:53:13,934 - root - INFO - 用例开始执行
+2021-12-21 19:53:17,815 - root - INFO - {'id': 7, 'module': '停呼黑名单', 'function': '新增停呼号码为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[2]/div/form/div[1]/div/div[2]\']', 'assertresult': '请输入停呼号码'}
+2021-12-21 19:53:20,768 - root - INFO - 用例执行完成
+2021-12-21 19:53:23,230 - root - INFO - 用例开始执行
+2021-12-21 19:53:27,176 - root - INFO - {'id': 8, 'module': '停呼黑名单', 'function': '新增停呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[2]/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["send_keys()","13111111111"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '添加停呼成功！'}
+2021-12-21 19:53:30,253 - root - INFO - 用例执行完成
+2021-12-21 19:53:32,534 - root - INFO - 用例开始执行
+2021-12-21 19:53:36,747 - root - INFO - {'id': 9, 'module': '停呼黑名单', 'function': '批量入呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[4]/div[2]/table/tbody/tr[2]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '入呼成功！'}
+2021-12-21 19:53:40,035 - root - INFO - 用例执行完成
+2021-12-21 19:53:42,191 - root - INFO - 用例开始执行
+2021-12-21 19:53:45,871 - root - INFO - {'id': 10, 'module': '停呼黑名单', 'function': '导出停呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '导出成功'}
+2021-12-21 19:53:49,775 - root - INFO - 用例执行完成
+2021-12-21 19:53:51,938 - root - INFO - 用例开始执行
+2021-12-21 19:53:55,673 - root - INFO - {'id': 11, 'module': '停呼黑名单', 'function': '编辑命中规则停呼', 'param': '[[By.XPATH,\'//*[@id="tab-rule"]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div/div[3]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div/div[3]/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '保存成功'}
+2021-12-21 19:53:58,671 - root - INFO - 用例执行完成
+2021-12-21 22:23:38,988 - root - INFO - 用例开始执行
+2021-12-21 22:23:43,850 - root - INFO - {'id': 1, 'module': '批次管理', 'function': '查询不存在的批次名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:23:46,364 - root - INFO - 用例执行完成
+2021-12-21 22:23:48,532 - root - INFO - 用例开始执行
+2021-12-21 22:23:52,574 - root - INFO - {'id': 2, 'module': '批次管理', 'function': '查询存在的批次名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["send_keys()","test2021年12月7日18:59:39"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[3]/div/a\']', 'assertresult': 'test2021年12月7日18:59:39'}
+2021-12-21 22:23:55,018 - root - INFO - 用例执行完成
+2021-12-21 22:23:57,190 - root - INFO - 用例开始执行
+2021-12-21 22:24:00,843 - root - INFO - {'id': 3, 'module': '批次管理', 'function': '查询批次状态暂停中', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:24:03,954 - root - INFO - 用例执行完成
+2021-12-21 22:24:06,268 - root - INFO - 用例开始执行
+2021-12-21 22:24:10,363 - root - INFO - {'id': 4, 'module': '批次管理', 'function': '查询批次状态进行中', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:24:13,533 - root - INFO - 用例执行完成
+2021-12-21 22:24:15,713 - root - INFO - 用例开始执行
+2021-12-21 22:24:19,354 - root - INFO - {'id': 5, 'module': '批次管理', 'function': '查询批次状态已完成', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[4]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div\']', 'assertresult': '已完成'}
+2021-12-21 22:24:22,407 - root - INFO - 用例执行完成
+2021-12-21 22:24:24,576 - root - INFO - 用例开始执行
+2021-12-21 22:24:28,285 - root - INFO - {'id': 6, 'module': '批次管理', 'function': '查询批次状态已取消', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[5]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div\']', 'assertresult': '已取消'}
+2021-12-21 22:24:31,384 - root - INFO - 用例执行完成
+2021-12-21 22:24:33,568 - root - INFO - 用例开始执行
+2021-12-21 22:24:37,336 - root - INFO - {'id': 7, 'module': '批次管理', 'function': '查询批次状态等待中', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[6]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:24:40,482 - root - INFO - 用例执行完成
+2021-12-21 22:24:42,642 - root - INFO - 用例开始执行
+2021-12-21 22:24:46,147 - root - INFO - {'id': 8, 'module': '批次管理', 'function': '创建批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/form/div[4]/div/button[2]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[2]/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[3]/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[1]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[9]/div/div[1]/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[9]/div/div[1]/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[11]/div/div/div/span/span/i\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/form/div[13]/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[3]/div[2]/button[2]/span\']]', 'action': '[["click()"],["send_keys()","testtime"],["click()"],["click()"],["clear()"],["send_keys()","0"],["click()"],["click()"],["send_keys()","2021-12-12"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '创建成功'}
+2021-12-21 22:25:01,022 - root - INFO - 用例执行完成
+2021-12-21 22:25:03,181 - root - INFO - 用例开始执行
+2021-12-21 22:25:07,433 - root - INFO - {'id': 9, 'module': '批次管理', 'function': '暂停批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[2]/span\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '暂停成功'}
+2021-12-21 22:25:10,041 - root - INFO - 用例执行完成
+2021-12-21 22:25:12,200 - root - INFO - 用例开始执行
+2021-12-21 22:25:15,707 - root - INFO - {'id': 10, 'module': '批次管理', 'function': '执行批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[3]/span\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '执行成功'}
+2021-12-21 22:25:18,415 - root - INFO - 用例执行完成
+2021-12-21 22:25:20,595 - root - INFO - 用例开始执行
+2021-12-21 22:25:24,059 - root - INFO - {'id': 11, 'module': '批次管理', 'function': '取消批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[4]/span\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '取消成功'}
+2021-12-21 22:25:26,663 - root - INFO - 用例执行完成
+2021-12-21 22:25:28,833 - root - INFO - 用例开始执行
+2021-12-21 22:25:32,909 - root - INFO - {'id': 12, 'module': '批次管理', 'function': '下载外呼明细', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/div[1]/button[5]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[3]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '下载任务已创建成功！'}
+2021-12-21 22:25:35,407 - root - INFO - 用例执行完成
+2021-12-21 22:25:37,579 - root - INFO - 用例开始执行
+2021-12-21 22:25:41,441 - root - INFO - {'id': 13, 'module': '批次管理', 'function': '批次详情查询存在的线索id', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/table/tbody/tr/td[2]/div\']', 'assertresult': 123}
+2021-12-21 22:25:44,084 - root - INFO - 用例执行完成
+2021-12-21 22:25:46,263 - root - INFO - 用例开始执行
+2021-12-21 22:25:49,990 - root - INFO - {'id': 14, 'module': '批次管理', 'function': '批次详情查询不存在的线索id', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:25:52,704 - root - INFO - 用例执行完成
+2021-12-21 22:25:54,875 - root - INFO - 用例开始执行
+2021-12-21 22:25:58,376 - root - INFO - {'id': 15, 'module': '批次管理', 'function': '批次详情查询存在的电话', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/table/tbody/tr/td[5]/div\']', 'assertresult': 13192293682}
+2021-12-21 22:26:01,482 - root - INFO - 用例执行完成
+2021-12-21 22:26:03,629 - root - INFO - 用例开始执行
+2021-12-21 22:26:07,401 - root - INFO - {'id': 16, 'module': '批次管理', 'function': '批次详情查询不存在的电话', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:26:10,355 - root - INFO - 用例执行完成
+2021-12-21 22:26:12,519 - root - INFO - 用例开始执行
+2021-12-21 22:26:16,383 - root - INFO - {'id': 17, 'module': '批次管理', 'function': '批次详情查询存在的姓名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[3]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","周彦龙"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '周彦龙'}
+2021-12-21 22:26:19,028 - root - INFO - 用例执行完成
+2021-12-21 22:26:21,198 - root - INFO - 用例开始执行
+2021-12-21 22:26:25,050 - root - INFO - {'id': 18, 'module': '批次管理', 'function': '批次详情查询不存在的姓名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[3]/div/div/div/input\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["send_keys()","1t23"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:26:28,241 - root - INFO - 用例执行完成
+2021-12-21 22:26:30,420 - root - INFO - 用例开始执行
+2021-12-21 22:26:34,365 - root - INFO - {'id': 19, 'module': '批次管理', 'function': '批次详情查询状态命中停呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[4]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:26:37,679 - root - INFO - 用例执行完成
+2021-12-21 22:26:39,861 - root - INFO - 用例开始执行
+2021-12-21 22:26:43,715 - root - INFO - {'id': 20, 'module': '批次管理', 'function': '批次详情查询状态去重', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[4]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:26:47,024 - root - INFO - 用例执行完成
+2021-12-21 22:26:49,196 - root - INFO - 用例开始执行
+2021-12-21 22:26:52,728 - root - INFO - {'id': 21, 'module': '批次管理', 'function': '批次详情查询状态正常', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/div[4]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[4]\'],[By.XPATH,\'//*[@id="pane-first"]/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '周彦龙'}
+2021-12-21 22:26:55,923 - root - INFO - 用例执行完成
+2021-12-21 22:26:58,102 - root - INFO - 用例开始执行
+2021-12-21 22:27:02,216 - root - INFO - {'id': 1, 'module': '呼出记录', 'function': '查询存在的线索id', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[3]/div/a\']', 'assertresult': 222}
+2021-12-21 22:27:05,342 - root - INFO - 用例执行完成
+2021-12-21 22:27:07,502 - root - INFO - 用例开始执行
+2021-12-21 22:27:11,133 - root - INFO - {'id': 2, 'module': '呼出记录', 'function': '查询不存在的线索id', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","333"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:27:14,248 - root - INFO - 用例执行完成
+2021-12-21 22:27:16,425 - root - INFO - 用例开始执行
+2021-12-21 22:27:19,845 - root - INFO - {'id': 3, 'module': '呼出记录', 'function': '查询存在的外呼批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","test2021年12月5日09:56:39"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[4]/div/a\']', 'assertresult': 'test2021年12月5日09:56:39'}
+2021-12-21 22:27:23,026 - root - INFO - 用例执行完成
+2021-12-21 22:27:25,187 - root - INFO - 用例开始执行
+2021-12-21 22:27:29,071 - root - INFO - {'id': 4, 'module': '呼出记录', 'function': '查询不存在的外呼批次', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:27:32,239 - root - INFO - 用例执行完成
+2021-12-21 22:27:34,419 - root - INFO - 用例开始执行
+2021-12-21 22:27:38,763 - root - INFO - {'id': 5, 'module': '呼出记录', 'function': '查询存在的呼叫对象', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","周生生"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[5]/div\']', 'assertresult': '周生生'}
+2021-12-21 22:27:41,954 - root - INFO - 用例执行完成
+2021-12-21 22:27:44,108 - root - INFO - 用例开始执行
+2021-12-21 22:27:48,009 - root - INFO - {'id': 6, 'module': '呼出记录', 'function': '查询不存在的呼叫对象', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:27:51,138 - root - INFO - 用例执行完成
+2021-12-21 22:27:53,309 - root - INFO - 用例开始执行
+2021-12-21 22:27:56,928 - root - INFO - {'id': 7, 'module': '呼出记录', 'function': '查询存在的电话号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[5]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[6]/div\']', 'assertresult': 13192293682}
+2021-12-21 22:28:00,067 - root - INFO - 用例执行完成
+2021-12-21 22:28:02,229 - root - INFO - 用例开始执行
+2021-12-21 22:28:06,153 - root - INFO - {'id': 8, 'module': '呼出记录', 'function': '查询不存在的电话号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[5]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:28:09,316 - root - INFO - 用例执行完成
+2021-12-21 22:28:11,486 - root - INFO - 用例开始执行
+2021-12-21 22:28:15,124 - root - INFO - {'id': 9, 'module': '呼出记录', 'function': '查询存在的主叫号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[6]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","02133191292"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[8]/div\']', 'assertresult': '02133191292'}
+2021-12-21 22:28:18,268 - root - INFO - 用例执行完成
+2021-12-21 22:28:20,432 - root - INFO - 用例开始执行
+2021-12-21 22:28:24,088 - root - INFO - {'id': 10, 'module': '呼出记录', 'function': '查询不存在的主叫号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[6]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","222"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:28:27,214 - root - INFO - 用例执行完成
+2021-12-21 22:28:29,374 - root - INFO - 用例开始执行
+2021-12-21 22:28:33,159 - root - INFO - {'id': 11, 'module': '呼出记录', 'function': '查询接听状态成功', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[7]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[10]/div\']', 'assertresult': '成功'}
+2021-12-21 22:28:36,500 - root - INFO - 用例执行完成
+2021-12-21 22:28:38,680 - root - INFO - 用例开始执行
+2021-12-21 22:28:42,605 - root - INFO - {'id': 12, 'module': '呼出记录', 'function': '查询接听状态失败', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[7]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:28:45,880 - root - INFO - 用例执行完成
+2021-12-21 22:28:48,058 - root - INFO - 用例开始执行
+2021-12-21 22:28:51,515 - root - INFO - {'id': 13, 'module': '呼出记录', 'function': '查询存在的通话时长', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[8]/div/div/div/div[1]/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[8]/div/div/div/div[2]/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","0"],["send_keys()","60"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[9]/div\']', 'assertresult': 43}
+2021-12-21 22:28:54,751 - root - INFO - 用例执行完成
+2021-12-21 22:28:56,902 - root - INFO - 用例开始执行
+2021-12-21 22:29:00,698 - root - INFO - {'id': 14, 'module': '呼出记录', 'function': '查询不存在的通话时长', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[8]/div/div/div/div[1]/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[8]/div/div/div/div[2]/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["send_keys()","0"],["send_keys()","6"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:29:03,924 - root - INFO - 用例执行完成
+2021-12-21 22:29:06,101 - root - INFO - 用例开始执行
+2021-12-21 22:29:10,073 - root - INFO - {'id': 15, 'module': '呼出记录', 'function': '查询存在的话术策略', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[9]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[4]/div[1]/div[1]/ul/li[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[15]/div\']', 'assertresult': '测试一汽营销'}
+2021-12-21 22:29:13,178 - root - INFO - 用例执行完成
+2021-12-21 22:29:15,358 - root - INFO - 用例开始执行
+2021-12-21 22:29:19,171 - root - INFO - {'id': 16, 'module': '呼出记录', 'function': '查询不存在的话术策略', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[9]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[5]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:29:31,853 - root - INFO - 用例执行完成
+2021-12-21 22:29:34,004 - root - INFO - 用例开始执行
+2021-12-21 22:29:38,591 - root - INFO - {'id': 17, 'module': '呼出记录', 'function': '查询转人工是', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[10]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:29:41,704 - root - INFO - 用例执行完成
+2021-12-21 22:29:43,877 - root - INFO - 用例开始执行
+2021-12-21 22:29:47,714 - root - INFO - {'id': 18, 'module': '呼出记录', 'function': '查询转人工否', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[10]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:29:50,756 - root - INFO - 用例执行完成
+2021-12-21 22:29:52,918 - root - INFO - 用例开始执行
+2021-12-21 22:29:56,477 - root - INFO - {'id': 19, 'module': '呼出记录', 'function': '线索详情', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[3]/div/a\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/div[2]/div[9]/div[2]\']', 'assertresult': '周生生'}
+2021-12-21 22:29:59,533 - root - INFO - 用例执行完成
+2021-12-21 22:30:01,704 - root - INFO - 用例开始执行
+2021-12-21 22:30:06,014 - root - INFO - {'id': 20, 'module': '呼出记录', 'function': '外呼批次详情', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[4]/div/a\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="pane-first"]/div/div/div[2]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '周生生'}
+2021-12-21 22:30:18,613 - root - INFO - 用例执行完成
+2021-12-21 22:30:20,768 - root - INFO - 用例开始执行
+2021-12-21 22:30:24,741 - root - INFO - {'id': 21, 'module': '呼出记录', 'function': '下载', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[1]/div[1]/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '下载任务已创建成功！'}
+2021-12-21 22:30:27,849 - root - INFO - 用例执行完成
+2021-12-21 22:30:30,025 - root - INFO - 用例开始执行
+2021-12-21 22:30:34,011 - root - INFO - {'id': 22, 'module': '呼出记录', 'function': '批量修改', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[1]/div[1]/button[2]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[1]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[4]/div[1]/div[1]/ul/li[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[12]/div\']', 'assertresult': '拒访-接通后挂断'}
+2021-12-21 22:30:37,095 - root - INFO - 用例执行完成
+2021-12-21 22:30:39,273 - root - INFO - 用例开始执行
+2021-12-21 22:30:43,508 - root - INFO - {'id': 23, 'module': '呼出记录', 'function': '下载录音', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/div/button[2]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '导出成功'}
+2021-12-21 22:30:46,598 - root - INFO - 用例执行完成
+2021-12-21 22:30:48,774 - root - INFO - 用例开始执行
+2021-12-21 22:30:52,344 - root - INFO - {'id': 24, 'module': '呼出记录', 'function': '通话详情', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/div/button[3]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/div[1]/div\']', 'assertresult': '通话详情'}
+2021-12-21 22:30:55,377 - root - INFO - 用例执行完成
+2021-12-21 22:30:57,555 - root - INFO - 用例开始执行
+2021-12-21 22:31:01,281 - root - INFO - {'id': 25, 'module': '呼出记录', 'function': '通话详情-编辑', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/div/button[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[3]/div/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[4]/form/div[3]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[4]/div[1]/div[1]/ul/li[1]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[3]/div/span[2]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"],["click()"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '操作成功'}
+2021-12-21 22:31:04,357 - root - INFO - 用例执行完成
+2021-12-21 22:31:06,513 - root - INFO - 用例开始执行
+2021-12-21 22:31:11,516 - root - INFO - {'id': 1, 'module': '线索列表', 'function': '查询今天', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:31:26,285 - root - INFO - 用例执行完成
+2021-12-21 22:31:28,426 - root - INFO - 用例开始执行
+2021-12-21 22:31:33,007 - root - INFO - {'id': 2, 'module': '线索列表', 'function': '查询昨天', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[2]/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:31:38,036 - root - INFO - 用例执行完成
+2021-12-21 22:31:40,209 - root - INFO - 用例开始执行
+2021-12-21 22:31:43,785 - root - INFO - {'id': 3, 'module': '线索列表', 'function': '查询最近7天', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[3]/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[1]/div/span\']', 'assertresult': 1}
+2021-12-21 22:31:48,590 - root - INFO - 用例执行完成
+2021-12-21 22:31:50,759 - root - INFO - 用例开始执行
+2021-12-21 22:31:54,625 - root - INFO - {'id': 4, 'module': '线索列表', 'function': '查询最近30天', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/div/div[1]/label[4]/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[1]/div/span\']', 'assertresult': 1}
+2021-12-21 22:31:59,413 - root - INFO - 用例执行完成
+2021-12-21 22:32:01,602 - root - INFO - 用例开始执行
+2021-12-21 22:32:05,200 - root - INFO - {'id': 5, 'module': '线索列表', 'function': '查询线索id', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/input\']', 'action': '["send_keys()","222"]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[2]/div/a\']', 'assertresult': 222}
+2021-12-21 22:32:21,107 - root - INFO - 用例执行完成
+2021-12-21 22:32:23,256 - root - INFO - 用例开始执行
+2021-12-21 22:32:27,445 - root - INFO - {'id': 6, 'module': '线索列表', 'function': '查询电话号码', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/input\']', 'action': '["send_keys()","13192293682"]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[5]/div\']', 'assertresult': 13192293682}
+2021-12-21 22:32:33,305 - root - INFO - 用例执行完成
+2021-12-21 22:32:35,476 - root - INFO - 用例开始执行
+2021-12-21 22:32:39,925 - root - INFO - {'id': 7, 'module': '线索列表', 'function': '查询客户姓名', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/input\']', 'action': '["send_keys()","周彦龙"]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '周彦龙'}
+2021-12-21 22:32:45,756 - root - INFO - 用例执行完成
+2021-12-21 22:32:47,921 - root - INFO - 用例开始执行
+2021-12-21 22:32:52,049 - root - INFO - {'id': 8, 'module': '线索列表', 'function': '下载', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button/span\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': 132}
+2021-12-21 22:33:06,887 - root - INFO - 用例执行完成
+2021-12-21 22:33:09,048 - root - INFO - 用例开始执行
+2021-12-21 22:33:13,130 - root - INFO - {'id': 9, 'module': '线索列表', 'function': '呼叫时间升序', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[1]/div/span/i[1]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:33:21,025 - root - INFO - 用例执行完成
+2021-12-21 22:33:23,184 - root - INFO - 用例开始执行
+2021-12-21 22:33:27,462 - root - INFO - {'id': 10, 'module': '线索列表', 'function': '呼叫时间降序', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[1]/div/span/i[2]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:33:36,371 - root - INFO - 用例执行完成
+2021-12-21 22:33:38,548 - root - INFO - 用例开始执行
+2021-12-21 22:33:42,436 - root - INFO - {'id': 11, 'module': '线索列表', 'function': '通话时长升序', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[9]/div/span/i[1]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:33:51,320 - root - INFO - 用例执行完成
+2021-12-21 22:33:53,493 - root - INFO - 用例开始执行
+2021-12-21 22:33:57,401 - root - INFO - {'id': 12, 'module': '线索列表', 'function': '通话时长降序', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[9]/div/span/i[2]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:34:06,258 - root - INFO - 用例执行完成
+2021-12-21 22:34:08,428 - root - INFO - 用例开始执行
+2021-12-21 22:34:12,398 - root - INFO - {'id': 12, 'module': '线索列表', 'function': '点击回传记录', 'param': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/span[2]\']', 'action': None, 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div\']', 'assertresult': '否'}
+2021-12-21 22:34:31,325 - root - INFO - 用例执行完成
+2021-12-21 22:34:33,488 - root - INFO - 用例开始执行
+2021-12-21 22:34:38,075 - root - INFO - {'id': 1, 'module': '字段管理', 'function': '查询存在的字段名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[1]/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["send_keys()","电话号码"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '电话号码'}
+2021-12-21 22:34:40,585 - root - INFO - 用例1:查询存在的字段名称执行成功
+2021-12-21 22:34:40,587 - root - INFO - 用例执行完成
+2021-12-21 22:34:42,764 - root - INFO - 用例开始执行
+2021-12-21 22:34:46,544 - root - INFO - {'id': 2, 'module': '字段管理', 'function': '查询不存在的字段名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[1]/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["send_keys()","ssa"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:34:48,944 - root - INFO - 用例2:查询不存在的字段名称执行成功
+2021-12-21 22:34:48,946 - root - INFO - 用例执行完成
+2021-12-21 22:34:51,138 - root - INFO - 用例开始执行
+2021-12-21 22:34:54,727 - root - INFO - {'id': 3, 'module': '字段管理', 'function': '查询文本字段类型', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[2]/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[1]/td[5]/div\']', 'assertresult': '文本'}
+2021-12-21 22:34:57,743 - root - INFO - 用例3:查询文本字段类型执行成功
+2021-12-21 22:34:57,745 - root - INFO - 用例执行完成
+2021-12-21 22:34:59,910 - root - INFO - 用例开始执行
+2021-12-21 22:35:03,562 - root - INFO - {'id': 4, 'module': '字段管理', 'function': '查询金额字段类型', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[2]/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[1]/td[5]/div\']', 'assertresult': '金额'}
+2021-12-21 22:35:06,600 - root - INFO - 用例4:查询金额字段类型执行成功
+2021-12-21 22:35:06,602 - root - INFO - 用例执行完成
+2021-12-21 22:35:08,784 - root - INFO - 用例开始执行
+2021-12-21 22:35:12,730 - root - INFO - {'id': 5, 'module': '字段管理', 'function': '查询日期字段类型', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[2]/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[4]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr/td[5]/div\']', 'assertresult': '日期'}
+2021-12-21 22:35:15,801 - root - INFO - 用例5:查询日期字段类型执行成功
+2021-12-21 22:35:15,803 - root - INFO - 用例执行完成
+2021-12-21 22:35:17,989 - root - INFO - 用例开始执行
+2021-12-21 22:35:21,683 - root - INFO - {'id': 6, 'module': '字段管理', 'function': '查询是否必填是', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[3]/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[1]/td[6]/div\']', 'assertresult': '是'}
+2021-12-21 22:35:24,734 - root - INFO - 用例6:查询是否必填是执行成功
+2021-12-21 22:35:24,736 - root - INFO - 用例执行完成
+2021-12-21 22:35:27,273 - root - INFO - 用例开始执行
+2021-12-21 22:35:31,130 - root - INFO - {'id': 7, 'module': '字段管理', 'function': '查询是否必填否', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[3]/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/form/div[4]/div/button[1]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[1]/td[6]/div\']', 'assertresult': '否'}
+2021-12-21 22:35:34,202 - root - INFO - 用例7:查询是否必填否执行成功
+2021-12-21 22:35:34,204 - root - INFO - 用例执行完成
+2021-12-21 22:35:36,379 - root - INFO - 用例开始执行
+2021-12-21 22:35:40,238 - root - INFO - {'id': 8, 'module': '字段管理', 'function': '新增名称为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[1]/div/div[2]\']', 'assertresult': '请输入字段名称'}
+2021-12-21 22:35:42,624 - root - INFO - 用例8:新增名称为空执行成功
+2021-12-21 22:35:42,626 - root - INFO - 用例执行完成
+2021-12-21 22:35:44,797 - root - INFO - 用例开始执行
+2021-12-21 22:35:48,711 - root - INFO - {'id': 9, 'module': '字段管理', 'function': '新增编码为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[2]\']', 'assertresult': '请输入字段编码'}
+2021-12-21 22:35:51,117 - root - INFO - 用例9:新增编码为空执行成功
+2021-12-21 22:35:51,119 - root - INFO - 用例执行完成
+2021-12-21 22:35:53,300 - root - INFO - 用例开始执行
+2021-12-21 22:35:56,883 - root - INFO - {'id': 10, 'module': '字段管理', 'function': '新增数据', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[1]/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[1]/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[5]/div/div/textarea\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["send_keys()","测试啊"],["send_keys()","testax"],["send_keys()","测试描述啊"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '新增成功'}
+2021-12-21 22:36:00,085 - root - INFO - 用例10:新增数据执行成功
+2021-12-21 22:36:00,088 - root - INFO - 用例执行完成
+2021-12-21 22:36:02,262 - root - INFO - 用例开始执行
+2021-12-21 22:36:06,081 - root - INFO - {'id': 11, 'module': '字段管理', 'function': '查看总计', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[2]/div[1]/span\']]', 'action': '[["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[2]/div[1]/span[2]\']', 'assertresult': '共23条'}
+2021-12-21 22:36:08,407 - root - INFO - 用例11:查看总计执行成功
+2021-12-21 22:36:08,409 - root - INFO - 用例执行完成
+2021-12-21 22:36:10,578 - root - INFO - 用例开始执行
+2021-12-21 22:36:13,952 - root - INFO - {'id': 12, 'module': '字段管理', 'function': '编辑数据', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[2]/div[2]/div/div/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[3]/td[10]/div/button[1]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '编辑成功'}
+2021-12-21 22:36:16,941 - root - INFO - 用例12:编辑数据执行成功
+2021-12-21 22:36:16,943 - root - INFO - 用例执行完成
+2021-12-21 22:36:19,107 - root - INFO - 用例开始执行
+2021-12-21 22:36:23,229 - root - INFO - {'id': 13, 'module': '字段管理', 'function': '删除', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[2]/div[2]/div/div/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[1]/div/div[1]/div[3]/table/tbody/tr[3]/td[10]/div/button[2]/span\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '删除成功'}
+2021-12-21 22:36:26,660 - root - INFO - 用例13:删除执行成功
+2021-12-21 22:36:26,662 - root - INFO - 用例执行完成
+2021-12-21 22:36:29,382 - root - INFO - 用例开始执行
+2021-12-21 22:36:33,220 - root - INFO - {'id': 1, 'module': '短信策略', 'function': '查询存在的策略名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]/span\']]', 'action': '[["send_keys()","测试短信啊"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[2]/div\']', 'assertresult': '测试短信啊'}
+2021-12-21 22:36:35,680 - root - INFO - 用例执行完成
+2021-12-21 22:36:38,065 - root - INFO - 用例开始执行
+2021-12-21 22:36:41,765 - root - INFO - {'id': 2, 'module': '短信策略', 'function': '查询不存在的策略名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]/span\']]', 'action': '[["send_keys()","ttt"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:36:44,270 - root - INFO - 用例执行完成
+2021-12-21 22:36:47,025 - root - INFO - 用例开始执行
+2021-12-21 22:36:50,554 - root - INFO - {'id': 3, 'module': '短信策略', 'function': '查询短信类型', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '挂机短信'}
+2021-12-21 22:36:53,620 - root - INFO - 用例执行完成
+2021-12-21 22:36:55,799 - root - INFO - 用例开始执行
+2021-12-21 22:36:59,532 - root - INFO - {'id': 4, 'module': '短信策略', 'function': '查询状态启用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[8]/div/div\']', 'assertresult': '启用'}
+2021-12-21 22:37:02,568 - root - INFO - 用例执行完成
+2021-12-21 22:37:04,740 - root - INFO - 用例开始执行
+2021-12-21 22:37:08,316 - root - INFO - {'id': 5, 'module': '短信策略', 'function': '查询状态禁用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[8]/div/div\']', 'assertresult': '禁用'}
+2021-12-21 22:37:11,292 - root - INFO - 用例执行完成
+2021-12-21 22:37:13,470 - root - INFO - 用例开始执行
+2021-12-21 22:37:16,962 - root - INFO - {'id': 6, 'module': '短信策略', 'function': '查询创建时间无', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-12"],["send_keys()","2021-12-12"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:37:20,062 - root - INFO - 用例执行完成
+2021-12-21 22:37:22,212 - root - INFO - 用例开始执行
+2021-12-21 22:37:25,572 - root - INFO - {'id': 7, 'module': '短信策略', 'function': '查询创建时间有', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-13"],["send_keys()","2021-12-13"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[2]/div\']', 'assertresult': '测试启用的短信'}
+2021-12-21 22:37:28,126 - root - INFO - 用例执行完成
+2021-12-21 22:37:30,289 - root - INFO - 用例开始执行
+2021-12-21 22:37:34,637 - root - INFO - {'id': 8, 'module': '短信策略', 'function': '新增名称为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[2]\']', 'assertresult': '请输入策略名称'}
+2021-12-21 22:37:37,081 - root - INFO - 用例执行完成
+2021-12-21 22:37:39,235 - root - INFO - 用例开始执行
+2021-12-21 22:37:42,757 - root - INFO - {'id': 9, 'module': '短信策略', 'function': '新增模板为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[5]/div/div[3]\']', 'assertresult': '请选择短信模板'}
+2021-12-21 22:37:45,221 - root - INFO - 用例执行完成
+2021-12-21 22:37:47,386 - root - INFO - 用例开始执行
+2021-12-21 22:37:51,049 - root - INFO - {'id': 10, 'module': '短信策略', 'function': '新增名称已存在', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[1]/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[5]/div/div[1]/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["send_keys()","测试短信啊"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '该短信策略[测试短信啊]名称已存在'}
+2021-12-21 22:37:54,275 - root - INFO - 用例执行完成
+2021-12-21 22:37:56,453 - root - INFO - 用例开始执行
+2021-12-21 22:38:00,251 - root - INFO - {'id': 11, 'module': '短信策略', 'function': '新增变量名称为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr/td[1]/div/div/div/div/div[2]\']', 'assertresult': '请选择变量名称'}
+2021-12-21 22:38:02,818 - root - INFO - 用例执行完成
+2021-12-21 22:38:04,988 - root - INFO - 用例开始执行
+2021-12-21 22:38:08,925 - root - INFO - {'id': 12, 'module': '短信策略', 'function': '新增变量条件为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr/td[2]/div/div/div/div/div[2]\']', 'assertresult': '请选择条件'}
+2021-12-21 22:38:11,498 - root - INFO - 用例执行完成
+2021-12-21 22:38:13,831 - root - INFO - 用例开始执行
+2021-12-21 22:38:17,291 - root - INFO - {'id': 13, 'module': '短信策略', 'function': '新增变量表达式为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr/td[3]/div/div/div/div/div[2]\']', 'assertresult': '请选择表达式'}
+2021-12-21 22:38:19,831 - root - INFO - 用例执行完成
+2021-12-21 22:38:22,001 - root - INFO - 用例开始执行
+2021-12-21 22:38:25,736 - root - INFO - {'id': 14, 'module': '短信策略', 'function': '删除变量', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[4]/div[2]/table/tbody/tr/td[4]/div/div/button\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:38:28,331 - root - INFO - 用例执行完成
+2021-12-21 22:38:30,690 - root - INFO - 用例开始执行
+2021-12-21 22:38:34,719 - root - INFO - {'id': 15, 'module': '短信策略', 'function': '新增逻辑符号为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr[1]/td[1]/div/div/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]/span\']]', 'action': '[["click()"],["click()"],["click()"],["click()"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[8]/span[2]/div/div/div[2]\']', 'assertresult': '请输入'}
+2021-12-21 22:38:37,625 - root - INFO - 用例执行完成
+2021-12-21 22:38:39,788 - root - INFO - 用例开始执行
+2021-12-21 22:38:43,389 - root - INFO - {'id': 16, 'module': '短信策略', 'function': '正常新增', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[1]/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[5]/div/div[1]/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["send_keys()","testsms"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '新增成功'}
+2021-12-21 22:38:46,624 - root - INFO - 用例执行完成
+2021-12-21 22:38:48,795 - root - INFO - 用例开始执行
+2021-12-21 22:38:52,567 - root - INFO - {'id': 17, 'module': '短信策略', 'function': '编辑', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[12]/div/div/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '编辑成功'}
+2021-12-21 22:38:55,963 - root - INFO - 用例执行完成
+2021-12-21 22:38:58,120 - root - INFO - 用例开始执行
+2021-12-21 22:39:02,050 - root - INFO - {'id': 18, 'module': '短信策略', 'function': '删除', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[12]/div/div/button[2]/span\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '删除成功'}
+2021-12-21 22:39:04,914 - root - INFO - 用例执行完成
+2021-12-21 22:39:07,091 - root - INFO - 用例开始执行
+2021-12-21 22:39:11,150 - root - INFO - {'id': 1, 'module': '停呼黑名单', 'function': '查询已存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293681"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': 13192293681}
+2021-12-21 22:39:14,097 - root - INFO - 用例执行完成
+2021-12-21 22:39:16,414 - root - INFO - 用例开始执行
+2021-12-21 22:39:20,673 - root - INFO - {'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:39:23,657 - root - INFO - 用例执行完成
+2021-12-21 22:39:25,825 - root - INFO - 用例开始执行
+2021-12-21 22:39:29,926 - root - INFO - {'id': 3, 'module': '停呼黑名单', 'function': '查询已存在的停呼原因', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","已还款"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[4]/div\']', 'assertresult': '已还款'}
+2021-12-21 22:39:32,821 - root - INFO - 用例执行完成
+2021-12-21 22:39:34,980 - root - INFO - 用例开始执行
+2021-12-21 22:39:38,718 - root - INFO - {'id': 4, 'module': '停呼黑名单', 'function': '查询不存在的停呼原因', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:39:41,708 - root - INFO - 用例执行完成
+2021-12-21 22:39:43,890 - root - INFO - 用例开始执行
+2021-12-21 22:39:47,675 - root - INFO - {'id': 5, 'module': '停呼黑名单', 'function': '查询已存在的创建日期', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-14"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[6]/div\']', 'assertresult': datetime.datetime(2021, 12, 14, 15, 9, 14)}
+2021-12-21 22:40:00,776 - root - INFO - 用例执行完成
+2021-12-21 22:40:02,941 - root - INFO - 用例开始执行
+2021-12-21 22:40:06,818 - root - INFO - {'id': 6, 'module': '停呼黑名单', 'function': '查询不存在的创建日期', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[3]/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-05"],["send_keys()","2021-12-05"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:40:09,946 - root - INFO - 用例执行完成
+2021-12-21 22:40:12,120 - root - INFO - 用例开始执行
+2021-12-21 22:40:15,573 - root - INFO - {'id': 7, 'module': '停呼黑名单', 'function': '新增停呼号码为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[2]/div/form/div[1]/div/div[2]\']', 'assertresult': '请输入停呼号码'}
+2021-12-21 22:40:18,448 - root - INFO - 用例执行完成
+2021-12-21 22:40:20,623 - root - INFO - 用例开始执行
+2021-12-21 22:40:24,351 - root - INFO - {'id': 8, 'module': '停呼黑名单', 'function': '新增停呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[2]/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["send_keys()","13111111111"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '添加停呼成功！'}
+2021-12-21 22:40:27,413 - root - INFO - 用例执行完成
+2021-12-21 22:40:29,930 - root - INFO - 用例开始执行
+2021-12-21 22:40:34,188 - root - INFO - {'id': 9, 'module': '停呼黑名单', 'function': '批量入呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[4]/div[2]/table/tbody/tr[2]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '入呼成功！'}
+2021-12-21 22:40:37,536 - root - INFO - 用例执行完成
+2021-12-21 22:40:39,697 - root - INFO - 用例开始执行
+2021-12-21 22:40:43,776 - root - INFO - {'id': 10, 'module': '停呼黑名单', 'function': '导出停呼', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[1]/button[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[3]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '导出成功'}
+2021-12-21 22:40:47,305 - root - INFO - 用例执行完成
+2021-12-21 22:40:49,480 - root - INFO - 用例开始执行
+2021-12-21 22:40:53,154 - root - INFO - {'id': 11, 'module': '停呼黑名单', 'function': '编辑命中规则停呼', 'param': '[[By.XPATH,\'//*[@id="tab-rule"]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div/div[3]/button\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div/div[3]/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '保存成功'}
+2021-12-21 22:40:56,202 - root - INFO - 用例执行完成
+2021-12-21 22:40:58,806 - root - INFO - 用例开始执行
+2021-12-21 22:41:03,304 - root - INFO - {'id': 1, 'module': '用户管理', 'function': '查询存在的登录名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","zhou11"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[2]/div\']', 'assertresult': 'zhou11'}
+2021-12-21 22:41:07,150 - root - INFO - 用例执行完成
+2021-12-21 22:41:09,327 - root - INFO - 用例开始执行
+2021-12-21 22:41:19,113 - root - INFO - {'id': 2, 'module': '用户管理', 'function': '查询不存在的登录名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:41:22,553 - root - INFO - 用例执行完成
+2021-12-21 22:41:24,714 - root - INFO - 用例开始执行
+2021-12-21 22:41:29,508 - root - INFO - {'id': 3, 'module': '用户管理', 'function': '查询存在的姓名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","周彦龙"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[3]/div\']', 'assertresult': '周彦龙'}
+2021-12-21 22:41:32,836 - root - INFO - 用例执行完成
+2021-12-21 22:41:35,021 - root - INFO - 用例开始执行
+2021-12-21 22:41:40,371 - root - INFO - {'id': 4, 'module': '用户管理', 'function': '查询不存在的姓名', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:41:43,837 - root - INFO - 用例执行完成
+2021-12-21 22:41:45,998 - root - INFO - 用例开始执行
+2021-12-21 22:41:59,563 - root - INFO - {'id': 5, 'module': '用户管理', 'function': '查询角色超管', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[3]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[4]/div\']', 'assertresult': '超级管理员'}
+2021-12-21 22:42:03,554 - root - INFO - 用例执行完成
+2021-12-21 22:42:05,729 - root - INFO - 用例开始执行
+2021-12-21 22:42:10,008 - root - INFO - {'id': 6, 'module': '用户管理', 'function': '查询人工坐席是', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:42:14,008 - root - INFO - 用例执行完成
+2021-12-21 22:42:16,186 - root - INFO - 用例开始执行
+2021-12-21 22:42:20,102 - root - INFO - {'id': 7, 'module': '用户管理', 'function': '查询人工坐席否', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[4]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[5]/div/div\']', 'assertresult': '否'}
+2021-12-21 22:42:24,010 - root - INFO - 用例执行完成
+2021-12-21 22:42:26,173 - root - INFO - 用例开始执行
+2021-12-21 22:42:29,726 - root - INFO - {'id': 8, 'module': '用户管理', 'function': '查询状态禁用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[5]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[6]/div\']', 'assertresult': '冻结'}
+2021-12-21 22:42:33,685 - root - INFO - 用例执行完成
+2021-12-21 22:42:35,856 - root - INFO - 用例开始执行
+2021-12-21 22:42:39,526 - root - INFO - {'id': 9, 'module': '用户管理', 'function': '查询创建时间无', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[6]/div/div/div/div/input[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[6]/div/div/div/div/input[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\']]', 'action': '[["send_keys()","2021-12-11"],["send_keys()","2021-12-11"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:42:43,046 - root - INFO - 用例执行完成
+2021-12-21 22:42:45,220 - root - INFO - 用例开始执行
+2021-12-21 22:42:48,949 - root - INFO - {'id': 10, 'module': '用户管理', 'function': '新增用户名称为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[1]/div/div[2]\']', 'assertresult': '请输入登录名称'}
+2021-12-21 22:42:52,359 - root - INFO - 用例执行完成
+2021-12-21 22:42:54,567 - root - INFO - 用例开始执行
+2021-12-21 22:42:58,964 - root - INFO - {'id': 11, 'module': '用户管理', 'function': '新增用户姓名为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div[2]\']', 'assertresult': '请输入用户姓名'}
+2021-12-21 22:43:02,298 - root - INFO - 用例执行完成
+2021-12-21 22:43:04,467 - root - INFO - 用例开始执行
+2021-12-21 22:43:08,636 - root - INFO - {'id': 12, 'module': '用户管理', 'function': '新增用户角色为空', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[3]/div/div[2]\']', 'assertresult': '请选择角色'}
+2021-12-21 22:43:11,958 - root - INFO - 用例执行完成
+2021-12-21 22:43:14,121 - root - INFO - 用例开始执行
+2021-12-21 22:43:17,699 - root - INFO - {'id': 13, 'module': '用户管理', 'function': '新增用户', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[2]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[2]/form/div[3]/div/div/div/div[1]/input\'],[By.XPATH,\'/html/body/div[3]/div[1]/div[1]/ul/li[1]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["send_keys()","zzyl"],["send_keys()","zyl"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '新增成功！'}
+2021-12-21 22:43:22,103 - root - INFO - 用例执行完成
+2021-12-21 22:43:24,291 - root - INFO - 用例开始执行
+2021-12-21 22:43:28,008 - root - INFO - {'id': 14, 'module': '用户管理', 'function': '禁用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[1]\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '禁用成功'}
+2021-12-21 22:43:31,594 - root - INFO - 用例执行完成
+2021-12-21 22:43:33,777 - root - INFO - 用例开始执行
+2021-12-21 22:43:37,851 - root - INFO - {'id': 15, 'module': '用户管理', 'function': '启用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[5]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[1]/span\'],[By.XPATH,\'/html/body/div[3]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '启用成功'}
+2021-12-21 22:43:41,311 - root - INFO - 用例执行完成
+2021-12-21 22:43:43,486 - root - INFO - 用例开始执行
+2021-12-21 22:43:46,892 - root - INFO - {'id': 16, 'module': '用户管理', 'function': '编辑', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[2]\'],[By.XPATH,\'//*[@id="appMain"]/div/div[2]/div/div[3]/span/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '编辑成功！'}
+2021-12-21 22:43:50,292 - root - INFO - 用例执行完成
+2021-12-21 22:43:52,472 - root - INFO - 用例开始执行
+2021-12-21 22:43:56,485 - root - INFO - {'id': 17, 'module': '用户管理', 'function': '重置密码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[3]\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '重置密码成功'}
+2021-12-21 22:44:00,371 - root - INFO - 用例执行完成
+2021-12-21 22:44:02,545 - root - INFO - 用例开始执行
+2021-12-21 22:44:06,925 - root - INFO - {'id': 18, 'module': '用户管理', 'function': '批量禁用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[3]\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '禁用成功'}
+2021-12-21 22:44:10,891 - root - INFO - 用例执行完成
+2021-12-21 22:44:13,063 - root - INFO - 用例开始执行
+2021-12-21 22:44:16,576 - root - INFO - {'id': 19, 'module': '用户管理', 'function': '批量启用', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/form/div[5]/div/div/div/div/input\'],[By.XPATH,\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/form/span/button[1]\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[1]/span\'],[By.XPATH,\'/html/body/div[3]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '启用成功'}
+2021-12-21 22:44:20,211 - root - INFO - 用例执行完成
+2021-12-21 22:44:22,484 - root - INFO - 用例开始执行
+2021-12-21 22:44:26,156 - root - INFO - {'id': 20, 'module': '用户管理', 'function': '批量重置密码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/label/span/span\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[1]/div[1]/button[4]\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '重置密码成功'}
+2021-12-21 22:44:29,636 - root - INFO - 用例执行完成
+2021-12-21 22:44:31,801 - root - INFO - 用例开始执行
+2021-12-21 22:44:36,365 - root - INFO - {'id': 21, 'module': '用户管理', 'function': '删除', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[4]\'],[By.XPATH,\'/html/body/div[2]/div/div[3]/button[2]\']]', 'action': '[["click()"],["click()"]]', 'assertparam': "[By.CLASS_NAME,'el-message__content']", 'assertresult': '删除成功'}
+2021-12-21 22:44:39,889 - root - INFO - 用例执行完成
+2021-12-21 22:51:43,631 - root - INFO - 用例开始执行
+2021-12-21 22:51:48,009 - root - INFO - {'id': 1, 'module': '批次管理', 'function': '查询不存在的批次名称', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[1]/form/span/button[1]/span\']]', 'action': '[["send_keys()","123"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[3]/div/span\']', 'assertresult': '暂无数据'}
+2021-12-21 22:51:50,501 - root - INFO - 用例执行完成
+2021-12-21 22:51:52,722 - root - INFO - 用例开始执行
+2021-12-21 22:51:52,972 - root - INFO - 用例执行完成
