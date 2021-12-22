@@ -1,21 +1,24 @@
-from common import setting
-import unittest,time
-from common.sendemail import send_mail
-from common.newreport import new_report
-from common.HTMLTestRunner import HTMLTestRunner
-def load_testcase(testcase=setting.testcasedir):
-    return unittest.defaultTestLoader.discover(testcase, pattern='stop*.py')
-def run_case(filedir=setting.reportdir):
-    #设置报告名称
-    now=time.strftime("%Y-%m-%d %H_%M_%S")
-    filename=filedir+'/'+now+"result.html"
-    #实例化HTMLTestRunner并运行case
-    with open(filename,"wb")as fp:
-        runner = HTMLTestRunner(stream=fp, verbosity=2, title="UI自动化测试", description=None, tester="zhouyanlong")
-        runner.run(load_testcase())
-        send_mail(new_report())
+import sys
+import subprocess
+
+WIN = sys.platform.startswith('win')
 
 
-if __name__ == '__main__':
-    run_case()
+def main():
+   """主函数
+   使用pytest生成原始报告，里面大多数是一些原始的json数据，加入--clean-alluredir参数清除allure-results历史数据
+   使用generate命令导出HTML报告到新的目录
+   使用open命令在浏览器中打开HTML报告
+   """
+   steps = [
+       "venv\\Script\\activate" if WIN else "source venv/bin/activate",
+       "pytest --alluredir allure-results --clean-alluredir",
+       "allure generate allure-results -c -o allure-report",
+       "allure open allure-report"
+   ]
+   for step in steps:
+       subprocess.run("call " + step if WIN else step, shell=True)
 
+
+if __name__ == "__main__":
+   main()
