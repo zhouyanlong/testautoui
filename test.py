@@ -133,10 +133,13 @@ class Test():
         testdata={'id': 8, 'module': '批次管理', 'function': '创建批次', 'action': '[["click()"],["send_keys()","testtime"],["click()"],["click()"],["clear()"],["send_keys()","0"],["click()"],["click()"],["send_keys()","2021-12-12"],["click()"]]'}
         testdata["action"]=testdata["action"].replace(eval(testdata["action"])[1][1],"ttttt")
         print(testdata,type(testdata))
-
+    def test_has(self):
+        if hasattr(self.driver, "get_screenshot_as_png"):
+            print("ddaassqqwe123")
 if __name__ == '__main__':
     #Test().test_ziduanguanli()
     #Test().test_piciguanli()
     #Test().test_xiansuoliebiao()
     #Test().testtt()
-    Test().test_yonghuguanli()
+    #Test().test_yonghuguanli()
+    Test().test_has()

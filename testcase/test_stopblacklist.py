@@ -4,7 +4,7 @@ from common.mylog import Log
 from common.readexcel import ReadExcel
 from testcase.basepage.stopblacklistpage import StopBlacklistPage
 from time import sleep
-import pytest
+import pytest,os,allure
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("停呼黑名单")
 class TestStopBlacklist():
@@ -45,6 +45,11 @@ class TestStopBlacklist():
             screenshot(self.driver, testdata["function"] + "失败")
         assert str(testdata["assertresult"])==str(result)
 
+
 if __name__ == '__main__':
     #pytest.main()
-    pytest.main(["-sv","test_stopblacklist.py","--html=123report.html"])
+    #pytest.main(["-sv","test_stopblacklist.py","--html=123report.html"])
+    pytest.main(["test_stopblacklist.py", '--alluredir', '../report'])
+    #os.system('allure serve report')
+    # a = 'allure' + 'generate' + '../report/result' + ' - o '+ '../report/html' + '–clean'
+    # os.system(a)

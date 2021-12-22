@@ -26,7 +26,7 @@ class Test3():
     #@pytest.mark.flaky(reruns=3)
     @allure.story("cs2")
     def test_2(self):
-        assert 2==1
+        assert 3==1
 
     @allure.story("cs3")
     def test_3(self):
@@ -36,5 +36,5 @@ class Test3():
     #     print("test ends")
 if __name__ == '__main__':
     #pytest.main(["-sv","test_pytest.py",'--reruns=1'])
-    pytest.main(["test_pytest.py",'--alluredir', 'report1'])
-    os.system('allure serve report1')
+    pytest.main(["test_pytest.py",'--alluredir', 'report'])
+    os.system('allure serve report')

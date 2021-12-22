@@ -1,11 +1,4 @@
-import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from common.page import Page
-from time import sleep
-
-
-
+import pytest,os,allure
 """@pytest.fixture(scope="class")
 def ccdd():
     print("test 就要开始啦啦啦啦啦")
