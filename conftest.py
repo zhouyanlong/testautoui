@@ -12,3 +12,6 @@ def eeff():
     # 后置
     yield
     print("333222111")"""
+@pytest.fixture(autouse=True)
+def tttaaa():
+    print("全局fixture")

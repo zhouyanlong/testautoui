@@ -49,7 +49,5 @@ class TestStopBlacklist():
 if __name__ == '__main__':
     #pytest.main()
     #pytest.main(["-sv","test_stopblacklist.py","--html=123report.html"])
-    pytest.main(["test_stopblacklist.py", '--alluredir', '../report'])
+    pytest.main(["test_stopblacklist.py", '--alluredir', '../report','--clean-alluredir'])
     #os.system('allure serve report')
-    # a = 'allure' + 'generate' + '../report/result' + ' - o '+ '../report/html' + '–clean'
-    # os.system(a)

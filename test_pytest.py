@@ -8,7 +8,7 @@ class Test3(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()"""
 
-import pytest
+"""import pytest
 import allure,os
 @allure.feature("aaa页面")
 class Test3():
@@ -37,4 +37,14 @@ class Test3():
 if __name__ == '__main__':
     #pytest.main(["-sv","test_pytest.py",'--reruns=1'])
     pytest.main(["test_pytest.py",'--alluredir', 'report'])
-    os.system('allure serve report')
+    os.system('allure serve report')"""
+import pytest
+#只能定义在类外部
+@pytest.fixture()
+def test():
+    print("fixture")
+class TestTT():
+    def test_1223(self,test):
+        print("1223")
+if __name__ == '__main__':
+    pytest.main(["-sv","test_pytest.py"])
