@@ -2,3 +2,13 @@
 2021-11-28 18:40:38,190 - root - ERROR - excel或者sheet不存在，请重新检查
 2021-11-28 18:41:01,879 - root - ERROR - excel或者sheet不存在，请重新检查
 2021-11-28 21:19:14,069 - root - ERROR - 出现异常openpyxl does not support .xlsx1 file format, please check you can open it with Excel first. Supported formats are: .xlsx,.xlsm,.xltx,.xltm
+2021-12-24 17:39:31,887 - root - ERROR - 4
+2021-12-24 17:40:38,450 - root - ERROR - 4
+2021-12-24 17:41:09,689 - root - ERROR - 4
+2021-12-24 17:41:39,553 - root - ERROR - 4
+2021-12-24 17:42:14,161 - root - ERROR - 4
+2021-12-24 17:42:44,749 - root - ERROR - 4
+2021-12-24 17:43:02,582 - root - ERROR - 4
+2021-12-24 17:43:06,134 - root - ERROR - 4
+2021-12-24 17:43:55,298 - root - ERROR - 4
+2021-12-24 17:44:28,698 - root - ERROR - 4
