@@ -8,6 +8,10 @@ from testcase.basepage.callrecordpage import CallRecordPage
 from time import sleep
 import pytest
 testdata=ReadExcel().read_data("呼出记录")
+# 使用fixture中的params做数据驱动，相当于ddt
+@pytest.fixture(params=testdata)
+def excel_data(request):
+    return request.param
 class TestCallRecord():
     """
                 setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
@@ -16,11 +20,6 @@ class TestCallRecord():
 
                 def teardown(self):
                     self.driver.quit()"""
-
-    # 使用fixture中的params做数据驱动，相当于ddt
-    @pytest.fixture(params=testdata)
-    def excel_data(self, request):
-        return request.param
 
     """
     在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver
@@ -50,4 +49,4 @@ class TestCallRecord():
             screenshot(self.driver, testdata["function"] + "失败")
         assert str(testdata["assertresult"])==str(result)
 if __name__ == '__main__':
-    pytest.main(["-sv","test_callrecord.py"])
+    pytest.main(["test_callrecord.py", '--alluredir', '../report','--clean-alluredir'])

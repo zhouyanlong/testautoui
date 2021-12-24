@@ -5,9 +5,14 @@ from time import sleep
 from testcase.basepage.cluelistpage import ClueListPage
 from common.page import Page
 from common.shot import screenshot
+import pytest
 #不可不导入By，否则执行eval函数会报错找不到By
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("线索中心")
+# 使用fixture中的params做数据驱动，相当于ddt
+@pytest.fixture(params=testdata)
+def excel_data(request):
+    return request.param
 import pytest
 class TestClueList():
     """
@@ -17,11 +22,6 @@ class TestClueList():
 
                 def teardown(self):
                     self.driver.quit()"""
-
-    # 使用fixture中的params做数据驱动，相当于ddt
-    @pytest.fixture(params=testdata)
-    def excel_data(self, request):
-        return request.param
 
     """
     在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver

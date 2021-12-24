@@ -40,10 +40,11 @@ if __name__ == '__main__':
     os.system('allure serve report')"""
 import pytest
 #只能定义在类外部
-@pytest.fixture()
-def test():
-    print("fixture")
+
 class TestTT():
+    @pytest.fixture()
+    def test(self):
+        print("fixture")
     def test_1223(self,test):
         print("1223")
 if __name__ == '__main__':

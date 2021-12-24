@@ -7,6 +7,9 @@ from time import sleep
 import pytest,os,allure
 from selenium.webdriver.common.by import By
 testdata=ReadExcel().read_data("停呼黑名单")
+@pytest.fixture(params=testdata)
+def excel_data(request):
+    return request.param
 class TestStopBlacklist():
     """
     setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
@@ -16,9 +19,7 @@ class TestStopBlacklist():
     def teardown(self):
         self.driver.quit()"""
     #使用fixture中的params做数据驱动，相当于ddt
-    @pytest.fixture(params=testdata)
-    def excel_data(self,request):
-        return request.param
+
     """
     在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver
     """

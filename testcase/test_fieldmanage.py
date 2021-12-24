@@ -7,6 +7,10 @@ from common.shot import screenshot
 from selenium.webdriver.common.by import By
 import pytest
 testdata=ReadExcel().read_data("字段管理")
+# 使用fixture中的params做数据驱动，相当于ddt
+@pytest.fixture(params=testdata)
+def excel_data(request):
+    return request.param
 class TestFieldManage():
     """
             setup和teardown,默认为function级别的，可以直接在此处配置，也可以在conftest.py做全局配置
@@ -15,11 +19,6 @@ class TestFieldManage():
 
             def teardown(self):
                 self.driver.quit()"""
-
-    # 使用fixture中的params做数据驱动，相当于ddt
-    @pytest.fixture(params=testdata)
-    def excel_data(self, request):
-        return request.param
 
     """
     在conftest.py做全局配置时调用登陆接口，返回driver，此处需要将的返回的driver赋值给self.driver
