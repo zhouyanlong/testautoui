@@ -1,5 +1,4 @@
 from common.page import Page
-from common.myunit import MyUnit
 from common.shot import screenshot
 from common.readexcel import ReadExcel
 from selenium.webdriver.common.by import By
