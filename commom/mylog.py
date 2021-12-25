@@ -1,6 +1,7 @@
 from commom import setting
 import logging
 from commom import setting
+from logging import handlers
 class Log():
     def get_log(self,level,msg,filename1=setting.infologdir,filename2=setting.errorlogdir):
         #获取日志收集器
@@ -12,7 +13,7 @@ class Log():
         sh.setLevel("INFO")
         sh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         #输出到文件
-        fh1=logging.FileHandler(filename1,encoding="UTF8")
+        fh1=logging.handlers.TimedRotatingFileHandler(filename1, when='D', interval=30, backupCount=10,encoding="UTF8")
         fh1.setLevel("DEBUG")
         fh1.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         #添加到handle
