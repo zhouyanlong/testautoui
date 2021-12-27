@@ -16,13 +16,11 @@ class Test():
             "zhouyanlong")
         self.driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[3]/div[3]/form/div[2]/div/div[2]/input').send_keys(
             "Aa123456.")
-        self.driver.find_element(By.XPATH,
-                            '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span').click()
-        self.driver.find_element(By.XPATH,
-                            '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div').click()
+        self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span').click()
+        self.driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div').click()
         #screenshot(self.driver, "登陆成功")
         #self.driver.get_screenshot_as_file(r'D:\pycharm\pythondemo\testui1125\screenpic\登陆成功.png')
-        sleep(1)
+        sleep(3)
 
     def test_xiansuoliebiao(self):
 
@@ -142,4 +140,5 @@ if __name__ == '__main__':
     #Test().test_xiansuoliebiao()
     #Test().testtt()
     #Test().test_yonghuguanli()
-    Test().test_has()
+    #Test().test_has()
+    Test()

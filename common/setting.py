@@ -9,4 +9,3 @@ screenpicdir=os.path.join(projectdir,"screenpic")
 testdatadir=os.path.join(projectdir,"testdata/case.xlsx")
 testcasedir=os.path.join(projectdir,"testcase")
 batchuploadfile="D:\software\AutoIt3\jiaoben\jiaoben.exe"
-

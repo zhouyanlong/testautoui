@@ -13,3 +13,13 @@
 2021-12-24 17:44:28,697 - root - WARNING - 3
 2021-12-24 17:44:28,698 - root - ERROR - 4
 2021-12-24 17:44:28,699 - root - CRITICAL - 阿萨德
+2021-12-27 16:30:42,056 - root - ERROR - 右击操作失败。
+2021-12-27 16:36:21,747 - root - ERROR - 右击操作失败。
+2021-12-27 16:39:10,248 - root - ERROR - 右击操作失败。
+2021-12-27 16:40:46,305 - root - ERROR - 右击操作失败。
+2021-12-27 16:54:23,803 - root - INFO - 右击元素：('xpath', '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div')
+2021-12-27 17:03:52,979 - root - INFO - 右击元素：('xpath', '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div')
+2021-12-27 17:10:30,933 - root - INFO - 右击元素：['xpath', '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div']
+2021-12-27 17:19:29,703 - root - INFO - 右击元素：('xpath', '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div')
+2021-12-27 17:37:01,958 - root - INFO - 鼠标悬停：('xpath', '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span')
+2021-12-27 17:38:31,840 - root - INFO - 鼠标悬停：('xpath', '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span')

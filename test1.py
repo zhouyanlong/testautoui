@@ -67,6 +67,8 @@ class Test1():
 if __name__ == '__main__':
     #Test1().test_roll()
     #Test1().print_hello({"ss":"dd"})
-    Test1().test1217()
-
-
+    #Test1().test1217()
+    print(type(('123',)))
+    print(isinstance(("123",), tuple))
+    a = (1, ('zhou', '男'))
+    print(Test1().print_hello(*a))
