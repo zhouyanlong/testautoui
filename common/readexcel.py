@@ -22,8 +22,34 @@ class ReadExcel():
         return data
 if __name__ == '__main__':
     a=ReadExcel().read_data("批次管理")
-    print(type(a))
-    b=a[7]["assertresult"]
-    print(b)
     #print(c,type(c))
     #c=a[4]["action"]
+
+
+"""
+使用xlrd
+"""
+"""import xlrd
+from common import setting
+from common.mylog import Log
+from selenium.webdriver.common.by import By
+class ReadExcel():
+    def read_data(self,sheet,file=setting.testdatadir):
+        global worksheet
+        try:
+            workbook = xlrd.open_workbook(file)
+            worksheet = workbook.sheet_by_name(sheet)
+        except Exception as e:
+            Log.error("出现以下异常{}".format(e))
+        rows=worksheet.nrows
+        columns=worksheet.ncols
+        title = worksheet.row_values(0)
+        print(rows,columns,title)
+        data=[]
+        for i in range(1,rows):
+            everydata=dict(zip(title,worksheet.row_values(i)))
+            data.append(everydata)
+        print(data)
+        return data
+if __name__ == '__main__':
+    a=ReadExcel().read_data("批次管理")"""
