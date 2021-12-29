@@ -23,3 +23,13 @@
 2021-12-27 17:19:29,703 - root - INFO - 右击元素：('xpath', '//*[@id="app"]/div[1]/div/div[2]/div/div[2]/div')
 2021-12-27 17:37:01,958 - root - INFO - 鼠标悬停：('xpath', '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span')
 2021-12-27 17:38:31,840 - root - INFO - 鼠标悬停：('xpath', '//*[@id="app"]/div[1]/div[3]/div[3]/form/button/span')
+2021-12-29 16:03:12,314 - root - DEBUG - 1
+2021-12-29 16:03:12,326 - root - INFO - 2
+2021-12-29 16:03:12,327 - root - WARNING - 3
+2021-12-29 16:03:12,328 - root - ERROR - 4
+2021-12-29 16:03:12,333 - root - CRITICAL - 阿萨德
+2021-12-29 17:12:57,903 - root - DEBUG - 1
+2021-12-29 17:12:57,904 - root - INFO - 2
+2021-12-29 17:12:57,904 - root - WARNING - 3
+2021-12-29 17:12:57,905 - root - ERROR - 4
+2021-12-29 17:12:57,906 - root - CRITICAL - 阿萨德

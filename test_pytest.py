@@ -8,9 +8,9 @@ class Test3(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()"""
 
-"""import pytest
+import pytest
 import allure,os
-@allure.feature("aaa页面")
+@allure.feature("打印xx功能")
 class Test3():
 
 
@@ -30,22 +30,25 @@ class Test3():
 
     @allure.story("cs3")
     def test_3(self):
-        print("3正在测试中")
-        assert 2==2
+        with allure.step("step1 print"):
+            print("3正在测试中")
+
+        with allure.step("step2 print"):
+            print("3正在测试中ing")
+        with allure.step("step3 assert"):
+            assert 2==2
     # def teardown(self):
     #     print("test ends")
 if __name__ == '__main__':
     #pytest.main(["-sv","test_pytest.py",'--reruns=1'])
-    pytest.main(["test_pytest.py",'--alluredir', 'report'])
-    os.system('allure serve report')"""
-import pytest
-#只能定义在类外部
-
-class TestTT():
-    @pytest.fixture()
-    def test(self):
-        print("fixture")
-    def test_1223(self,test):
-        print("1223")
-if __name__ == '__main__':
-    pytest.main(["-sv","test_pytest.py"])
+    pytest.main(["test_pytest.py", '--alluredir', 'report','--clean-alluredir'])
+    os.system('allure serve report')
+#import pytest
+# class TestTT():
+#     @pytest.fixture()
+#     def test(self):
+#         print("fixture")
+#     def test_1223(self,test):
+#         print("1223")
+# if __name__ == '__main__':
+#     pytest.main(["-sv","test_pytest.py"])

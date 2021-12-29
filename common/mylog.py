@@ -10,12 +10,12 @@ class Log():
         mylog.setLevel("DEBUG")
         #输出到控制台
         sh=logging.StreamHandler()
-        sh.setLevel("INFO")
+        sh.setLevel(setting.LOG_STREAM_LEVEL)
         sh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         #设置按照时间输出到文件,时间为30天
         fh1=logging.handlers.TimedRotatingFileHandler(filename1, when='D', interval=30, backupCount=10,encoding="UTF8")
         #fh1=logging.FileHandler(filename1,encoding="UTF8")
-        fh1.setLevel("DEBUG")
+        fh1.setLevel(setting.LOG_FILE_LEVEL)
         fh1.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         #添加到handle
         mylog.addHandler(sh)
@@ -27,8 +27,9 @@ class Log():
         if level=="WARNING":
             mylog.warning(msg)
         if level=="ERROR":
-            fh2 = logging.FileHandler(filename2,encoding="UTF8")
-            fh2.setLevel("DEBUG")
+            #fh2 = logging.FileHandler(filename2,encoding="UTF8")
+            fh2=logging.handlers.TimedRotatingFileHandler(filename2, when='D', interval=30, backupCount=10,encoding="UTF8")
+            fh2.setLevel(setting.LOG_FILE_LEVEL)
             fh2.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
             mylog.addHandler(fh2)
             mylog.error(msg)
