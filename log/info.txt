@@ -36,3 +36,13 @@
 2021-12-29 18:23:12,086 - root - ERROR - 出现以下异常'Book' object is not subscriptable
 2021-12-29 18:25:10,894 - root - ERROR - 出现以下异常'Book' object is not subscriptable
 2021-12-29 18:25:39,389 - root - ERROR - 出现以下异常'Book' object is not subscriptable
+2022-01-05 15:48:07,531 - root - INFO - 用例开始执行
+2022-01-05 15:48:23,205 - root - INFO - {'id': 1, 'module': '停呼黑名单', 'function': '查询已存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293681"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\']', 'assertresult': '13192293681'}
+2022-01-05 15:48:36,503 - root - INFO - 添加失败截图
+2022-01-05 15:48:37,069 - root - INFO - 用例执行完成
+2022-01-05 15:48:39,466 - root - INFO - 用例开始执行
+2022-01-05 15:48:50,418 - root - INFO - {'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/div[1]/div/div/div/input\'],[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/form/span/button[1]\']]', 'action': '[["send_keys()","13192293682"],["click()"]]', 'assertparam': '[By.XPATH,\'//*[@id="appMain"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\']', 'assertresult': '暂无数据1'}
+2022-01-05 15:48:53,673 - root - INFO - 用例2:查询不存在的停呼号码执行失败
+2022-01-05 15:48:53,674 - root - INFO - D:\pytest\testautoui\screenpic\20220105_154853查询不存在的停呼号码失败.png
+2022-01-05 15:48:54,213 - root - INFO - 添加失败截图
+2022-01-05 15:48:54,704 - root - INFO - 用例执行完成

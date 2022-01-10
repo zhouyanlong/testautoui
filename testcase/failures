@@ -38,3 +38,5 @@ testcase/test_stopblacklist.py::TestStopBlacklist::test_tinghuheimingdan[excel_d
 testcase/test_callrecord.py::TestCallRecord::test_huchujilu[excel_data10]
 testcase/test_callrecord.py::TestCallRecord::test_huchujilu[excel_data14]
 testcase/test_callrecord.py::TestCallRecord::test_huchujilu[excel_data15]
+testcase/test_stopblacklist.py::TestStopBlacklist::test_tinghuheimingdan[excel_data0]
+testcase/test_stopblacklist.py::TestStopBlacklist::test_tinghuheimingdan[excel_data1]
