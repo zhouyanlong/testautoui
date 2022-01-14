@@ -1,0 +1,139 @@
+{
+  "uid" : "4dac0279c46e901b",
+  "name" : "test_yonghuguanli[excel_data5]",
+  "fullName" : "testcase.test_usermanage.TestUserManage#test_yonghuguanli",
+  "historyId" : "4ced8383fee7bfe6a2f8964b9a4c914c",
+  "time" : {
+    "start" : 1640264033997,
+    "stop" : 1640264038074,
+    "duration" : 4077
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1640264030418,
+      "stop" : 1640264033996,
+      "duration" : 3578
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640264030418,
+      "stop" : 1640264030418,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640264033996,
+      "stop" : 1640264033996,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "db620d2775ad848",
+      "name" : "log",
+      "source" : "db620d2775ad848.txt",
+      "type" : "text/plain",
+      "size" : 294780
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640264038076,
+      "stop" : 1640264040243,
+      "duration" : 2167
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_usermanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserManage"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_usermanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 6, 'module': '用户管理', 'function': '查询人工坐席是', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[4]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4dac0279c46e901b.json",
+  "parameterValues" : [ "{'id': 6, 'module': '用户管理', 'function': '查询人工坐席是', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[4]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+}

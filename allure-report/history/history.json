@@ -1,0 +1,2181 @@
+{
+  "4ced8383fee7bfe6a2f8964b9a4c914c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4dac0279c46e901b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264033997,
+        "stop" : 1640264038074,
+        "duration" : 4077
+      }
+    } ]
+  },
+  "51bb224f19c7b9f7a2bf5ba546878587" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2fa40d3c9f6a18e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264014686,
+        "stop" : 1640264018315,
+        "duration" : 3629
+      }
+    } ]
+  },
+  "81eb648be9e4ca03dcc1a95ee3acb1ea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b896efef2d077fb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263288732,
+        "stop" : 1640263291802,
+        "duration" : 3070
+      }
+    } ]
+  },
+  "698adb6706fd40d98e22f1ba9f252346" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe9af61c5e7b938d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263011751,
+        "stop" : 1640263014183,
+        "duration" : 2432
+      }
+    } ]
+  },
+  "0b469a7475e28c47daaa35b340d5977a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc506bd789166ef6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263345467,
+        "stop" : 1640263348610,
+        "duration" : 3143
+      }
+    } ]
+  },
+  "5c281566201ecea7ebe33dd37c436ccc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6699e491003e1e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263856698,
+        "stop" : 1640263859139,
+        "duration" : 2441
+      }
+    } ]
+  },
+  "ada0cf2af9842f362c856955d6ea4174" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "919096f0101da0f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263724539,
+        "stop" : 1640263727494,
+        "duration" : 2955
+      }
+    } ]
+  },
+  "eb8d906ee3336c4372b8b4026035e68f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9053be3c7ce9f15e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263804654,
+        "stop" : 1640263807701,
+        "duration" : 3047
+      }
+    } ]
+  },
+  "5bb8f238003fe31bd191622e765fc6aa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d4c41449ea9ef3bb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div[1]/div/div[2]/div[1]/span[2]\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263749598,
+        "stop" : 1640263761890,
+        "duration" : 12292
+      }
+    } ]
+  },
+  "a4891ec1547a4cd8c4df7378ba6403b8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f1923444cd1ddbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263715189,
+        "stop" : 1640263718154,
+        "duration" : 2965
+      }
+    } ]
+  },
+  "ce04d3fb67671b7a7677147678d30004" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6436bf99194aab47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264101544,
+        "stop" : 1640264105905,
+        "duration" : 4361
+      }
+    } ]
+  },
+  "d8b0644f86fea77cc1f878a1baff21bd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "66a7e94652f96cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263930062,
+        "stop" : 1640263933335,
+        "duration" : 3273
+      }
+    } ]
+  },
+  "a57543ba335c13bd72c6d1417480dba1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7c9d1546fe99866",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007D4F44+1068868]\n\tOrdinal0 [0x007D4E0E+1068558]\n\tOrdinal0 [0x007D5070+1069168]\n\tOrdinal0 [0x007FEC4C+1240140]\n\tOrdinal0 [0x007F3F63+1195875]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640264160366,
+        "stop" : 1640264163830,
+        "duration" : 3464
+      }
+    } ]
+  },
+  "566a3f02503ab96f4bdaece9262a9e6d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "689219c21763385e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264043986,
+        "stop" : 1640264047876,
+        "duration" : 3890
+      }
+    } ]
+  },
+  "1969f04fc53cc04ea9a3d133ef196dc9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3920ab2f422d760",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263831384,
+        "stop" : 1640263834160,
+        "duration" : 2776
+      }
+    } ]
+  },
+  "3e2fc9f041d4c4e1b018e5f437d6491c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3118860b68a9c7e4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263447812,
+        "stop" : 1640263450863,
+        "duration" : 3051
+      }
+    } ]
+  },
+  "0da6d602e2d65c7268ef369e110351b9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2adb0d96aaa6654",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263269566,
+        "stop" : 1640263272686,
+        "duration" : 3120
+      }
+    } ]
+  },
+  "6a01d891f819006061a7a92505abcd3e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "44e490d57ca97811",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263986253,
+        "stop" : 1640263989570,
+        "duration" : 3317
+      }
+    } ]
+  },
+  "56c257540623ec897c1edd7b2217db44" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c83f6a28b59f977f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263391886,
+        "stop" : 1640263394904,
+        "duration" : 3018
+      }
+    } ]
+  },
+  "90f426cfa6b736e7673fa954c7987e69" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e4f7b95f1c7912",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264141460,
+        "stop" : 1640264144837,
+        "duration" : 3377
+      }
+    } ]
+  },
+  "079f0383839a102b8acaa60fdc2da7a0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4999a0e0655dbdea",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263957200,
+        "stop" : 1640263970665,
+        "duration" : 13465
+      }
+    } ]
+  },
+  "098746ad258c3dbb096e5aafb5a163e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c50dc6f21ee8ca0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263670561,
+        "stop" : 1640263672957,
+        "duration" : 2396
+      }
+    } ]
+  },
+  "00132ae3cd1343986c449818d699d114" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea5d8de5b8f7c835",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263317091,
+        "stop" : 1640263320448,
+        "duration" : 3357
+      }
+    } ]
+  },
+  "d48fe147d74bdb7be3ad88e777a54f96" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9524b695719d2eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263733115,
+        "stop" : 1640263735515,
+        "duration" : 2400
+      }
+    } ]
+  },
+  "5601e4a6d97ca1a453760c2d1366a26a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9f13c1a2734b7ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263778011,
+        "stop" : 1640263781195,
+        "duration" : 3184
+      }
+    } ]
+  },
+  "63683b049a4b3b1727b095c9444743eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d384a57f2faa09a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263146422,
+        "stop" : 1640263149138,
+        "duration" : 2716
+      }
+    } ]
+  },
+  "2f525f08cec76156c53109fb0149df47" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ee21e884041bf3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263822078,
+        "stop" : 1640263825089,
+        "duration" : 3011
+      }
+    } ]
+  },
+  "4b1631371a21bda432953e052676c767" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2558b55f9c951289",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span>...</span> is not clickable at point (718, 140). Other element would receive the click: <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263795624,
+        "stop" : 1640263798497,
+        "duration" : 2873
+      }
+    } ]
+  },
+  "36ab6d2b9afec1020b8b0764e59d4c0b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b01af8714fd88094",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264170565,
+        "stop" : 1640264174523,
+        "duration" : 3958
+      }
+    } ]
+  },
+  "c3debe95e8aa1d80d824458923dbef35" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e163dcf3c5682bb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263637203,
+        "stop" : 1640263656076,
+        "duration" : 18873
+      }
+    } ]
+  },
+  "333266f2b7e6c4b2f3e973223fe9995c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0de192a1007edce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263069288,
+        "stop" : 1640263072415,
+        "duration" : 3127
+      }
+    } ]
+  },
+  "98a61a4ed956f6cbcaac9dcbcbe6487a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "441cf9bf73202115",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264150433,
+        "stop" : 1640264154117,
+        "duration" : 3684
+      }
+    } ]
+  },
+  "bf45b8b482543faa852900701fef15e2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7bf27029cfa8996f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263787554,
+        "stop" : 1640263790003,
+        "duration" : 2449
+      }
+    } ]
+  },
+  "b8f24f8c56e8559bcbc3745fea7efc89" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "539cea54a0eeefd9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263909931,
+        "stop" : 1640263923938,
+        "duration" : 14007
+      }
+    } ]
+  },
+  "af0f666122ba80999199bfd616bc1d49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c0fb5005a6d04f86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263212789,
+        "stop" : 1640263217538,
+        "duration" : 4749
+      }
+    } ]
+  },
+  "d31e1f54acd0ba3e219380014c9822d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d84c42ba1ffcfd5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263892077,
+        "stop" : 1640263894617,
+        "duration" : 2540
+      }
+    } ]
+  },
+  "728ceabd05ce18530e3feb310275acaa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1814892a73be3b42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263662524,
+        "stop" : 1640263664992,
+        "duration" : 2468
+      }
+    } ]
+  },
+  "f535e650317a15b6e580b5afc2030e56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79a5f681be487f92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263768081,
+        "stop" : 1640263771760,
+        "duration" : 3679
+      }
+    } ]
+  },
+  "ba29ddff2966889a79cf87d7e105515c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d4a5fac02f853712",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263419392,
+        "stop" : 1640263423321,
+        "duration" : 3929
+      }
+    } ]
+  },
+  "fd6dedd447a01101786a7bdc44935e7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb9dbfd930d7ed9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263687652,
+        "stop" : 1640263690705,
+        "duration" : 3053
+      }
+    } ]
+  },
+  "ae7a564ae949f1c63dc0383379fdbf5a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ce73027b570f7f0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263401060,
+        "stop" : 1640263404202,
+        "duration" : 3142
+      }
+    } ]
+  },
+  "07e0fdd5ff92a7291fdb82486de92202" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b594a91f4fcc7d63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263840233,
+        "stop" : 1640263842776,
+        "duration" : 2543
+      }
+    } ]
+  },
+  "4adaad43c30c225b8704e7db0331d30d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6079caab2f8f6d61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263591955,
+        "stop" : 1640263600814,
+        "duration" : 8859
+      }
+    } ]
+  },
+  "cbaef653a7c0659437e1754384079a5f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d780c2aba3bdbdba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263326343,
+        "stop" : 1640263329569,
+        "duration" : 3226
+      }
+    } ]
+  },
+  "661a942b43012cc165f4806332e33275" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a4910fb1dbd8ee26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264112075,
+        "stop" : 1640264115782,
+        "duration" : 3707
+      }
+    } ]
+  },
+  "446006eefa6e88192253f544243b3b4b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4e5045057d79550",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263556512,
+        "stop" : 1640263571245,
+        "duration" : 14733
+      }
+    } ]
+  },
+  "ebc8a527d9b3e7a24eb5b9a5096daf5e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec671621410ea1ea",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263307225,
+        "stop" : 1640263310347,
+        "duration" : 3122
+      }
+    } ]
+  },
+  "805ae4c58ded8ae8ca4f92fccd0484fc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1fdcfbe46645d7cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263079080,
+        "stop" : 1640263094568,
+        "duration" : 15488
+      }
+    } ]
+  },
+  "a23d4db16edab005319a78033c9875df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2d6f6950384684f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263948584,
+        "stop" : 1640263951397,
+        "duration" : 2813
+      }
+    } ]
+  },
+  "c8e095a23f93dc1072350bb8a65c45cb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a473b67c16b2c1cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263438605,
+        "stop" : 1640263441579,
+        "duration" : 2974
+      }
+    } ]
+  },
+  "ec13a7ed09f87254f7adbda359357dbd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2eaa68d1ef26d4b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263607425,
+        "stop" : 1640263616288,
+        "duration" : 8863
+      }
+    } ]
+  },
+  "5a29945de487b1fc2daeaad9299717f4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c088bb21b795b995",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263410311,
+        "stop" : 1640263413329,
+        "duration" : 3018
+      }
+    } ]
+  },
+  "9390cbf4792a0dbe3b6f995e6824eb32" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "998e83df1e70e3db",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263297735,
+        "stop" : 1640263300803,
+        "duration" : 3068
+      }
+    } ]
+  },
+  "c71b9815920c95e665dfd6495d705e25" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f29b063dcd272d59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263532891,
+        "stop" : 1640263538745,
+        "duration" : 5854
+      }
+    } ]
+  },
+  "e66443b8384968416b3f39d65d4e501e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aa65e245dd5fb57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263544681,
+        "stop" : 1640263550558,
+        "duration" : 5877
+      }
+    } ]
+  },
+  "53c74b9927d4423466a821ac2abb201e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "af450d1833abf9cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263003404,
+        "stop" : 1640263005835,
+        "duration" : 2431
+      }
+    } ]
+  },
+  "a24b3ec5eb011ad0be2ec9372e2c8e69" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "164599cce12624ef",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263364634,
+        "stop" : 1640263367659,
+        "duration" : 3025
+      }
+    } ]
+  },
+  "87bb75f975a4e4efe54032d0f8622ede" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16c5ceb766b573af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263697099,
+        "stop" : 1640263700156,
+        "duration" : 3057
+      }
+    } ]
+  },
+  "fa6215d77828883532bb20d6717ee214" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "862461e2ab17cc69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263706064,
+        "stop" : 1640263709065,
+        "duration" : 3001
+      }
+    } ]
+  },
+  "98f89bd3a0a02bee64dd6287b001c24c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e9770730a699244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264082765,
+        "stop" : 1640264086079,
+        "duration" : 3314
+      }
+    } ]
+  },
+  "30b736b208c39c6f32ee79fd67c18c4f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4458ae53bb22cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264024219,
+        "stop" : 1640264028238,
+        "duration" : 4019
+      }
+    } ]
+  },
+  "3eec484a13d77201bc3692a5aa2885ed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "801d46c22961febf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type=\"text\" readonly=\"readonly\" autocomplete=\"off\" placeholder=\"请选择\" class=\"el-input__inner\"> is not clickable at point (1050, 189). Other element would receive the click: <th>...</th>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263373700,
+        "stop" : 1640263376697,
+        "duration" : 2997
+      }
+    } ]
+  },
+  "e4d2aff4225168e2ef293183a4fe4e55" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7633aa567a7edaa0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263813498,
+        "stop" : 1640263816484,
+        "duration" : 2986
+      }
+    } ]
+  },
+  "23d96fbb426e5a0d9a090d872a12626b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc953da5295f3563",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263279310,
+        "stop" : 1640263282437,
+        "duration" : 3127
+      }
+    } ]
+  },
+  "68ff97f2fe70de9adbe3bbc4e2acee55" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "308e95c81a176c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263203614,
+        "stop" : 1640263206859,
+        "duration" : 3245
+      }
+    } ]
+  },
+  "105bb92caf26925022b9428edb6fb187" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "824c1d87ee82d5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263500038,
+        "stop" : 1640263504811,
+        "duration" : 4773
+      }
+    } ]
+  },
+  "866695f16e3db871f13d5d5594c75d4b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "100ef3c71997fbe2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263335981,
+        "stop" : 1640263339222,
+        "duration" : 3241
+      }
+    } ]
+  },
+  "eaee92fed152c00d6b92e2f5c7b1a366" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "213fb2b807195fda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263875033,
+        "stop" : 1640263877577,
+        "duration" : 2544
+      }
+    } ]
+  },
+  "4f64a42d5c3c1617b6e97b72fb2240d5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7788b47c2e3bec1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"sort-caret ascending\"></i> is not clickable at point (258, 199). Other element would receive the click: <div class=\"el-loading-mask\" style=\"\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263577470,
+        "stop" : 1640263586217,
+        "duration" : 8747
+      }
+    } ]
+  },
+  "14a256c815fa1840ecb288a72f46a1c7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ed95b136e667f788",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263194679,
+        "stop" : 1640263197948,
+        "duration" : 3269
+      }
+    } ]
+  },
+  "b4810cc64fb01df23df6a5b9d94aa6ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f43083dabf810ba4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263901518,
+        "stop" : 1640263904056,
+        "duration" : 2538
+      }
+    } ]
+  },
+  "3dc5f038ca6e5616a12bb329e8956871" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e23dd20ee81d241",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263489422,
+        "stop" : 1640263494211,
+        "duration" : 4789
+      }
+    } ]
+  },
+  "4ca8246e8fd28a4fa0b0fdecee3d5152" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11c066fcba7299e7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263223306,
+        "stop" : 1640263226412,
+        "duration" : 3106
+      }
+    } ]
+  },
+  "a42839235d4478d48e31989389fade72" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9523cbba3d551cd0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263167433,
+        "stop" : 1640263170154,
+        "duration" : 2721
+      }
+    } ]
+  },
+  "5f3a63e487747e233c6c4e3777e7e352" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3af905297cd4ede3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263128874,
+        "stop" : 1640263131315,
+        "duration" : 2441
+      }
+    } ]
+  },
+  "ea42a02fc7f6b3e0bab9060cd829dfd2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78eead070ce2c67",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[2]/div/a\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263511175,
+        "stop" : 1640263526999,
+        "duration" : 15824
+      }
+    } ]
+  },
+  "e8b3722ef61305d01b08cf9fb37e56bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a8443220ece4c05d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263159040,
+        "stop" : 1640263161695,
+        "duration" : 2655
+      }
+    } ]
+  },
+  "d5ae42fe199f4bd1dafa459e23871072" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "926d3971197d4869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264073283,
+        "stop" : 1640264076631,
+        "duration" : 3348
+      }
+    } ]
+  },
+  "6dfff11143b7c63d6b7fb66a69d0b5ae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dda40756b2f2a435",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263478527,
+        "stop" : 1640263483295,
+        "duration" : 4768
+      }
+    } ]
+  },
+  "f91a0519d8aafac00bacfb1e9e7cc8a9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e079b7b965d42226",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type=\"text\" readonly=\"readonly\" autocomplete=\"off\" placeholder=\"请选择\" class=\"el-input__inner\"> is not clickable at point (1050, 189). Other element would receive the click: <th>...</th>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263382639,
+        "stop" : 1640263385691,
+        "duration" : 3052
+      }
+    } ]
+  },
+  "534f93afcab6c6691c4f12a8da6bd37e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27e190f15b7ccb21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263864902,
+        "stop" : 1640263868118,
+        "duration" : 3216
+      }
+    } ]
+  },
+  "b97a80dd32da729e850d5ea5bd41dff2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e197e201327f1c67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264005603,
+        "stop" : 1640264008919,
+        "duration" : 3316
+      }
+    } ]
+  },
+  "592e6bad6b1c7b74f22eca646afa5fd1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f2ea355bd638a7ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263110184,
+        "stop" : 1640263113275,
+        "duration" : 3091
+      }
+    } ]
+  },
+  "2a6b9c44fc7c347588817587718c4afe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e591a0061474bf85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263059567,
+        "stop" : 1640263062657,
+        "duration" : 3090
+      }
+    } ]
+  },
+  "6d545bf18e482e633f8a79f3be1b0d9d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "757c6a57425fca23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263118962,
+        "stop" : 1640263122326,
+        "duration" : 3364
+      }
+    } ]
+  },
+  "213326bb5257fd2fd284748ff83d549e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c0be0481cc25d1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263024585,
+        "stop" : 1640263027872,
+        "duration" : 3287
+      }
+    } ]
+  },
+  "52c3b16a43c2dcd12e77944525ec6ab1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d5b64aabf156ad66",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263176147,
+        "stop" : 1640263178809,
+        "duration" : 2662
+      }
+    } ]
+  },
+  "0c25277c4c2081ab020b375b1ea76245" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "612fcfd40e312302",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263260323,
+        "stop" : 1640263263403,
+        "duration" : 3080
+      }
+    } ]
+  },
+  "b7ce12b55e50f5e9ce088e49f9620f11" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fc899207fa4d7832",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263622140,
+        "stop" : 1640263630983,
+        "duration" : 8843
+      }
+    } ]
+  },
+  "58abcb70765ffb7e5313fcb8d86fdd06" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c6401d162a43b71e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263241745,
+        "stop" : 1640263244925,
+        "duration" : 3180
+      }
+    } ]
+  },
+  "2ef96ffbd0efefc598f4cc81b4b8d35e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c006a216f0856ec6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264131583,
+        "stop" : 1640264134959,
+        "duration" : 3376
+      }
+    } ]
+  },
+  "5e16938532c527624c0e4b6cc728756b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5072cb7c49f208d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263678682,
+        "stop" : 1640263681714,
+        "duration" : 3032
+      }
+    } ]
+  },
+  "080db67081d2c72f3bf47cf426342ac7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29c9b76fe2f8ac14",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263355458,
+        "stop" : 1640263358495,
+        "duration" : 3037
+      }
+    } ]
+  },
+  "67cbd25730a1ec5ea54b8f3aa55ef6ca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e119832d5a1a660d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264054044,
+        "stop" : 1640264057971,
+        "duration" : 3927
+      }
+    } ]
+  },
+  "96234f348464fea1fa0cbffe3de34673" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b81f485fb9bc1542",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263429459,
+        "stop" : 1640263432549,
+        "duration" : 3090
+      }
+    } ]
+  },
+  "611013648aa3ec7f66f56f739e60048d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c398928a513117a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263741302,
+        "stop" : 1640263744049,
+        "duration" : 2747
+      }
+    } ]
+  },
+  "c3f6e8209634a48774e507b22d8e6b2c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "97b7a3f84d971ee5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264091890,
+        "stop" : 1640264095231,
+        "duration" : 3341
+      }
+    } ]
+  },
+  "821d2eac389398d86dda3bb5c76b8f9e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a5f166b04bb5c361",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263883526,
+        "stop" : 1640263886101,
+        "duration" : 2575
+      }
+    } ]
+  },
+  "8576f94b34b11ac5314ea2a8e2d42d5d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "713cd1cb2351e558",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263996016,
+        "stop" : 1640263999382,
+        "duration" : 3366
+      }
+    } ]
+  },
+  "a608f91e763ccc73973e34c6e752e281" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5b5c3837a4986284",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263049514,
+        "stop" : 1640263052588,
+        "duration" : 3074
+      }
+    } ]
+  },
+  "2660f48b96750e4855f279e219d407c9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4502384285e7e89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263848521,
+        "stop" : 1640263850952,
+        "duration" : 2431
+      }
+    } ]
+  },
+  "9967cdf4b00de6c4bf359efe5200fc9a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a94c3c3d4139890c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264180190,
+        "stop" : 1640264183801,
+        "duration" : 3611
+      }
+    } ]
+  },
+  "a8aed16e314f4b4aa0244f742af27ce5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec538e964a3101b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263185487,
+        "stop" : 1640263188778,
+        "duration" : 3291
+      }
+    } ]
+  },
+  "1243b98b8676663e402d631fc582cd70" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6002badd6d899286",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263939690,
+        "stop" : 1640263943072,
+        "duration" : 3382
+      }
+    } ]
+  },
+  "6375a747be3f5a1861035782b49dfc0b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9140c5549ce94f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263137492,
+        "stop" : 1640263140148,
+        "duration" : 2656
+      }
+    } ]
+  },
+  "b60744bfdc1f4b33ace3538009945cc3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "148fc585ca1ad372",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640264063705,
+        "stop" : 1640264067346,
+        "duration" : 3641
+      }
+    } ]
+  },
+  "b1b69ecb7add0ba0f2ab2161c54bf105" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fd58983b133277fe",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263457813,
+        "stop" : 1640263472613,
+        "duration" : 14800
+      }
+    } ]
+  },
+  "94429cbbc41025fa2ddcddfdf28896e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32efae7d09cc29e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263040186,
+        "stop" : 1640263043272,
+        "duration" : 3086
+      }
+    } ]
+  },
+  "33914229396095a882cb60532bb5a977" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30104986d6da1999",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '暂无数据1' == '暂无数据'\n  - 暂无数据\n  + 暂无数据1\n  ?     +",
+      "time" : {
+        "start" : 1640263977240,
+        "stop" : 1640263980417,
+        "duration" : 3177
+      }
+    } ]
+  },
+  "1bb63371b79f03bb0a854efdd40d6f93" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c4b1a2f6b67c6d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007D4F44+1068868]\n\tOrdinal0 [0x007D4E0E+1068558]\n\tOrdinal0 [0x007D56BA+1070778]\n\tOrdinal0 [0x008264F9+1402105]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640264121520,
+        "stop" : 1640264124984,
+        "duration" : 3464
+      }
+    } ]
+  },
+  "91a732aab79a0a1e1d283088e0fa961c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e53e01985c3ceda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640263101109,
+        "stop" : 1640263103697,
+        "duration" : 2588
+      }
+    } ]
+  },
+  "9251898bf6baef6815727e082474b4f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4bbcfe34ae2cadfd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263232415,
+        "stop" : 1640263235486,
+        "duration" : 3071
+      }
+    } ]
+  },
+  "3e0141e46dac0ecdbaecded4626ea492" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1ee9f03ab125d9fe",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "time" : {
+        "start" : 1640263251384,
+        "stop" : 1640263254525,
+        "duration" : 3141
+      }
+    } ]
+  }
+}

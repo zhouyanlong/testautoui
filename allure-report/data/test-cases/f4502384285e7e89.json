@@ -1,0 +1,139 @@
+{
+  "uid" : "f4502384285e7e89",
+  "name" : "test_duanxincelue[excel_data7]",
+  "fullName" : "testcase.test_smsstrategy.TestSmsStrategy#test_duanxincelue",
+  "historyId" : "2660f48b96750e4855f279e219d407c9",
+  "time" : {
+    "start" : 1640263848521,
+    "stop" : 1640263850952,
+    "duration" : 2431
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1640263844950,
+      "stop" : 1640263848521,
+      "duration" : 3571
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640263844950,
+      "stop" : 1640263844950,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640263848521,
+      "stop" : 1640263848521,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f709f27eb4a85eae",
+      "name" : "log",
+      "source" : "f709f27eb4a85eae.txt",
+      "type" : "text/plain",
+      "size" : 107782
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640263850954,
+      "stop" : 1640263853120,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_smsstrategy"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSmsStrategy"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_smsstrategy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 8, 'module': '短信策略', 'function': '新增名称为空', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[1]/div[1]/button\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[3]/span/button[2]\\']]', 'action': '[[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[2]/div/div[2]\\']', 'assertresult': '请输入策略名称'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4502384285e7e89.json",
+  "parameterValues" : [ "{'id': 8, 'module': '短信策略', 'function': '新增名称为空', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[1]/div[1]/button\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[3]/span/button[2]\\']]', 'action': '[[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[2]/div/div[2]\\']', 'assertresult': '请输入策略名称'}" ]
+}

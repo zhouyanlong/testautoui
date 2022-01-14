@@ -1,0 +1,139 @@
+{
+  "uid" : "c9140c5549ce94f8",
+  "name" : "test_piciguanli[excel_data12]",
+  "fullName" : "testcase.test_batchmanage.TestBatchManage#test_piciguanli",
+  "historyId" : "6375a747be3f5a1861035782b49dfc0b",
+  "time" : {
+    "start" : 1640263137492,
+    "stop" : 1640263140148,
+    "duration" : 2656
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1640263133490,
+      "stop" : 1640263137492,
+      "duration" : 4002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640263133490,
+      "stop" : 1640263133490,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640263137492,
+      "stop" : 1640263137492,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2e4a242a00cc3d44",
+      "name" : "log",
+      "source" : "2e4a242a00cc3d44.txt",
+      "type" : "text/plain",
+      "size" : 155533
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640263140149,
+      "stop" : 1640263142489,
+      "duration" : 2340
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_batchmanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBatchManage"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_batchmanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 13, 'module': '批次管理', 'function': '批次详情查询存在的线索id', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\\'],[By.XPATH,\\'//*[@id=\"pane-first\"]/div/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"pane-first\"]/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"send_keys()\",\"123\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"pane-first\"]/div/div/div[2]/div[3]/table/tbody/tr/td[2]/div\\']', 'assertresult': 123}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c9140c5549ce94f8.json",
+  "parameterValues" : [ "{'id': 13, 'module': '批次管理', 'function': '批次详情查询存在的线索id', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/a\\'],[By.XPATH,\\'//*[@id=\"pane-first\"]/div/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"pane-first\"]/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"send_keys()\",\"123\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"pane-first\"]/div/div/div[2]/div[3]/table/tbody/tr/td[2]/div\\']', 'assertresult': 123}" ]
+}

@@ -1,0 +1,168 @@
+{
+  "uid" : "2b896efef2d077fb",
+  "name" : "test_huchujilu[excel_data7]",
+  "fullName" : "testcase.test_callrecord.TestCallRecord#test_huchujilu",
+  "historyId" : "81eb648be9e4ca03dcc1a95ee3acb1ea",
+  "time" : {
+    "start" : 1640263288732,
+    "stop" : 1640263291802,
+    "duration" : 3070
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+  "statusTrace" : "self = <testcase.test_callrecord.TestCallRecord object at 0x0000026CD5CB3D00>\nexcel_data = {'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertpar...\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据', 'function': '查询不存在的电话号码', ...}\nstart = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a4899c85bcd6a08c1de62b651c5f022\")>\n\n    def test_huchujilu(self,excel_data,start):\n        testdata=excel_data\n        self.driver=start\n        Log.info(testdata)\n        #等待页面菜单加载，否则容易出现菜单点击不到\n        sleep(1)\n        Page(self.driver).wait_until_presence(self.driver,CallRecordPage(self.driver).recordcenter)\n        #点击记录中心\n        CallRecordPage(self.driver).recordcenter_page()\n        Page(self.driver).wait_until_presence(self.driver,CallRecordPage(self.driver).callrecord)\n        sleep(0.5)\n        # 点击呼出记录\n        CallRecordPage(self.driver).callrecord_page()\n        for i in range(len(eval(testdata[\"param\"]))):\n            Page(self.driver).wait_until_clickable(self.driver, eval(testdata[\"param\"])[i])\n>           Page(self.driver).find_element_action(eval(testdata[\"action\"])[i],*eval(testdata[\"param\"])[i])\n\ntest_callrecord.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\common\\page.py:56: in find_element_action\n    self.driver.find_element(*loc).click()\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:81: in click\n    self._execute(Command.CLICK_ELEMENT)\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:710: in _execute\n    return self._parent.execute(command, params)\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000026CD5DF62B0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\nE         (Session info: chrome=96.0.4664.110)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00936903+2517251]\nE       \tOrdinal0 [0x008CF8E1+2095329]\nE       \tOrdinal0 [0x007D2848+1058888]\nE       \tOrdinal0 [0x00803509+1258761]\nE       \tOrdinal0 [0x00801868+1251432]\nE       \tOrdinal0 [0x007FF65D+1242717]\nE       \tOrdinal0 [0x007FE4A8+1238184]\nE       \tOrdinal0 [0x007F4037+1196087]\nE       \tOrdinal0 [0x008164D3+1336531]\nE       \tOrdinal0 [0x007F3A36+1194550]\nE       \tOrdinal0 [0x008165BA+1336762]\nE       \tOrdinal0 [0x00825BBF+1399743]\nE       \tOrdinal0 [0x0081639B+1336219]\nE       \tOrdinal0 [0x007F27A7+1189799]\nE       \tOrdinal0 [0x007F3609+1193481]\nE       \tGetHandleVerifier [0x00AC5904+1577972]\nE       \tGetHandleVerifier [0x00B70B97+2279047]\nE       \tGetHandleVerifier [0x009C6D09+534521]\nE       \tGetHandleVerifier [0x009C5DB9+530601]\nE       \tOrdinal0 [0x008D4FF9+2117625]\nE       \tOrdinal0 [0x008D98A8+2136232]\nE       \tOrdinal0 [0x008D99E2+2136546]\nE       \tOrdinal0 [0x008E3541+2176321]\nE       \tBaseThreadInitThunk [0x760BFA29+25]\nE       \tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\nE       \tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]\n\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: ElementClickInterceptedException",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640263284800,
+      "stop" : 1640263284800,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "start",
+    "time" : {
+      "start" : 1640263284800,
+      "stop" : 1640263288732,
+      "duration" : 3932
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640263288732,
+      "stop" : 1640263288732,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+    "statusTrace" : "self = <testcase.test_callrecord.TestCallRecord object at 0x0000026CD5CB3D00>\nexcel_data = {'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertpar...\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据', 'function': '查询不存在的电话号码', ...}\nstart = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8a4899c85bcd6a08c1de62b651c5f022\")>\n\n    def test_huchujilu(self,excel_data,start):\n        testdata=excel_data\n        self.driver=start\n        Log.info(testdata)\n        #等待页面菜单加载，否则容易出现菜单点击不到\n        sleep(1)\n        Page(self.driver).wait_until_presence(self.driver,CallRecordPage(self.driver).recordcenter)\n        #点击记录中心\n        CallRecordPage(self.driver).recordcenter_page()\n        Page(self.driver).wait_until_presence(self.driver,CallRecordPage(self.driver).callrecord)\n        sleep(0.5)\n        # 点击呼出记录\n        CallRecordPage(self.driver).callrecord_page()\n        for i in range(len(eval(testdata[\"param\"]))):\n            Page(self.driver).wait_until_clickable(self.driver, eval(testdata[\"param\"])[i])\n>           Page(self.driver).find_element_action(eval(testdata[\"action\"])[i],*eval(testdata[\"param\"])[i])\n\ntest_callrecord.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\common\\page.py:56: in find_element_action\n    self.driver.find_element(*loc).click()\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:81: in click\n    self._execute(Command.CLICK_ELEMENT)\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:710: in _execute\n    return self._parent.execute(command, params)\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000026CD5DF62B0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\nE         (Session info: chrome=96.0.4664.110)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00936903+2517251]\nE       \tOrdinal0 [0x008CF8E1+2095329]\nE       \tOrdinal0 [0x007D2848+1058888]\nE       \tOrdinal0 [0x00803509+1258761]\nE       \tOrdinal0 [0x00801868+1251432]\nE       \tOrdinal0 [0x007FF65D+1242717]\nE       \tOrdinal0 [0x007FE4A8+1238184]\nE       \tOrdinal0 [0x007F4037+1196087]\nE       \tOrdinal0 [0x008164D3+1336531]\nE       \tOrdinal0 [0x007F3A36+1194550]\nE       \tOrdinal0 [0x008165BA+1336762]\nE       \tOrdinal0 [0x00825BBF+1399743]\nE       \tOrdinal0 [0x0081639B+1336219]\nE       \tOrdinal0 [0x007F27A7+1189799]\nE       \tOrdinal0 [0x007F3609+1193481]\nE       \tGetHandleVerifier [0x00AC5904+1577972]\nE       \tGetHandleVerifier [0x00B70B97+2279047]\nE       \tGetHandleVerifier [0x009C6D09+534521]\nE       \tGetHandleVerifier [0x009C5DB9+530601]\nE       \tOrdinal0 [0x008D4FF9+2117625]\nE       \tOrdinal0 [0x008D98A8+2136232]\nE       \tOrdinal0 [0x008D99E2+2136546]\nE       \tOrdinal0 [0x008E3541+2176321]\nE       \tBaseThreadInitThunk [0x760BFA29+25]\nE       \tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\nE       \tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]\n\nD:\\python3.9\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: ElementClickInterceptedException",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1640263291842,
+        "stop" : 1640263292017,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2e5705e8c21c2b92",
+        "name" : "失败截图",
+        "source" : "2e5705e8c21c2b92.png",
+        "type" : "image/png",
+        "size" : 127327
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a60443f4f76193bd",
+      "name" : "log",
+      "source" : "a60443f4f76193bd.txt",
+      "type" : "text/plain",
+      "size" : 202815
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640263292018,
+      "stop" : 1640263294184,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_callrecord"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCallRecord"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_callrecord"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 8, 'module': '呼出记录', 'function': '查询不存在的电话号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2b896efef2d077fb.json",
+  "parameterValues" : [ "{'id': 8, 'module': '呼出记录', 'function': '查询不存在的电话号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+}

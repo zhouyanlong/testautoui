@@ -1,0 +1,609 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button> is not clickable at point (1216, 187). Other element would receive the click: <div class=\"el-picker-panel__content el-date-range-picker__content is-right\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_huchujilu[excel_data0]",
+        "uid" : "11c066fcba7299e7",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263223306,
+          "stop" : 1640263226412,
+          "duration" : 3106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 1, 'module': '呼出记录', 'function': '查询存在的线索id', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[2]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[3]/div/a\\']', 'assertresult': 222}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data1]",
+        "uid" : "4bbcfe34ae2cadfd",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263232415,
+          "stop" : 1640263235486,
+          "duration" : 3071
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 2, 'module': '呼出记录', 'function': '查询不存在的线索id', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[2]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"333\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data2]",
+        "uid" : "c6401d162a43b71e",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263241745,
+          "stop" : 1640263244925,
+          "duration" : 3180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 3, 'module': '呼出记录', 'function': '查询存在的外呼批次', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[3]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"test2021年12月5日09:56:39\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[4]/div/a\\']', 'assertresult': 'test2021年12月5日09:56:39'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data3]",
+        "uid" : "1ee9f03ab125d9fe",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263251384,
+          "stop" : 1640263254525,
+          "duration" : 3141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 4, 'module': '呼出记录', 'function': '查询不存在的外呼批次', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[3]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data4]",
+        "uid" : "612fcfd40e312302",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263260323,
+          "stop" : 1640263263403,
+          "duration" : 3080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 5, 'module': '呼出记录', 'function': '查询存在的呼叫对象', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[4]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"周生生\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[5]/div\\']', 'assertresult': '周生生'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data5]",
+        "uid" : "b2adb0d96aaa6654",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263269566,
+          "stop" : 1640263272686,
+          "duration" : 3120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 6, 'module': '呼出记录', 'function': '查询不存在的呼叫对象', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[4]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data6]",
+        "uid" : "bc953da5295f3563",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263279310,
+          "stop" : 1640263282437,
+          "duration" : 3127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 7, 'module': '呼出记录', 'function': '查询存在的电话号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[6]/div\\']', 'assertresult': 13192293682}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data7]",
+        "uid" : "2b896efef2d077fb",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263288732,
+          "stop" : 1640263291802,
+          "duration" : 3070
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 8, 'module': '呼出记录', 'function': '查询不存在的电话号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data8]",
+        "uid" : "998e83df1e70e3db",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263297735,
+          "stop" : 1640263300803,
+          "duration" : 3068
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 9, 'module': '呼出记录', 'function': '查询存在的主叫号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[6]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"02133191292\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[8]/div\\']', 'assertresult': '02133191292'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data9]",
+        "uid" : "ec671621410ea1ea",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263307225,
+          "stop" : 1640263310347,
+          "duration" : 3122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 10, 'module': '呼出记录', 'function': '查询不存在的主叫号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[6]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"222\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data12]",
+        "uid" : "100ef3c71997fbe2",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263335981,
+          "stop" : 1640263339222,
+          "duration" : 3241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 13, 'module': '呼出记录', 'function': '查询存在的通话时长', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[8]/div/div/div/div[1]/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[8]/div/div/div/div[2]/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"0\"],[\"send_keys()\",\"60\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[9]/div\\']', 'assertresult': 43}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data13]",
+        "uid" : "cc506bd789166ef6",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263345467,
+          "stop" : 1640263348610,
+          "duration" : 3143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 14, 'module': '呼出记录', 'function': '查询不存在的通话时长', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[8]/div/div/div/div[1]/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[8]/div/div/div/div[2]/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"0\"],[\"send_keys()\",\"6\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data14]",
+        "uid" : "29c9b76fe2f8ac14",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263355458,
+          "stop" : 1640263358495,
+          "duration" : 3037
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 15, 'module': '呼出记录', 'function': '查询存在的话术策略', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[9]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[4]/div[1]/div[1]/ul/li[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/table/tbody/tr/td[15]/div\\']', 'assertresult': '测试一汽营销'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data15]",
+        "uid" : "164599cce12624ef",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263364634,
+          "stop" : 1640263367659,
+          "duration" : 3025
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 16, 'module': '呼出记录', 'function': '查询不存在的话术策略', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[9]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[5]/div[1]/div[1]/ul/li[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data18]",
+        "uid" : "c83f6a28b59f977f",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263391886,
+          "stop" : 1640263394904,
+          "duration" : 3018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 19, 'module': '呼出记录', 'function': '线索详情', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[4]/div[2]/table/tbody/tr/td[3]/div/a\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[1]/div[2]/div[9]/div[2]\\']', 'assertresult': '周生生'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data20]",
+        "uid" : "c088bb21b795b995",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263410311,
+          "stop" : 1640263413329,
+          "duration" : 3018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 21, 'module': '呼出记录', 'function': '下载', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[1]/div[1]/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"]]', 'assertparam': \"[By.CLASS_NAME,'el-message__content']\", 'assertresult': '下载任务已创建成功！'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data22]",
+        "uid" : "b81f485fb9bc1542",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263429459,
+          "stop" : 1640263432549,
+          "duration" : 3090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 23, 'module': '呼出记录', 'function': '下载录音', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/div/button[2]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"]]', 'assertparam': \"[By.CLASS_NAME,'el-message__content']\", 'assertresult': '导出成功'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data24]",
+        "uid" : "3118860b68a9c7e4",
+        "parentUid" : "792bf61a8762fdff9469d28b1b5551df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263447812,
+          "stop" : 1640263450863,
+          "duration" : 3051
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 25, 'module': '呼出记录', 'function': '通话详情-编辑', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr/td[17]/div/div/button[3]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[3]/div/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[4]/form/div[3]/div/div/div/div[1]/input\\'],[By.XPATH,\\'/html/body/div[4]/div[1]/div[1]/ul/li[1]/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[3]/div/span[2]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': \"[By.CLASS_NAME,'el-message__content']\", 'assertresult': '操作成功'}" ]
+      } ],
+      "uid" : "792bf61a8762fdff9469d28b1b5551df"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type=\"text\" readonly=\"readonly\" autocomplete=\"off\" placeholder=\"请选择\" class=\"el-input__inner\"> is not clickable at point (1050, 189). Other element would receive the click: <th>...</th>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_huchujilu[excel_data16]",
+        "uid" : "801d46c22961febf",
+        "parentUid" : "23c91f1ac2c9649737c05842d0e45b40",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263373700,
+          "stop" : 1640263376697,
+          "duration" : 2997
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 17, 'module': '呼出记录', 'function': '查询转人工是', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[10]/div/div/div/div[1]/input\\'],[By.XPATH,\\'/html/body/div[3]/div[1]/div[1]/ul/li[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_huchujilu[excel_data17]",
+        "uid" : "e079b7b965d42226",
+        "parentUid" : "23c91f1ac2c9649737c05842d0e45b40",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263382639,
+          "stop" : 1640263385691,
+          "duration" : 3052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 18, 'module': '呼出记录', 'function': '查询转人工否', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[2]/input[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[10]/div/div/div/div[1]/input\\'],[By.XPATH,\\'/html/body/div[3]/div[1]/div[1]/ul/li[3]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"2021-12-05\"],[\"send_keys()\",\"2021-12-05\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      } ],
+      "uid" : "23c91f1ac2c9649737c05842d0e45b40"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_xiansuoliebiao[excel_data0]",
+        "uid" : "fd58983b133277fe",
+        "parentUid" : "927f5a9a873f781633fdcf38b34a2caf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263457813,
+          "stop" : 1640263472613,
+          "duration" : 14800
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 1, 'module': '线索列表', 'function': '查询今天', 'param': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/div/div[1]/label[1]/span\\']', 'action': None, 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      }, {
+        "name" : "test_xiansuoliebiao[excel_data7]",
+        "uid" : "b4e5045057d79550",
+        "parentUid" : "927f5a9a873f781633fdcf38b34a2caf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263556512,
+          "stop" : 1640263571245,
+          "duration" : 14733
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 8, 'module': '线索列表', 'function': '下载', 'param': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[1]/div[1]/button/span\\']', 'action': None, 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': 132}" ]
+      } ],
+      "uid" : "927f5a9a873f781633fdcf38b34a2caf"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[2]/div/a\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_xiansuoliebiao[excel_data4]",
+        "uid" : "78eead070ce2c67",
+        "parentUid" : "db3299aaef96afd46bcdb73ae84db6fc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263511175,
+          "stop" : 1640263526999,
+          "duration" : 15824
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 5, 'module': '线索列表', 'function': '查询线索id', 'param': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[2]/div/div/div/input\\']', 'action': '[\"send_keys()\",\"222\"]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/table/tbody/tr[1]/td[2]/div/a\\']', 'assertresult': 222}" ]
+      } ],
+      "uid" : "db3299aaef96afd46bcdb73ae84db6fc"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"sort-caret ascending\"></i> is not clickable at point (258, 199). Other element would receive the click: <div class=\"el-loading-mask\" style=\"\">...</div>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_xiansuoliebiao[excel_data8]",
+        "uid" : "c7788b47c2e3bec1",
+        "parentUid" : "c3180b7a6173d4ea54f4d4daaff4394d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263577470,
+          "stop" : 1640263586217,
+          "duration" : 8747
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 9, 'module': '线索列表', 'function': '呼叫时间升序', 'param': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[1]/div/span/i[1]\\']', 'action': None, 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      } ],
+      "uid" : "c3180b7a6173d4ea54f4d4daaff4394d"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_xiansuoliebiao[excel_data12]",
+        "uid" : "e163dcf3c5682bb",
+        "parentUid" : "61134bf5e5277345296d735454f9a225",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263637203,
+          "stop" : 1640263656076,
+          "duration" : 18873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 12, 'module': '线索列表', 'function': '点击回传记录', 'param': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[1]/span[2]\\']', 'action': None, 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div\\']', 'assertresult': '否'}" ]
+      } ],
+      "uid" : "61134bf5e5277345296d735454f9a225"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div[1]/div/div[2]/div[1]/span[2]\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_ziduanguanli[excel_data10]",
+        "uid" : "d4c41449ea9ef3bb",
+        "parentUid" : "fc48543180ce81ba7763a3047fd92d87",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263749598,
+          "stop" : 1640263761890,
+          "duration" : 12292
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 11, 'module': '字段管理', 'function': '查看总计', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[1]/div/div[2]/div[1]/span\\']]', 'action': '[[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[1]/div/div[2]/div[1]/span[2]\\']', 'assertresult': '共23条'}" ]
+      } ],
+      "uid" : "fc48543180ce81ba7763a3047fd92d87"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span>...</span> is not clickable at point (718, 140). Other element would receive the click: <button data-v-313530b3=\"\" type=\"button\" class=\"el-button el-button--primary el-button--mini\">...</button>\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x00803509+1258761]\n\tOrdinal0 [0x00801868+1251432]\n\tOrdinal0 [0x007FF65D+1242717]\n\tOrdinal0 [0x007FE4A8+1238184]\n\tOrdinal0 [0x007F4037+1196087]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_duanxincelue[excel_data1]",
+        "uid" : "2558b55f9c951289",
+        "parentUid" : "3374ad98ca07bd0b25e7f5902c79257f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263795624,
+          "stop" : 1640263798497,
+          "duration" : 2873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 2, 'module': '短信策略', 'function': '查询不存在的策略名称', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]/span\\']]', 'action': '[[\"send_keys()\",\"ttt\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/div/span\\']', 'assertresult': '暂无数据'}" ]
+      } ],
+      "uid" : "3374ad98ca07bd0b25e7f5902c79257f"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_duanxincelue[excel_data14]",
+        "uid" : "539cea54a0eeefd9",
+        "parentUid" : "cef26602bb75b4332f110115df2bc956",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263909931,
+          "stop" : 1640263923938,
+          "duration" : 14007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 15, 'module': '短信策略', 'function': '新增逻辑符号为空', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[1]/div[1]/button\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[6]/div[2]/button/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr[1]/td[1]/div/div/div/div/div/div[1]/input\\'],[By.XPATH,\\'/html/body/div[3]/div[1]/div[1]/ul/li[2]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[7]/div/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[3]/div[1]/div[1]/ul/li[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[3]/span/button[2]/span\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[8]/span[2]/div/div/div[2]\\']', 'assertresult': '请输入'}" ]
+      } ],
+      "uid" : "cef26602bb75b4332f110115df2bc956"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\"}\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007FD448+1233992]\n\tOrdinal0 [0x007FD63B+1234491]\n\tOrdinal0 [0x00827812+1406994]\n\tOrdinal0 [0x0081650A+1336586]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_tinghuheimingdan[excel_data0]",
+        "uid" : "4999a0e0655dbdea",
+        "parentUid" : "cc9fb4509d933b77f75e200e02e429b5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640263957200,
+          "stop" : 1640263970665,
+          "duration" : 13465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 1, 'module': '停呼黑名单', 'function': '查询已存在的停呼号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"13192293681\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/table/tbody/tr/td[3]/div\\']', 'assertresult': '13192293681'}" ]
+      } ],
+      "uid" : "cc9fb4509d933b77f75e200e02e429b5"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007D4F44+1068868]\n\tOrdinal0 [0x007D4E0E+1068558]\n\tOrdinal0 [0x007D56BA+1070778]\n\tOrdinal0 [0x008264F9+1402105]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_yonghuguanli[excel_data14]",
+        "uid" : "7c4b1a2f6b67c6d",
+        "parentUid" : "324a81c47b00fd2d43d0f0ee6a403c82",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640264121520,
+          "stop" : 1640264124984,
+          "duration" : 3464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 15, 'module': '用户管理', 'function': '启用', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[1]/span\\'],[By.XPATH,\\'/html/body/div[3]/div/div[3]/button[2]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': \"[By.CLASS_NAME,'el-message__content']\", 'assertresult': '启用成功'}" ]
+      } ],
+      "uid" : "324a81c47b00fd2d43d0f0ee6a403c82"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=96.0.4664.110)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00936903+2517251]\n\tOrdinal0 [0x008CF8E1+2095329]\n\tOrdinal0 [0x007D2848+1058888]\n\tOrdinal0 [0x007D4F44+1068868]\n\tOrdinal0 [0x007D4E0E+1068558]\n\tOrdinal0 [0x007D5070+1069168]\n\tOrdinal0 [0x007FEC4C+1240140]\n\tOrdinal0 [0x007F3F63+1195875]\n\tOrdinal0 [0x008164D3+1336531]\n\tOrdinal0 [0x007F3A36+1194550]\n\tOrdinal0 [0x008165BA+1336762]\n\tOrdinal0 [0x00825BBF+1399743]\n\tOrdinal0 [0x0081639B+1336219]\n\tOrdinal0 [0x007F27A7+1189799]\n\tOrdinal0 [0x007F3609+1193481]\n\tGetHandleVerifier [0x00AC5904+1577972]\n\tGetHandleVerifier [0x00B70B97+2279047]\n\tGetHandleVerifier [0x009C6D09+534521]\n\tGetHandleVerifier [0x009C5DB9+530601]\n\tOrdinal0 [0x008D4FF9+2117625]\n\tOrdinal0 [0x008D98A8+2136232]\n\tOrdinal0 [0x008D99E2+2136546]\n\tOrdinal0 [0x008E3541+2176321]\n\tBaseThreadInitThunk [0x760BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77E17A6E+238]",
+      "children" : [ {
+        "name" : "test_yonghuguanli[excel_data18]",
+        "uid" : "b7c9d1546fe99866",
+        "parentUid" : "87d42b5d96a8eb51c46fe8138476dbbf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640264160366,
+          "stop" : 1640264163830,
+          "duration" : 3464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 19, 'module': '用户管理', 'function': '批量启用', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[3]/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[5]/div[2]/table/tbody/tr[1]/td[10]/div/div/button[1]/span\\'],[By.XPATH,\\'/html/body/div[3]/div/div[3]/button[2]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': \"[By.CLASS_NAME,'el-message__content']\", 'assertresult': '启用成功'}" ]
+      } ],
+      "uid" : "87d42b5d96a8eb51c46fe8138476dbbf"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '暂无数据1' == '暂无数据'\n  - 暂无数据\n  + 暂无数据1\n  ?     +",
+      "children" : [ {
+        "name" : "test_tinghuheimingdan[excel_data1]",
+        "uid" : "30104986d6da1999",
+        "parentUid" : "31853c956c3b23b1994866a5bdae6514",
+        "status" : "failed",
+        "time" : {
+          "start" : 1640263977240,
+          "stop" : 1640263980417,
+          "duration" : 3177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\\']', 'assertresult': '暂无数据1'}" ]
+      } ],
+      "uid" : "31853c956c3b23b1994866a5bdae6514"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

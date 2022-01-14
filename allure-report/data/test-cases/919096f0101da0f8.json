@@ -1,0 +1,139 @@
+{
+  "uid" : "919096f0101da0f8",
+  "name" : "test_ziduanguanli[excel_data7]",
+  "fullName" : "testcase.test_fieldmanage.TestFieldManage#test_ziduanguanli",
+  "historyId" : "ada0cf2af9842f362c856955d6ea4174",
+  "time" : {
+    "start" : 1640263724539,
+    "stop" : 1640263727494,
+    "duration" : 2955
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1640263720338,
+      "stop" : 1640263724538,
+      "duration" : 4200
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640263720338,
+      "stop" : 1640263720338,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640263724538,
+      "stop" : 1640263724538,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3812c7690d1cce56",
+      "name" : "log",
+      "source" : "3812c7690d1cce56.txt",
+      "type" : "text/plain",
+      "size" : 154343
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640263727495,
+      "stop" : 1640263729661,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_fieldmanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFieldManage"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_fieldmanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 8, 'module': '字段管理', 'function': '新增名称为空', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[1]/div/button/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[3]/span/button[2]/span\\']]', 'action': '[[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[1]/div/div[2]\\']', 'assertresult': '请输入字段名称'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "919096f0101da0f8.json",
+  "parameterValues" : [ "{'id': 8, 'module': '字段管理', 'function': '新增名称为空', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[1]/div/button/span\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[3]/span/button[2]/span\\']]', 'action': '[[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div[2]/div/div[2]/form/div[1]/div/div[2]\\']', 'assertresult': '请输入字段名称'}" ]
+}

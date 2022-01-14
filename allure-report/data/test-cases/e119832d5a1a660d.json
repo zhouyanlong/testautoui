@@ -1,0 +1,139 @@
+{
+  "uid" : "e119832d5a1a660d",
+  "name" : "test_yonghuguanli[excel_data7]",
+  "fullName" : "testcase.test_usermanage.TestUserManage#test_yonghuguanli",
+  "historyId" : "67cbd25730a1ec5ea54b8f3aa55ef6ca",
+  "time" : {
+    "start" : 1640264054044,
+    "stop" : 1640264057971,
+    "duration" : 3927
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640264050035,
+      "stop" : 1640264050035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "start",
+    "time" : {
+      "start" : 1640264050035,
+      "stop" : 1640264054043,
+      "duration" : 4008
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640264054043,
+      "stop" : 1640264054043,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e7ff6a5c6000b2f8",
+      "name" : "log",
+      "source" : "e7ff6a5c6000b2f8.txt",
+      "type" : "text/plain",
+      "size" : 294819
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640264057972,
+      "stop" : 1640264060138,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_usermanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserManage"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_usermanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 8, 'module': '用户管理', 'function': '查询状态禁用', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[3]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[6]/div\\']', 'assertresult': '冻结'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e119832d5a1a660d.json",
+  "parameterValues" : [ "{'id': 8, 'module': '用户管理', 'function': '查询状态禁用', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/div[5]/div/div/div/div/input\\'],[By.XPATH,\\'/html/body/div[2]/div[1]/div[1]/ul/li[3]\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/form/span/button[1]\\']]', 'action': '[[\"click()\"],[\"click()\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div/div[2]/div[3]/table/tbody/tr/td[6]/div\\']', 'assertresult': '冻结'}" ]
+}

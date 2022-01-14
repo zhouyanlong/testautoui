@@ -1,7 +1,12 @@
 from common import setting
 import logging
+<<<<<<< HEAD:common/mylog.py
 from logging import handlers
 from common import setting
+=======
+from commom import setting
+from logging import handlers
+>>>>>>> testgitee/master:commom/mylog.py
 class Log():
     def get_log(self,level,msg,filename1=setting.infologdir,filename2=setting.errorlogdir):
         #获取日志收集器
@@ -12,10 +17,16 @@ class Log():
         sh=logging.StreamHandler()
         sh.setLevel(setting.LOG_STREAM_LEVEL)
         sh.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+<<<<<<< HEAD:common/mylog.py
         #设置按照时间输出到文件,时间为30天
         fh1=logging.handlers.TimedRotatingFileHandler(filename1, when='D', interval=30, backupCount=10,encoding="UTF8")
         #fh1=logging.FileHandler(filename1,encoding="UTF8")
         fh1.setLevel(setting.LOG_FILE_LEVEL)
+=======
+        #输出到文件
+        fh1=logging.handlers.TimedRotatingFileHandler(filename1, when='D', interval=30, backupCount=10,encoding="UTF8")
+        fh1.setLevel("DEBUG")
+>>>>>>> testgitee/master:commom/mylog.py
         fh1.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
         #添加到handle
         mylog.addHandler(sh)

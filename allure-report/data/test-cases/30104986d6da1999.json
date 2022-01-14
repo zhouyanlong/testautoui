@@ -1,0 +1,168 @@
+{
+  "uid" : "30104986d6da1999",
+  "name" : "test_tinghuheimingdan[excel_data1]",
+  "fullName" : "testcase.test_stopblacklist.TestStopBlacklist#test_tinghuheimingdan",
+  "historyId" : "33914229396095a882cb60532bb5a977",
+  "time" : {
+    "start" : 1640263977240,
+    "stop" : 1640263980417,
+    "duration" : 3177
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '暂无数据1' == '暂无数据'\n  - 暂无数据\n  + 暂无数据1\n  ?     +",
+  "statusTrace" : "self = <testcase.test_stopblacklist.TestStopBlacklist object at 0x0000026CD5DA8A90>\nexcel_data = {'action': '[[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\\']', 'assertresult': '暂无数据1', 'function': '查询不存在的停呼号码', ...}\nstart = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2673c67433591d94512dd37338629593\")>\n\n    def test_tinghuheimingdan(self,excel_data,start):\n        self.driver=start\n        testdata=excel_data\n        Log.info(testdata)\n        # 等待页面菜单加载，否则容易出现菜单点击不到\n        sleep(1)\n        #点击系统设置\n        StopBlacklistPage(self.driver).syssetting_page()\n        Page(self.driver).wait_until_clickable(self.driver,StopBlacklistPage(self.driver).stopblacklist)\n        sleep(0.5)\n        #点击停呼黑名单\n        StopBlacklistPage(self.driver).stopblacklist_page()\n        for i in range(len(eval(testdata[\"param\"]))):\n            Page(self.driver).wait_until_clickable(self.driver, eval(testdata[\"param\"])[i])\n            Page(self.driver).find_element_action(eval(testdata[\"action\"])[i],*eval(testdata[\"param\"])[i])\n        Page(self.driver).wait_until_presence(self.driver, eval(testdata[\"assertparam\"]))\n        sleep(0.5)\n        result = Page(self.driver).find_element(*eval(testdata[\"assertparam\"])).text\n        if str(result) != str(testdata[\"assertresult\"]):\n            Log.info(\"用例{}:{}执行失败\".format(testdata[\"id\"], testdata[\"function\"]))\n            screenshot(self.driver, testdata[\"function\"] + \"失败\")\n>       assert str(testdata[\"assertresult\"])==str(result)\nE       AssertionError: assert '暂无数据1' == '暂无数据'\nE         - 暂无数据\nE         + 暂无数据1\nE         ?     +\n\ntest_stopblacklist.py:46: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1640263973006,
+      "stop" : 1640263977240,
+      "duration" : 4234
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tttaaa",
+    "time" : {
+      "start" : 1640263973006,
+      "stop" : 1640263973006,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "excel_data",
+    "time" : {
+      "start" : 1640263977240,
+      "stop" : 1640263977240,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '暂无数据1' == '暂无数据'\n  - 暂无数据\n  + 暂无数据1\n  ?     +",
+    "statusTrace" : "self = <testcase.test_stopblacklist.TestStopBlacklist object at 0x0000026CD5DA8A90>\nexcel_data = {'action': '[[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\\']', 'assertresult': '暂无数据1', 'function': '查询不存在的停呼号码', ...}\nstart = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2673c67433591d94512dd37338629593\")>\n\n    def test_tinghuheimingdan(self,excel_data,start):\n        self.driver=start\n        testdata=excel_data\n        Log.info(testdata)\n        # 等待页面菜单加载，否则容易出现菜单点击不到\n        sleep(1)\n        #点击系统设置\n        StopBlacklistPage(self.driver).syssetting_page()\n        Page(self.driver).wait_until_clickable(self.driver,StopBlacklistPage(self.driver).stopblacklist)\n        sleep(0.5)\n        #点击停呼黑名单\n        StopBlacklistPage(self.driver).stopblacklist_page()\n        for i in range(len(eval(testdata[\"param\"]))):\n            Page(self.driver).wait_until_clickable(self.driver, eval(testdata[\"param\"])[i])\n            Page(self.driver).find_element_action(eval(testdata[\"action\"])[i],*eval(testdata[\"param\"])[i])\n        Page(self.driver).wait_until_presence(self.driver, eval(testdata[\"assertparam\"]))\n        sleep(0.5)\n        result = Page(self.driver).find_element(*eval(testdata[\"assertparam\"])).text\n        if str(result) != str(testdata[\"assertresult\"]):\n            Log.info(\"用例{}:{}执行失败\".format(testdata[\"id\"], testdata[\"function\"]))\n            screenshot(self.driver, testdata[\"function\"] + \"失败\")\n>       assert str(testdata[\"assertresult\"])==str(result)\nE       AssertionError: assert '暂无数据1' == '暂无数据'\nE         - 暂无数据\nE         + 暂无数据1\nE         ?     +\n\ntest_stopblacklist.py:46: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1640263980421,
+        "stop" : 1640263980589,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1fab652a244abfd9",
+        "name" : "失败截图",
+        "source" : "1fab652a244abfd9.png",
+        "type" : "image/png",
+        "size" : 75233
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b2bd0fd560c727d2",
+      "name" : "log",
+      "source" : "b2bd0fd560c727d2.txt",
+      "type" : "text/plain",
+      "size" : 201051
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "start::0",
+    "time" : {
+      "start" : 1640263980590,
+      "stop" : 1640263982755,
+      "duration" : 2165
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_stopblacklist"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestStopBlacklist"
+  }, {
+    "name" : "host",
+    "value" : "zhou"
+  }, {
+    "name" : "thread",
+    "value" : "21564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_stopblacklist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "excel_data",
+    "value" : "{'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\\']', 'assertresult': '暂无数据1'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "30104986d6da1999.json",
+  "parameterValues" : [ "{'id': 2, 'module': '停呼黑名单', 'function': '查询不存在的停呼号码', 'param': '[[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/div[1]/div/div/div/input\\'],[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/form/span/button[1]\\']]', 'action': '[[\"send_keys()\",\"13192293682\"],[\"click()\"]]', 'assertparam': '[By.XPATH,\\'//*[@id=\"appMain\"]/div/div/div[2]/div[2]/div[1]/div[3]/div/span\\']', 'assertresult': '暂无数据1'}" ]
+}
