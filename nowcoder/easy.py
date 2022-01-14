@@ -7,9 +7,9 @@
 
 @Software: PyCharm
 
-@Description: 
-'''
+@Description:
 
+'''
 """#最大公约数"""
 #1：时间和空间复杂度高
 # class Solution:
@@ -36,6 +36,45 @@
 #             return a
 #         else:
 #             return self.gcd(b, a % b)
+"""求子串"""
+# a="abcd"
+# b=[]
+# for i in range(len(a)):
+#     for j in range(len(a)-i):
+#         b.append(a[j:len(a)-i])
+# print(b)
+"""
+根据这个来写循环
+i=0 j=0123
+i=1 j=123
+i=2 j=23
+i=3 j=3
+取其中一个来取切片的值，如i=0 j=0,1,2,3 当i=0,j=0时，字母为a，我想要的是a j=1时ab,j=2时abc,j=3时abcd，即a[i,j+1]
+"""
+# a="abcd"
+# b=[]
+# for i in range(len(a)):
+#     #for j in range(len(a) - i):
+#     for j in range(i,len(a)):
+#         b.append(a[i:j+1])
+# print(b)
+# -*- coding:utf-8 -*-
+
+# class Parenthesis:
+#     def chkParenthesis(self, A, n):
+#         a = list(A)
+#         stack =[]
+#         for i in a:
+#             if i == '(':
+#                 stack.append(i)
+#             elif i == ')':
+#                 if not stack:
+#                     return False
+#                 else:
+#                     stack.pop()
+#             else:
+#                 return False
+#         return True
 
 """排序"""
 # def paixu():
@@ -91,6 +130,7 @@
 #         print("* " + (i - 1) * "  " + "* ")
 #     else:
 #         print((i + 1) * "* ")
+
 """两种方式，list中的数据分别为int和str类型"""
 # a = list(map(int, input().split(" ")))
 # print(a,type(a))

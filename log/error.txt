@@ -21,3 +21,4 @@
 2021-12-29 18:23:12,086 - root - ERROR - 出现以下异常'Book' object is not subscriptable
 2021-12-29 18:25:10,894 - root - ERROR - 出现以下异常'Book' object is not subscriptable
 2021-12-29 18:25:39,389 - root - ERROR - 出现以下异常'Book' object is not subscriptable
+2022-01-14 19:56:14,619 - root - ERROR - 4
