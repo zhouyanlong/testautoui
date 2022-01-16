@@ -10,6 +10,7 @@
 @Description:
 
 '''
+#print("a".join(list(map(lambda x:x,"123"))))
 """#最大公约数"""
 #1：时间和空间复杂度高
 # class Solution:
@@ -288,3 +289,261 @@ i=3 j=3
 #                     a=1
 #             return a==1
 # print(Solution().solve("abcd","abcd"))
+# -*- coding:utf-8 -*-
+"""给定一个int整数数组A及其大小n，请编写一个函数，找出索引m和n，只要将m和n之间的元素排好序，整个数组就是有序的。注意：n-m应该越小越好，即找出符合条件的最短序列。请返回一个二元组，元组的两个元素分别代表所求序列的起点和终点。(原序列位置从0开始标号,若原序列有序，返回[0,0])。要求A中元素均为正整数。
+测试样例：
+[1,4,6,5,9,10],6
+返回：[2,3]"""
+# class Rearrange:
+#     def findSegment(self, A, n):
+#         # write code here
+#         B=A[:]
+#         c=[]
+#         B.sort()
+#         for i in range(n):
+#             if B[i]!=A[i]:
+#                 c.append(i)
+#         if c == []:
+#             return [0,0]
+#         else:
+#             return [c[0], c[-1]]
+# Rearrange().findSegment([1,2,10,1,8,9],6)
+# -*- coding:utf-8 -*-
+"""给定一个int n，返回n的阶乘的末尾连续的零的个数"""
+# class Factor:
+#     def getFactorSuffixZero(self, n):
+#         # write code here
+#         def f(n):
+#             if n == 1:
+#                 return 1
+#             else:
+#                 return n * f(n - 1)
+#
+#         cheng = f(n)
+#         c = []
+#         su = str(cheng)[::-1]
+#         print(su)
+#         for i in range(len(su)):
+#             if su[i] == "0":
+#                 c.append(0)
+#             else:
+#                 break
+#         print(len(c))
+#         return len(c)
+# Factor().getFactorSuffixZero(6)
+# -*- coding:utf-8 -*-
+"""现有一堆球颜色是红色(R)、黄色(Y)、绿色(G)或蓝色(B)各若干个，现在随机选四个球分别放入四个槽中，得到一个序列。例如，RGGB(槽1为红色，槽2、3为绿色，槽4为蓝色)，需要你猜出这个颜色序列的组合。比如，你可能猜YRGB。要是猜对了某个槽的颜色，则算一次“猜中”。要是只是猜对了颜色但槽位猜错了，则算为一次“伪猜中”。要注意，“猜中”不能算入“伪猜中”。给定两个string A和guess。分别表示颜色序列的组合和一个猜测。需要返回一个int数组，数组第一个元素为猜中的次数，第二个元素为伪猜中的次数"""
+# class Result:
+#     def calcResult(self, A, guess):
+#         # write code here
+#         t = ['R', 'Y', 'G', 'B']
+#         persudo = 0
+#         for i in t:
+#             print(i)
+#             persudo += min(A.count(i), guess.count(i))
+#             print(persudo)
+#         #print(persudo)
+#         sum = 0
+#         for i in range(len(A)):
+#             if A[i] == guess[i]:
+#                 sum += 1
+#                 persudo -= 1
+#         return sum, persudo
+# Result().calcResult("RGBY","GGRR")
+# -*- coding:utf-8 -*-
+"""
+井字棋
+给定一个二维数组board，代表棋盘，其中元素为1的代表是当前玩家的棋子，0表示没有棋子，-1代表是对方玩家的棋子。当一方棋子在横竖斜方向上有连成排的及获胜（及井字棋规则），返回当前玩家是否胜出
+[
+[1, 0, 1], 
+[1, -1,-1], 
+[1, -1, 0]
+]
+"""
+# class Board:
+#     def checkWon(self, board):
+#         # write code here
+#         c=d=e=f=0
+#         for i in range(len(board)):
+#             if board[0][i]==1:
+#                 c+=1
+#             if board[i][0]==1:
+#                 d+=1
+#             if board[i][len(board)-1]==1:
+#                 e+=1
+#             if board[i][i]==1:
+#                 f+=1
+#         if c==len(board) or d==len(board) or e==len(board)or f==len(board):
+#             return 1
+#         else:
+#             return 0
+# print(Board().checkWon([[1, 0, 1,0], [1, -1, -1,1], [1, -1, 0,0],[-1,-1,-1,-1]]))
+"""
+使用位运算交换字符
+使用亦或^
+"""
+# a=[1,2]
+# a[0]^=a[1]
+# a[1]^=a[0]
+# a[0]^=a[1]
+"""已知一个数组A及它的大小n，在读入这串数的时候算出每个数的秩，即在当前数组中小于等于它的数的个数(不包括它自身)。从而返回一个int数组，元素为每次加入的数的秩
+[1,2,3,4,5,6,7],7
+返回：[0,1,2,3,4,5,6]"""
+# class Rank:
+#     def getRankOfNumber(self, A, n):
+#         # write code here
+#         c=[]
+#         d=[]
+#         for i in range(n):
+#             d.append(A[i])
+#             d.sort()
+#             c.append(d.index(A[i]))
+#         return c
+"""二分法查找（数字必须有序）时间复杂度logn"""
+#lst=[20,50,22,-22,0,15,222,28,29,99,1999,100823,55,35,5,1,2,3,8,9,55,10239,234234]
+# def erfen(x,lst=lst):
+#     a=sorted(lst)
+#     i=0
+#     j=len(a)
+#     while i<=j:
+#         mid=int((i+j)/2)
+#         if x==a[mid]:
+#             return mid
+#         elif x<a[mid]:
+#             j=mid+1
+#         else:
+#             i=mid-1
+#     return False
+# print(erfen(10239))
+"""已知正整数n，将其分为0到多个25、10、5、1这四个数的和。如n为11可分为一个10和一个1，或者分为两个5和一个1"""
+# class Coins:
+#     def countWays(self, n):
+#         coins = [1, 5, 10, 25]
+#         dp = [0 for i in range(n + 1)]
+#         dp[0] = 1
+#         #dp=[1, 0, 0, 0, 0, 0, 0]
+#         #i=0,j=1,2,3,4,5,6
+#         #i=1,j=5,6
+#         #i=2,j=
+#         #i=3,j=
+#         #coin的长度
+#         for i in range(4):
+#             #coin到总价钱的长度
+#             for j in range(coins[i], n + 1):
+#                 dp[j] += dp[j - coins[i]]
+#         print(dp)
+#         return dp[n]
+# print(Coins().countWays(6))
+"""itertools.permutations 求字符串的全排序
+输入“abc”
+输出['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+"""
+# from itertools import permutations
+# a="abc"
+# lst=list(permutations(a,len(a)))
+# b=[]
+# for i in lst:
+#     s = ""
+#     for j in i:
+#         s+=j
+#     b.append(s)
+# print(b)
+"""给定一个N阶方阵int[][]mat及其阶数n，若方阵中某个元素为0，则将其所在的行与列清零。返回改变后的int[][]方阵"""
+#[[1,2,3],[0,1,2],[0,0,1]]
+# class Clearer:
+#     def clearZero(self, mat, n):
+#         #出现0的行号 set去重
+#         row=set()
+#         #出现0的列号 set去重
+#         col=set()
+#         #im为二位列表的下标和值
+#         for i,k in enumerate(mat):
+#             #jn为二维列表中的列表的下标和值
+#             for j,l in enumerate(k):
+#                 if l==0:
+#                     row.add(i)
+#                     col.add(j)
+#         print(row,col)
+#         for i in row:
+#             for j in range(n):
+#                 mat[i][j]=0
+#         for i in col:
+#             for j in range(n):
+#                 mat[j][i]=0
+#         print(mat)
+#         return mat
+# Clearer().clearZero([[1,2,3],[0,1,2],[0,0,1]],3)
+"""请按连续重复字母压缩的方式将该字符串压缩，返回结果为string，比如，字符串“aabbcccccaaa”经压缩会变成“a2b2c5a3”，若压缩后的字符串没有变短，则返回原先的字符串。注意保证串内字符均由大小写英文字母组成"""
+# class Zipper:
+#     def zipString(self, iniString):
+#         zipStr = ""
+#         strCnt = 1
+#         for i in range(len(iniString) - 1):
+#             #如果字符相同，变量加一
+#             if iniString[i + 1] == iniString[i]:
+#                 strCnt += 1
+#             #否则，等于字符加变量，在重置变量
+#             else:
+#                 zipStr += iniString[i] + str(strCnt)
+#                 strCnt = 1
+#         print(zipStr)
+#         #把最后不满足的字符加上
+#         zipStr += iniString[-1] + str(strCnt)
+#         return zipStr if len(zipStr) < len(iniString) else iniString
+# Zipper().zipString("aabbc")
+"""给出一个整型数组 numbers 和一个目标值 target，请在数组中找出两个加起来等于目标值的数的下标，返回的下标按升序排列
+给出的数组为 [20, 70, 110, 150] , 目标值为90
+返回一个数组 [1,2] ，numbers[0]+munbers[1]=20+70=90"""
+# class Solution:
+#     def twoSum(self , numbers , target ):
+#         # write code here
+#         for i in range(len(numbers)-1,0,-1) :
+#             sub = target - numbers[i]
+#             if sub in numbers and numbers.index(sub) != i :
+#                 List =[numbers.index(sub)+1,i+1]
+#                 return List
+"""给定一个字符串，找出最长的不具有重复字符的子串的长度。例如，“abcabcbb”不具有重复字符的最长子串是“abc”，长度为3。对于“bbbbb”，最长的不具有重复字符的子串是“b”，长度为1
+输入abcabcbb
+输出abc
+输入bbb
+输出b"""
+# class Solution:
+#     def lengthOfLongestSubstring(self , s ):
+#         if s=="":
+#             return int(0)
+#         else:
+#             a = []
+#             b = []
+#             for i in range(len(s)):
+#                 for j in range(len(s) - i):
+#                     a.append(s[j:len(s) - i])
+#             print(a)
+#             for m in range(len(a)):
+#                 for n in range(len(a[m])):
+#                     # print(a[m][n])
+#                     if a[m].count(a[m][n]) != 1:
+#                         c = 0
+#                         break
+#                     else:
+#                         c = 1
+#                 if c == 1:
+#                     b.append(a[m])
+#             f = []
+#             for l in b:
+#                 f.append(len(l))
+#             return max(f)
+# print(Solution().lengthOfLongestSubstring("aabcd"))
+#
+#
+# @param height int整型一维数组
+# @return int整型
+#
+#
+# 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+#
+#
+# @param nums int整型一维数组
+# @param target int整型
+# @return int整型
+#
+
