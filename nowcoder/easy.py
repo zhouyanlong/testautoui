@@ -481,24 +481,27 @@ i=3 j=3
 #         print(mat)
 #         return mat
 # Clearer().clearZero([[1,2,3],[0,1,2],[0,0,1]],3)
-"""请按连续重复字母压缩的方式将该字符串压缩，返回结果为string，比如，字符串“aabbcccccaaa”经压缩会变成“a2b2c5a3”，若压缩后的字符串没有变短，则返回原先的字符串。注意保证串内字符均由大小写英文字母组成"""
-# class Zipper:
-#     def zipString(self, iniString):
-#         zipStr = ""
-#         strCnt = 1
-#         for i in range(len(iniString) - 1):
-#             #如果字符相同，变量加一
-#             if iniString[i + 1] == iniString[i]:
-#                 strCnt += 1
-#             #否则，等于字符加变量，在重置变量
-#             else:
-#                 zipStr += iniString[i] + str(strCnt)
-#                 strCnt = 1
-#         print(zipStr)
-#         #把最后不满足的字符加上
-#         zipStr += iniString[-1] + str(strCnt)
-#         return zipStr if len(zipStr) < len(iniString) else iniString
-# Zipper().zipString("aabbc")
+"""利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串aabcccccaaa会变为a2bc5a3。
+1.如果只有一个字符，1不用写
+2.字符串中只包含大小写英文字母（a至z）"""
+# class Solution:
+#     def compressString(self , param ):
+#         if param=="":
+#             return ""
+#         else:
+#             st1=""
+#             a=1
+#             for i in range(len(param)-1):
+#                 if param[i]==param[i+1]:
+#                     a+=1
+#                 else:
+#                     if a==1:
+#                         st1+=param[i]
+#                     else:
+#                         st1+=param[i]+str(a)
+#                         a=1
+#             return st1+param[-1]+str(a) if a!=1 else st1+param[-1]
+# print(Solution().compressString("aabbc"))
 """给出一个整型数组 numbers 和一个目标值 target，请在数组中找出两个加起来等于目标值的数的下标，返回的下标按升序排列
 给出的数组为 [20, 70, 110, 150] , 目标值为90
 返回一个数组 [1,2] ，numbers[0]+munbers[1]=20+70=90"""
