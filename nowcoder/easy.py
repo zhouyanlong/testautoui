@@ -448,6 +448,14 @@ i=3 j=3
 #         s+=j
 #     b.append(s)
 # print(b)
+"""itertools.combinations求排列组合，combinations(iterable, r)，r表示要排列组合的位数，如果是2 只从[1,2,3]中找(1,2),(1,3),(2,3)"""
+# import itertools
+# list1 = [1, 3, 4, 5]
+# list2 = []
+# for i in range(1, len(list1)+1):
+#     iter1 = itertools.combinations(list1, i)
+#     list2.append(list(iter1))
+# print(list2)
 """给定一个N阶方阵int[][]mat及其阶数n，若方阵中某个元素为0，则将其所在的行与列清零。返回改变后的int[][]方阵"""
 #[[1,2,3],[0,1,2],[0,0,1]]
 # class Clearer:
@@ -533,17 +541,51 @@ i=3 j=3
 #                 f.append(len(l))
 #             return max(f)
 # print(Solution().lengthOfLongestSubstring("aabcd"))
-#
-#
-# @param height int整型一维数组
-# @return int整型
-#
-#
-# 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
-#
-#
-# @param nums int整型一维数组
-# @param target int整型
-# @return int整型
-#
-
+"""最长无重复子数组
+给定一个长度为n的数组arr，返回arr的最长无重复元素子数组的长度，无重复指的是所有数字都不相同。
+子数组是连续的，比如[1,3,5,7,9]的子数组有[1,3]，[3,5,7]等等，但是[1,3,7]不是子数组"""
+# class Solution:
+#     def maxLength(self , arr ):
+#         # write code here
+#         res = 0
+#         l = []
+#         for i in arr:
+#             while i in l:
+#                 l.pop(0)
+#             l.append(i)
+#             print(l)
+#             res = max(res, len(l))
+#         print(res)
+#         return res
+# Solution().maxLength([2,2,3,3])
+"""
+使用栈判断括号
+给出一个仅包含字符'(',')','{','}','['和']',的字符串，判断给出的字符串是否是合法的括号序列
+括号必须以正确的顺序关闭，"()"和"()[]{}"都是合法的括号序列，但"(]"和"([)]"不合法。
+"""
+# class Solution:
+#     def isValid(self , s: str) -> bool:
+#         d = {'}': '{', ']': '[', ')': '('}
+#         stack = []
+#         for i in s:
+#             if i in '{[(':
+#                 stack.append(i)
+#             if i in '}])':
+#                 if not stack:
+#                     return False
+#                 else:
+#                     if d[i] == stack[-1]:
+#                         stack.pop()
+#                     else:
+#                         return False
+#         return not stack
+"""一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法（先后次序不同算不同的结果）
+递归实现Fibonacci数列"""
+# class Solution:
+#     def jumpFloor(self , number: int) -> int:
+#         def f(number):
+#             if number<=1:
+#                 return number
+#             else:
+#                 return f(number-1)+f(number-2)
+#         return f(number+1)
