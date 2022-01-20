@@ -448,6 +448,14 @@ i=3 j=3
 #         s+=j
 #     b.append(s)
 # print(b)
+"""itertools.combinations求排列组合，combinations(iterable, r)，r表示要排列组合的位数，如果是2 只从[1,2,3]中找(1,2),(1,3),(2,3)"""
+# import itertools
+# list1 = [1, 3, 4, 5]
+# list2 = []
+# for i in range(1, len(list1)+1):
+#     iter1 = itertools.combinations(list1, i)
+#     list2.append(list(iter1))
+# print(list2)
 """给定一个N阶方阵int[][]mat及其阶数n，若方阵中某个元素为0，则将其所在的行与列清零。返回改变后的int[][]方阵"""
 #[[1,2,3],[0,1,2],[0,0,1]]
 # class Clearer:
@@ -473,24 +481,27 @@ i=3 j=3
 #         print(mat)
 #         return mat
 # Clearer().clearZero([[1,2,3],[0,1,2],[0,0,1]],3)
-"""请按连续重复字母压缩的方式将该字符串压缩，返回结果为string，比如，字符串“aabbcccccaaa”经压缩会变成“a2b2c5a3”，若压缩后的字符串没有变短，则返回原先的字符串。注意保证串内字符均由大小写英文字母组成"""
-# class Zipper:
-#     def zipString(self, iniString):
-#         zipStr = ""
-#         strCnt = 1
-#         for i in range(len(iniString) - 1):
-#             #如果字符相同，变量加一
-#             if iniString[i + 1] == iniString[i]:
-#                 strCnt += 1
-#             #否则，等于字符加变量，在重置变量
-#             else:
-#                 zipStr += iniString[i] + str(strCnt)
-#                 strCnt = 1
-#         print(zipStr)
-#         #把最后不满足的字符加上
-#         zipStr += iniString[-1] + str(strCnt)
-#         return zipStr if len(zipStr) < len(iniString) else iniString
-# Zipper().zipString("aabbc")
+"""利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串aabcccccaaa会变为a2bc5a3。
+1.如果只有一个字符，1不用写
+2.字符串中只包含大小写英文字母（a至z）"""
+# class Solution:
+#     def compressString(self , param ):
+#         if param=="":
+#             return ""
+#         else:
+#             st1=""
+#             a=1
+#             for i in range(len(param)-1):
+#                 if param[i]==param[i+1]:
+#                     a+=1
+#                 else:
+#                     if a==1:
+#                         st1+=param[i]
+#                     else:
+#                         st1+=param[i]+str(a)
+#                         a=1
+#             return st1+param[-1]+str(a) if a!=1 else st1+param[-1]
+# print(Solution().compressString("aabbc"))
 """给出一个整型数组 numbers 和一个目标值 target，请在数组中找出两个加起来等于目标值的数的下标，返回的下标按升序排列
 给出的数组为 [20, 70, 110, 150] , 目标值为90
 返回一个数组 [1,2] ，numbers[0]+munbers[1]=20+70=90"""
@@ -533,28 +544,51 @@ i=3 j=3
 #                 f.append(len(l))
 #             return max(f)
 # print(Solution().lengthOfLongestSubstring("aabcd"))
-
-# from itertools import combinations
+"""最长无重复子数组
+给定一个长度为n的数组arr，返回arr的最长无重复元素子数组的长度，无重复指的是所有数字都不相同。
+子数组是连续的，比如[1,3,5,7,9]的子数组有[1,3]，[3,5,7]等等，但是[1,3,7]不是子数组"""
 # class Solution:
-#     def combine(self , n , k ):
-#         m=[i for i in range(1,n+1)]
-#         print(m)
-#         a=list(combinations(m, k))
-#
-# Solution().combine(2,1)
-"""求所给的数字是否存在于递增二维数组中"""
+#     def maxLength(self , arr ):
+#         # write code here
+#         res = 0
+#         l = []
+#         for i in arr:
+#             while i in l:
+#                 l.pop(0)
+#             l.append(i)
+#             print(l)
+#             res = max(res, len(l))
+#         print(res)
+#         return res
+# Solution().maxLength([2,2,3,3])
+"""
+使用栈判断括号
+给出一个仅包含字符'(',')','{','}','['和']',的字符串，判断给出的字符串是否是合法的括号序列
+括号必须以正确的顺序关闭，"()"和"()[]{}"都是合法的括号序列，但"(]"和"([)]"不合法。
+"""
 # class Solution:
-#     def searchMatrix(self , matrix , target ):
-#         i=0
-#         j=len(matrix[0])-1
-#         while i<len(matrix) and j>=0:
-#             print("dd")
-#             if target>matrix[i][j]:
-#                 i+=1
-#             elif target<matrix[i][j]:
-#                 j-=1
+#     def isValid(self , s: str) -> bool:
+#         d = {'}': '{', ']': '[', ')': '('}
+#         stack = []
+#         for i in s:
+#             if i in '{[(':
+#                 stack.append(i)
+#             if i in '}])':
+#                 if not stack:
+#                     return False
+#                 else:
+#                     if d[i] == stack[-1]:
+#                         stack.pop()
+#                     else:
+#                         return False
+#         return not stack
+"""一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法（先后次序不同算不同的结果）
+递归实现Fibonacci数列"""
+# class Solution:
+#     def jumpFloor(self , number: int) -> int:
+#         def f(number):
+#             if number<=1:
+#                 return number
 #             else:
-#                 print("11")
-#                 return True
-#         return False
-# print(Solution().searchMatrix([[1]],1))
+#                 return f(number-1)+f(number-2)
+#         return f(number+1)
