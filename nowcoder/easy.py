@@ -533,17 +533,28 @@ i=3 j=3
 #                 f.append(len(l))
 #             return max(f)
 # print(Solution().lengthOfLongestSubstring("aabcd"))
-#
-#
-# @param height int整型一维数组
-# @return int整型
-#
-#
-# 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
-#
-#
-# @param nums int整型一维数组
-# @param target int整型
-# @return int整型
-#
 
+# from itertools import combinations
+# class Solution:
+#     def combine(self , n , k ):
+#         m=[i for i in range(1,n+1)]
+#         print(m)
+#         a=list(combinations(m, k))
+#
+# Solution().combine(2,1)
+"""求所给的数字是否存在于递增二维数组中"""
+# class Solution:
+#     def searchMatrix(self , matrix , target ):
+#         i=0
+#         j=len(matrix[0])-1
+#         while i<len(matrix) and j>=0:
+#             print("dd")
+#             if target>matrix[i][j]:
+#                 i+=1
+#             elif target<matrix[i][j]:
+#                 j-=1
+#             else:
+#                 print("11")
+#                 return True
+#         return False
+# print(Solution().searchMatrix([[1]],1))
