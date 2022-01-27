@@ -625,3 +625,36 @@ i=3 j=3
 #             p2+=1
 #     return True  if p1==len(s) else False
 # print(zichuan("afdc","aafccdd"))
+"""给定两个字符串 s和 t ，判断 s是否为 t 的子序列,例如，"ace"是"abcde"的一个子序列，而"aec"不是）"""
+#解法1，获取短字符串s的第一个字符在长字符串t中的索引start,然后判断s是不是在t[start:]中，再判断顺序
+# def zichuan(s,t):
+#     if len(s)>len(t):
+#         return False
+#     else:
+#         try:
+#             start = t.index(s[0])
+#             a=t[start:]
+#             c=[]
+#             for i in s:
+#                 b=a.index(i)
+#                 c.append(b)
+#             print(c)
+#             if c==sorted(c):
+#                 return True
+#             else:
+#                 return False
+#         except:
+#             return False
+# print(zichuan("afc","aafccdd"))
+#解法2,使用循环，如果st中某个字符相同，后移一位，否则t后移一位，最后判断s后移的位数是否等于自己的长度
+# def zichuan(s,t):
+#     p1=0
+#     p2=0
+#     while p1<len(s) and p2<len(t):
+#         if s[p1]==t[p2]:
+#             p1+=1
+#             p2+=1
+#         else:
+#             p2+=1
+#     return True  if p1==len(s) else False
+# print(zichuan("afdc","aafccdd"))
