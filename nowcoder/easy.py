@@ -100,42 +100,6 @@ i=3 j=3
 #             if a[j]>a[j+1]:
 #                 a[j],a[j+1]=a[j+1],a[j]
 #     print(a)
-"""选择排序"""
-# def selection_sort(list):
-#     n=len(list)
-#     for i in range (0,n):
-#         min = i
-#         for j in range(i+1,n):
-#             if list[j]<list[min]:
-#                 min=j
-#                 list[min],list[i]=list[i],list[min]
-#     return list
-"""快速排序"""
-# def quick_sort(list):
-#     less = []
-#     pivotList = []
-#     more = []
-#     # 递归出口
-#     if len(list) <= 1:
-#         return list
-#     else:
-#         # 将第一个值做为基准
-#         pivot = list[0]
-#         for i in list:
-#             # 将比急转小的值放到less数列
-#             if i < pivot:
-#                 less.append(i)
-#             # 将比基准打的值放到more数列
-#             elif i > pivot:
-#                 more.append(i)
-#             # 将和基准相同的值保存在基准数列
-#             else:
-#                 pivotList.append(i)
-#         # 对less数列和more数列继续进行排序
-#         less = quick_sort(less)
-#         more = quick_sort(more)
-#         return less + pivotList + more
-# print(quick_sort([3,2,1,5,4,6]))
 """打印正方形"""
 # a=input()
 # for i in range(int(a)):
@@ -628,3 +592,36 @@ i=3 j=3
 #             else:
 #                 return f(number-1)+f(number-2)
 #         return f(number+1)
+"""给定两个字符串 s和 t ，判断 s是否为 t 的子序列,例如，"ace"是"abcde"的一个子序列，而"aec"不是）"""
+#解法1，获取短字符串s的第一个字符在长字符串t中的索引start,然后判断s是不是在t[start:]中，再判断顺序
+# def zichuan(s,t):
+#     if len(s)>len(t):
+#         return False
+#     else:
+#         try:
+#             start = t.index(s[0])
+#             a=t[start:]
+#             c=[]
+#             for i in s:
+#                 b=a.index(i)
+#                 c.append(b)
+#             print(c)
+#             if c==sorted(c):
+#                 return True
+#             else:
+#                 return False
+#         except:
+#             return False
+# print(zichuan("afc","aafccdd"))
+#解法2,使用循环，如果st中某个字符相同，后移一位，否则t后移一位，最后判断s后移的位数是否等于自己的长度
+# def zichuan(s,t):
+#     p1=0
+#     p2=0
+#     while p1<len(s) and p2<len(t):
+#         if s[p1]==t[p2]:
+#             p1+=1
+#             p2+=1
+#         else:
+#             p2+=1
+#     return True  if p1==len(s) else False
+# print(zichuan("afdc","aafccdd"))
